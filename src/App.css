@@ -1,8 +1,38 @@
+body {
+  font-family: "Wigrum-Light", "Verdana", sans-serif !important;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+  color: #1D3B64 !important;
+}
+.para-content {
+  color: rgb(101, 101, 101);
+  font-size: 15px;
+  display: flex;
+  text-align: justify;
+}
+
+.List-content{
+    color: rgb(101, 101, 101);
+}
+
+.Product-Para H6 {
+  color: #1D3B64;
+  font-weight: bold;
+  padding-right: 3px;
+}
+
 /* TOP HEADER */
 .top-header {
-  background-color: #76d6ed;
+  background-color: #1D3B64;
   color: white;
   font-size: 14px;
+}
+
+
+.logo img {
+  height: 80px;
+  width: 200px;
 }
 
 
@@ -10,7 +40,7 @@
 /* NAVBAR */
 .custom-navbar {
   background: #fff;
-  padding: 15px 0;
+  padding: 5px 6px;
   border-bottom: 1px solid #eee;
 }
 
@@ -39,7 +69,7 @@
 /* ACTIVE + HOVER ORANGE */
 .nav-link:hover,
 .nav-link.active {
-  color: #76d6ed;
+  color: #1D3B64;
 }
 
 /* UNDERLINE EFFECT */
@@ -47,7 +77,7 @@
   content: "";
   width: 0;
   height: 2px;
-  background: #76d6ed;
+  background: #1D3B64;
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -70,7 +100,7 @@
 
 /* SUPPORT BUTTON */
 .support-btn {
-  background: #76d6ed;
+  background: #1D3B64;
   border: none;
   color: white;
   padding: 8px 18px;
@@ -87,22 +117,205 @@
 }
 
 
-.carousel-caption-div{
+.carousel-caption-div {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   margin-bottom: 50px;
   text-align: justify !important;
-  right: 1%  !important;
-  left:auto !important;
+  right: 1% !important;
+  left: auto !important;
   font-size: 14px;
   top: 60% !important;
-  bottom: -0.75rem !important ;
+  bottom: -0.75rem !important;
 }
 
-.carousel-caption-div p{
+.carousel-caption-div p {
   color: black;
 }
+
+
+/* ---------------- New Card CSS---------------------- */
+/* SECTION */
+.report-section {
+  padding: 60px 0;
+}
+
+/* CARD */
+.report-card {
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.Product-row-Two {
+  margin-top: 25px !important;
+}
+
+/* SLANTED CORNER EFFECT */
+.report-card::before {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  right: -45px;
+  width: 50px;
+  height: 120px;
+  background: #f5f5f5;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+/* HOVER */
+.report-card:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGE */
+.report-image {
+  position: relative;
+  height: 285px;
+  overflow: hidden;
+}
+
+.report-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* BLUE OVERLAY */
+.report-image::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  /* background: linear-gradient(180deg,
+      rgba(0, 123, 255, 0.85),
+      rgba(0, 0, 40, 0.9)); */
+  z-index: 1;
+}
+
+/* HOVER EFFECT (optional but pro) */
+.report-image:hover img {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+/* TEXT OVER IMAGE */
+.overlay-content {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 3;
+  color: #fff;
+}
+
+.overlay-content h2 {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 120px;
+}
+
+.overlay-content p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #cfcfcf;
+  margin: 0;
+}
+
+/* BIG VERTICAL TEXT */
+.vertical-text {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 100px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 0.8;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  z-index: 2;
+}
+
+/* CONTENT */
+.report-content {
+  padding: 35px 30px 70px;
+  position: relative;
+  z-index: 3;
+}
+
+.report-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #12386b;
+  margin-bottom: 25px;
+}
+
+.report-content p {
+  font-size: 15px;
+  line-height: 1.9;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* BUTTON */
+.read-btn {
+  text-decoration: none;
+  color: #12386b;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.read-btn:hover {
+  color: #0d6efd;
+}
+
+/* RESPONSIVE */
+@media(max-width:991px) {
+
+  .overlay-content h2 {
+    font-size: 34px;
+    margin-bottom: 90px;
+  }
+
+  .vertical-text {
+    font-size: 80px;
+  }
+}
+
+@media(max-width:767px) {
+
+  .report-image {
+    height: 240px;
+  }
+
+  .overlay-content h2 {
+    font-size: 28px;
+    margin-bottom: 70px;
+  }
+
+  .vertical-text {
+    font-size: 60px;
+  }
+
+  .report-content {
+    padding: 25px 20px 60px;
+  }
+
+  .report-content p {
+    font-size: 16px;
+  }
+}
+
+/* ----------------- New Card CSS --------------------- */
+
+
 
 
 
@@ -111,69 +324,68 @@
   background: #f5f5f5;
 }
 
-.Product-Heading h5{
+.Product-Heading h5 {
   display: flex;
 }
 
-.Product-Para{
+.Product-Para {
   display: flex;
   flex-direction: column;
   text-align: justify;
 }
 
-.underline-Product-Points{
+.underline-Product-Points {
   display: flex;
   justify-content: flex-start;
-   width: 250px;
-  height: 3px;
-  background: #76d6ed;
-  margin-top: 5px;
+  width: 280px;
+  height: 2px;
+  background: #1D3B64;
+  margin-top: 2px;
+}
+
+.underline-TUBES-ROD {
+  width: 230px;
+}
+
+.INDUSTRIAL-TUBES {
+  width: 230px;
 }
 
 /* HEADING LINE */
 .underline {
   width: 160px;
   height: 3px;
-  background: #76d6ed;
-  margin-top: 5px;
+  background: #1D3B64;
+  margin-top: 2px;
 }
 
-/* CARD */
-.feature-card {
-  position: relative;
-  overflow: hidden;
+.underline-Machining {
+  width: 190px;
 }
 
-.feature-card img {
-  width: 100%;
-  display: block;
+.underline-ABOUT {
+  width: 185px;
 }
 
-/* SLANTED CONTENT */
-.card-content {
-  background: white;
-  border-top: 2px solid #76d6ed;
-  padding: 20px;
-  position: relative;
-  margin-top: -60px;
-  z-index: 2;
-  /* clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%); */
-  /* box-shadow: 0 5px 15px rgba(0,0,0,0.1); */
-    padding: 22px 15px 20px;
-    /* position: absolute; */
-    bottom: 0;
-    transform: skewY(5deg);
-    margin: 0 10px;
+.underline-PRODUCTS {
+  width: 480px;
 }
 
-/* TITLE */
-.card-content h5 {
-  font-weight: 700;
+.underline-MACHINING {
+  width: 410px;
+}
+
+.underline-CYLINDER {
+  width: 530px;
+}
+
+.underline-Partners {
+  width: 240px;
 }
 
 /* BUTTON */
 .read-btn {
-  background: #76d6ed;
+  background: #1D3B64;
   color: white;
   border: none;
   padding: 8px 18px;
@@ -181,33 +393,27 @@
   margin-top: 10px;
 }
 
-.card-content:hover{
-  background: #76d6ed;
-  border-top: 3px solid white;
-  bottom: 30px;
-}
-
 .read-btn:hover {
   background: white;
-  color:  #76d6ed;
+  color: #1D3B64;
 }
 
-.service-card{
+.service-card {
   background-color: #f8f3f3;
   padding: 20px;
-  border-top: 3px solid #76d6ed;
-  border-left: 3px solid #76d6ed;
+  border-top: 3px solid #1D3B64;
+  border-left: 3px solid #1D3B64;
   border-radius: 0px 20px;
   height: 260px;
 }
 
-.service-card ul{
+.service-card ul {
   text-align: justify;
 }
 
-.service-card:hover{
-  border-bottom: 3px solid #76d6ed;
-  border-right: 3px solid #76d6ed;
+.service-card:hover {
+  border-bottom: 3px solid #1D3B64;
+  border-right: 3px solid #1D3B64;
   border-top: none;
   border-left: none;
   margin-top: -10px;
@@ -232,7 +438,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #ff9800;
+  background: #1D3B64;
   color: white;
   padding: 30px 20px;
 
@@ -254,7 +460,7 @@
 .feature-overlay button {
   margin-top: 10px;
   background: white;
-  color: #ff9800;
+  color: #1D3B64;
   border: none;
   padding: 8px 18px;
   border-radius: 20px;
@@ -262,49 +468,173 @@
 }
 
 /* HOVER EFFECT (optional but pro) */
-.feature-card:hover img {
+.report-image:hover img {
   transform: scale(1.05);
   transition: 0.4s;
 }
 
 
-
-.CYLINDER-Child2-Div{
+.CYLINDER-Child2-Div {
   display: flex;
   text-align: justify;
 }
 
-
-.ABOUTus-Section-Main h2{
-  text-align: center;
-}
-
-.About-Info{
+/* ---------------About Us CSS-------------- */
+.About-Info {
   margin-top: 20px !important;
 }
 
-.ABOUT-Img-Section{
+.ABOUT-Img-Section {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ABOUT-Img-Section img{
-  width: 450px;
-  height: 350px;
+
+.ABOUT-Img-Section img {
+  width: 490px;
+  height: 390px;
   border-radius: 20px;
 }
 
-.ABOUT-Img-Section img:hover{
-  width: 460px;
-  height: 360px;
-  border-radius: 20px;
+/* ---------------About Us CSS-------------- */
+
+
+/* --------------Partners-content CSS --------------- */
+
+.services-content {
+  background-color: #f5f5f5;
 }
+
+/* WRAPPER */
+.team-wrapper {
+  position: relative;
+  margin-top: 40px;
+}
+
+/* SLIDER */
+.slider-container {
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: 0.4s ease;
+  justify-content: space-evenly;
+}
+
+.team-slide {
+  padding: 10px;
+}
+
+/* CARD */
+.team-card {
+  position: relative;
+  background: #f5f5f5;
+  text-align: center;
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+  border-radius: 20px 20px 0px 0px;
+}
+
+/* INFO (DEFAULT) */
+.team-info {
+  background: #d7d5d5;
+  padding: 20px;
+}
+
+.team-info h5 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.team-info p {
+  margin: 0;
+  color: #777;
+}
+
+/* OVERLAY */
+.team-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2d3e50;
+  border-radius: 20px 20px 0px 0px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+  transition: 0.4s;
+}
+
+/* SHOW ON HOVER */
+.team-card:hover .team-overlay {
+  transform: translateY(0);
+}
+
+/* SOCIAL ICONS */
+.socials {
+  margin-top: 10px;
+}
+
+.socials span {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #fff;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* CONTROLS */
+.team-controls {
+  margin-top: 20px;
+}
+
+.team-controls button {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: #2d3e50;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.team-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* FIX MOBILE STACK */
+@media (max-width: 767px) {
+  .slider-track {
+    display: block;
+  }
+}
+
+/* --------------Slider CSS --------------- */
+
+
+
+
+
 
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .feature-overlay {
-    clip-path: none; /* remove angle for small screens */
+    clip-path: none;
+    /* remove angle for small screens */
   }
 }
 
@@ -313,7 +643,8 @@
 /* RESPONSIVE FIX */
 @media (max-width: 768px) {
   .card-content {
-    clip-path: none; /* remove slant for mobile */
+    clip-path: none;
+    /* remove slant for mobile */
     margin-top: -30px;
   }
 }
