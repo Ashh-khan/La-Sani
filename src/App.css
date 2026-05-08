@@ -2,9 +2,15 @@ body {
   font-family: "Wigrum-Light", "Verdana", sans-serif !important;
 }
 
-h1 , h2 , h3 , h4 , h5 , h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #1D3B64 !important;
 }
+
 .para-content {
   color: rgb(101, 101, 101);
   font-size: 15px;
@@ -12,8 +18,8 @@ h1 , h2 , h3 , h4 , h5 , h6 {
   text-align: justify;
 }
 
-.List-content{
-    color: rgb(101, 101, 101);
+.List-content {
+  color: rgb(101, 101, 101);
 }
 
 .Product-Para H6 {
@@ -34,7 +40,6 @@ h1 , h2 , h3 , h4 , h5 , h6 {
   height: 80px;
   width: 200px;
 }
-
 
 
 /* NAVBAR */
@@ -98,12 +103,17 @@ h1 , h2 , h3 , h4 , h5 , h6 {
   border-radius: 50%;
 }
 
-/* SUPPORT BUTTON */
+/* Whatapp BUTTON */
+.Whatapp-image {
+  height: 30px;
+  width: 30px;
+}
+
 .support-btn {
-  background: #1D3B64;
+  background: #d1d4d6;
   border: none;
-  color: white;
-  padding: 8px 18px;
+  /* color: white; */
+  padding: 7px 4px;
   border-radius: 25px;
   font-weight: 600;
 }
@@ -490,8 +500,13 @@ h1 , h2 , h3 , h4 , h5 , h6 {
   align-items: center;
 }
 
+.ABOUT-Img-Section .AboutUs2 {
+  object-fit: cover;
+  position: fixed;
+}
+
 .ABOUT-Img-Section img {
-  width: 490px;
+  width: 490px !important;
   height: 390px;
   border-radius: 20px;
 }
@@ -605,7 +620,7 @@ h1 , h2 , h3 , h4 , h5 , h6 {
   width: 45px;
   height: 45px;
   border: none;
-  background: #2d3e50;
+  background: #1D3B64;
   color: #fff;
   margin-right: 5px;
 }
@@ -626,8 +641,80 @@ h1 , h2 , h3 , h4 , h5 , h6 {
 
 
 
+/* --- HISTORY SECTION STYLES --- */
+.underline-HISTORY {
+  width: 170px;
+  height: 4px;
+  background-color: #1D3B64;
+  /* Adjust to your brand color */
+  margin-top: 2px;
+}
 
+.history-timeline-wrapper {
+  position: relative;
+  padding: 40px 0;
+}
 
+/* The horizontal line */
+.history-line {
+  position: absolute;
+  top: 50px;
+  /* Adjust based on dot position */
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #dee2e6;
+  z-index: 1;
+}
+
+.history-item {
+  position: relative;
+  z-index: 2;
+}
+
+/* The Dots */
+.history-dot {
+  width: 15px;
+  height: 15px;
+  background-color: #004085;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 2px #1D3B64;
+}
+
+.history-sub-item:hover {
+  border: 2px solid #1D3B64;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 2px #1D3B64;
+
+}
+
+.history-item h6 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.history-item p {
+  line-height: 1.4;
+  color: #666;
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 768px) {
+  .history-line {
+    display: none;
+    /* Hide line on mobile for vertical look or grid */
+  }
+
+  .history-item {
+    margin-bottom: 30px;
+  }
+
+  .history-dot {
+    margin-bottom: 10px;
+  }
+}
 
 
 /* RESPONSIVE */
@@ -712,4 +799,86 @@ h1 , h2 , h3 , h4 , h5 , h6 {
   height: 100vh;
   padding: 50px;
   border-bottom: 1px solid #ccc;
+}
+
+
+/* ---  FOOTER CSS --- */
+.lasani-footer {
+  background-color: #1D3B64;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-header {
+  font-weight: 700;
+  color: white !important;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+  max-width: 180px;
+  border-radius: 20px;
+}
+
+.bank-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid #fff;
+}
+
+.footer-list li {
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+/* --- TABLET VIEW (768px to 991px) --- */
+@media (max-width: 991px) {
+  .footer-column {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-header {
+    font-size: 1.1rem;
+  }
+}
+
+/* --- MOBILE VIEW (Below 767px) --- */
+@media (max-width: 767px) {
+  .lasani-footer {
+    text-align: center;
+    /* Center everything on mobile */
+  }
+
+  .footer-list li {
+    justify-content: center;
+    /* Center the icons and text */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .bank-card {
+    border-left: none;
+    border-top: 4px solid #fff;
+    margin: 10px auto;
+    max-width: 300px;
+  }
+
+  .footer-column {
+    margin-bottom: 2rem;
+  }
 }
