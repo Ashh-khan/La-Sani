@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Carousel } from 'bootstrap';
 
 import img1 from './ImageFiles/115.1.jpg';
 import Logo from './ImageFiles/Lasani logo White PNG.png';
 
 import Boring from './ImageFiles/Machining Services/Boring.jpeg';
+import DeepTurning from './ImageFiles/Machining Services/Deep Hole Drilling.jpg';
+import ODTurning from './ImageFiles/Machining Services/OD Turning.jpg';
+import Trepanning from './ImageFiles/Machining Services/Trepanning.jpg';
 
 import honed1 from './ImageFiles/Honed/11.jpg';
 import Suitabletoskive from './ImageFiles/SuitableToSkiveHone/Suitable-(Ready)-To-SkiveHone.jpg';
@@ -23,12 +28,18 @@ import AbdulMannan from './ImageFiles/Partner/Abdul Mannan - Director.jpg';
 import AbdulRehman from './ImageFiles/Partner/Abdul Rehman - Managing Director.jpg';
 import EhsanKhan from './ImageFiles/Partner/Ehsan Ahmad Khan- Director.jpg';
 
-import WhatApp from './ImageFiles/whatsapp (1).png';
+import whyus1 from './ImageFiles/WHYUS/IMG-20221217-WA0007.jpg';
+import whyus2 from './ImageFiles/WHYUS/asa.jpg';
+import whyus3 from './ImageFiles/WHYUS/1.jpg';
+import whyus4 from './ImageFiles/WHYUS/why4.jpg';
+import whyus5 from './ImageFiles/WHYUS/why5.jpg';
+
+import WhatApp from './ImageFiles/SocialFont/whatsapp (1).png';
 
 
 import AboutUs from './ImageFiles/about.webp';
 import AboutUs2 from './ImageFiles/about-us 2.png';
-import AboutUs3 from './ImageFiles/about 3.jpg';
+import AboutUs3 from './ImageFiles/business-professional-using-laptop-digital-600nw-2729153227.webp';
 
 function App() {
 
@@ -56,7 +67,7 @@ function App() {
 
   // aboutCarousel
   useEffect(() => {
-    const carouselItems = document.querySelectorAll(".carousel_item_custom");
+    const carouselItems = document.querySelectorAll(".about-carousel-item");
     let i = 1;
 
     const interval = setInterval(() => {
@@ -82,20 +93,45 @@ function App() {
   }, []);
 
 
+  // WHYUS Carousel
+  useEffect(() => {
+
+    const carouselItems = document.querySelectorAll(".whyus-carousel-item");
+
+    let index = 0;
+
+    const interval = setInterval(() => {
+
+      index = (index + 1) % carouselItems.length;
+
+      carouselItems.forEach((item) => {
+        item.style.transform = `translateX(-${index * 100}%)`;
+      });
+
+    }, 3000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
+
   const teamData = [
     {
       name: "Abdul Mannan",
       role: "Director",
+      details: "MD (Radiologist) a medical practitioner but his business approach and thinking are of immense helpful in directing of the company",
       img: AbdulMannan,
     },
     {
       name: "Abdul Rehman",
       role: "Managing Director",
+      details: "B.E (Mechanical Engineering) having 12 years’ experience in the software industry. He has joined the family business in year 2012 and is responsible for execution of strategy and expansion of business.",
       img: AbdulRehman,
     },
     {
       name: "Ehsan Khan",
       role: "Director",
+      details: "B.Sc. (Mechanical Engineering) working as Chief Strategy Officer for company manufacturing wellhead Equipment. He is having 25 years of experience of supply Chain and Manufacturing.",
       img: EhsanKhan,
     },
   ];
@@ -236,11 +272,14 @@ function App() {
               <div className='ABOUT-Img-Section col-lg-6 col-md-6 col-12 mb-4'>
                 {/* Wrapper with overflow hidden is crucial */}
                 <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex', marginLeft: "70px" }}>
-                  <div className="carousel_item_custom" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                  <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                     <img src={AboutUs} className="d-block w-100 rounded" alt="1" />
                   </div>
-                  <div className="carousel_item_custom" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                  <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                     <img src={AboutUs2} className="d-block w-100 rounded" alt="2" />
+                  </div>
+                  <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                    <img src={AboutUs3} className="d-block w-100 rounded" alt="2" />
                   </div>
                 </div>
               </div>
@@ -646,7 +685,7 @@ function App() {
                   <div class="report-card ">
                     <div class="report-image">
                       <img
-                        src={honed1}
+                        src={DeepTurning}
                         alt=""
                       />
                     </div>
@@ -667,7 +706,7 @@ function App() {
                 </div>
 
                 {/* Card 2 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                {/* <div class="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -679,103 +718,18 @@ function App() {
                     <div class="report-content">
                       <h3>Gun Drilling</h3>
 
-                      {/* <p>
-                        Precision Cold Drawn Seamless and DRAWN-ON MANDREL (DOM) welded...
-                      </p> */}
-
                       <a href="#" class="read-btn">
                         Read more →
                       </a>
                     </div>
 
                   </div>
-                </div>
-
-                {/* Card 3 */}
+                </div> */}
                 <div class="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
-                        src={HotFinished}
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="report-content">
-                      <h3>BTA Drilling</h3>
-
-                      {/* <p>
-                        Bored & Honed tube for hydraulic cylinders are obtained from...
-                      </p> */}
-
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-
-                {/* Card 4 */}
-                <div class="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
-                      <img
-                        src={honed1}
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="report-content">
-                      <h3>Fine Boring</h3>
-
-                      {/* <p>
-                        Honed tube or skived/roller burnished tube for are...
-                      </p> */}
-
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-              {/* Cards */}
-              <div className="row mt-4">
-
-                {/* Card 1 */}
-                <div class="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
-                      <img
-                        src={Suitabletoskive}
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="report-content">
-                      <h3>Trepanning</h3>
-
-                      {/* <p>
-                        Precision Cold Drawn Seamless and DRAWN-ON MANDREL (DOM) welded...
-                      </p> */}
-
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-
-                {/* Card 2 */}
-                <div class="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
-                      <img
-                        src={HotFinished}
+                        src={ODTurning}
                         alt=""
                       />
                     </div>
@@ -796,6 +750,25 @@ function App() {
                 </div>
 
                 {/* Card 3 */}
+                {/* <div class="col-lg-3 col-md-6 col-12">
+                  <div class="report-card ">
+                    <div class="report-image">
+                      <img
+                        src={HotFinished}
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="report-content">
+                      <h3>BTA Drilling</h3>
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
+
+                  </div>
+                </div> */}
                 <div class="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
@@ -810,6 +783,31 @@ function App() {
 
                       {/* <p>
                         Honed tube or skived/roller burnished tube for are...
+                      </p> */}
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Card 4 */}
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="report-card ">
+                    <div class="report-image">
+                      <img
+                        src={Trepanning}
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="report-content">
+                      <h3>Trepanning</h3>
+
+                      {/* <p>
+                        Precision Cold Drawn Seamless and DRAWN-ON MANDREL (DOM) welded...
                       </p> */}
 
                       <a href="#" class="read-btn">
@@ -888,7 +886,9 @@ function App() {
                   key={i}  >
                   <div className="team-card">
 
-                    <img src={member.img} alt="" />
+                    <div>
+                      <img src={member.img} alt="" />
+                    </div>
 
                     <div className="team-info">
                       <h5>{member.name}</h5>
@@ -900,13 +900,22 @@ function App() {
                       <h5>{member.name}</h5>
                       <p>{member.role}</p>
 
+                      <div className='Partners-details'>
+                        <p>{member.details}</p>
+                      </div>
+
                       <div className="socials">
-                        <span>X</span>
-                        <span>F</span>
-                        <span>I</span>
+                        <span><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon className='soical-icons' icon={faXTwitter} />
+                        </a></span>
+                        <span><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon className='soical-icons' icon={faFacebook} />
+                        </a></span>
+                        <span><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                          <FontAwesomeIcon className='soical-icons' icon={faLinkedin} />
+                        </a></span>
                       </div>
                     </div>
-
                   </div>
                 </div>
               ))}
@@ -994,6 +1003,79 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* WHY US SECTION */}
+      <div>
+        <div id='WHYUS' className="feature-section WhyUs-Section-Main py-5">
+
+          <div className="container">
+
+            {/* Section Heading */}
+            <h2 className="fw-bold">WHY US?</h2>
+            <div className="underline underline-WhyUs"></div>
+
+            <div className="row">
+
+              {/* Left Content */}
+              <div className='WhyUs-Info col-lg-6 col-md-6 col-12'>
+
+                <p className='para-content mt-2'>
+                  There are many companies in the world, but more than any of them we create true value
+                  by the way we work together in partnerships — with our colleagues, our customers,
+                  our communities, and all our stakeholders.
+                </p>
+
+                {/* Key Points */}
+                <ul className="para-content">
+                  <li>Customer Range: First Tier, Second Tier & Network</li>
+                  <li>Product Range, Stocking Program, Forward Delivery, Custom Solution</li>
+                  <li>Unique Solution – Cost & Lead Time Reduction, Smooth Operations</li>
+                  <li>Product Quality & Process Excellence</li>
+                  <li>Organisational Strength – People</li>
+                </ul>
+
+                {/* Closing Content */}
+                <p className='para-content'>
+                  Our strength lies in people and the pride we take in our work.
+                </p>
+
+                <p className='para-content'>
+                  Whatever we are doing today, we are working closely with our customers to make them
+                  more successful in their markets. Our pride drives everything we do.
+                </p>
+
+                <p className='para-content'>
+                  We focus on exceeding customer expectations, investing in cleaner and safer processes,
+                  contributing to our communities, and building a company that lasts for generations.
+                </p>
+
+              </div>
+
+              {/* Right Image Section (kept structure same, only class renamed) */}
+              <div className='WHYUS-Img-Section col-lg-6 col-md-6 col-12 mb-4'>
+
+                {/* Carousel Wrapper */}
+                <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex', marginLeft: "70px" }} >
+
+                  <div className="whyus-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                    <img src={whyus2} className="d-block w-100 rounded" alt="1" />
+                  </div>
+
+                  <div className="whyus-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                    <img src={whyus3} className="d-block w-100 rounded" alt="2" />
+                  </div>
+
+                  <div className="whyus-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                    <img src={whyus4} className="d-block w-100 rounded" alt="3" />
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* FOOTER SECTION */}
       <footer className="lasani-footer pt-5 pb-3 text-white">

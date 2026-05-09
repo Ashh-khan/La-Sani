@@ -14,7 +14,6 @@ h6 {
 .para-content {
   color: rgb(101, 101, 101);
   font-size: 15px;
-  display: flex;
   text-align: justify;
 }
 
@@ -286,6 +285,19 @@ h6 {
   color: #0d6efd;
 }
 
+/* ---------------Why Us-------------- */
+/* WHY US Carousel Styles */
+.whyus-carousel-item {
+  min-width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.WHYUS-Img-Section img {
+  width: 490px !important;
+  height: 390px;
+  border-radius: 20px;
+}
+
 /* RESPONSIVE */
 @media(max-width:991px) {
 
@@ -544,16 +556,18 @@ h6 {
 /* CARD */
 .team-card {
   position: relative;
-  background: #f5f5f5;
+  background: #d7d5d5;
   text-align: center;
   overflow: hidden;
+  width: 400px;
+  border-radius: 20px;
 }
 
 .team-card img {
-  width: 100%;
-  height: 260px;
+  padding: 20px 0px 10px;
+  height: 180px;
+  border-radius: 50%;
   object-fit: contain;
-  border-radius: 20px 20px 0px 0px;
 }
 
 /* INFO (DEFAULT) */
@@ -584,10 +598,20 @@ h6 {
   color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
   align-items: center;
   transform: translateY(100%);
   transition: 0.4s;
+}
+
+.Partners-details {
+  text-align: justify;
+  padding: 0 15px;
+}
+
+.socials .soical-icons {
+  color: white;
 }
 
 /* SHOW ON HOVER */
@@ -684,9 +708,9 @@ h6 {
 }
 
 .history-sub-item:hover {
-  border: 2px solid #1D3B64;
+  border: 1px solid #1D3B64;
   border-radius: 10px;
-  box-shadow: 0 0 2px 2px #1D3B64;
+  box-shadow: 0 0 2px 1px #1D3B64;
 
 }
 
@@ -811,6 +835,7 @@ h6 {
 .footer-header {
   font-weight: 700;
   color: white !important;
+
   margin-bottom: 1.5rem;
   position: relative;
   padding-bottom: 10px;
