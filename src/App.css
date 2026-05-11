@@ -67,6 +67,7 @@ h6 {
   text-decoration: none;
   color: #222;
   font-weight: 600;
+  font-size: 15px !important;
   position: relative;
 }
 
@@ -171,7 +172,7 @@ h6 {
   right: -45px;
   width: 50px;
   height: 120px;
-  background: #f5f5f5;
+  background: #ededed;
   transform: rotate(45deg);
   z-index: 2;
 }
@@ -343,7 +344,7 @@ h6 {
 
 /* SECTION */
 .feature-section {
-  background: #f5f5f5;
+  background: #ededed;
 }
 
 .Product-Heading h5 {
@@ -390,7 +391,7 @@ h6 {
 }
 
 .underline-PRODUCTS {
-  width: 480px;
+  width: 200px;
 }
 
 .underline-MACHINING {
@@ -529,7 +530,7 @@ h6 {
 /* --------------Partners-content CSS --------------- */
 
 .services-content {
-  background-color: #f5f5f5;
+  background-color: #ededed;
 }
 
 /* WRAPPER */
@@ -602,7 +603,7 @@ h6 {
   padding-bottom: 5px;
   align-items: center;
   transform: translateY(100%);
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 .Partners-details {
@@ -707,11 +708,15 @@ h6 {
   box-shadow: 0 0 0 2px #1D3B64;
 }
 
-.history-sub-item:hover {
-  border: 1px solid #1D3B64;
-  border-radius: 10px;
-  box-shadow: 0 0 2px 1px #1D3B64;
+.history-sub-item {
+  transition: all 0.7s ease;
+}
 
+
+.history-sub-item:hover {
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px 1px #1D3B64;
+  transform: translateY(-10px);
 }
 
 .history-item h6 {

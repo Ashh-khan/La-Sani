@@ -11,6 +11,8 @@ import Boring from './ImageFiles/Machining Services/Boring.jpeg';
 import DeepTurning from './ImageFiles/Machining Services/Deep Hole Drilling.jpg';
 import ODTurning from './ImageFiles/Machining Services/OD Turning.jpg';
 import Trepanning from './ImageFiles/Machining Services/Trepanning.jpg';
+import DeepHoleHoning from './ImageFiles/Machining Services/Deep Hole Honing.jpg';
+import CuttingMachine from './ImageFiles/Machining Services/Cutting Machine.jpg';
 
 import honed1 from './ImageFiles/Honed/11.jpg';
 import Suitabletoskive from './ImageFiles/SuitableToSkiveHone/Suitable-(Ready)-To-SkiveHone.jpg';
@@ -40,6 +42,8 @@ import WhatApp from './ImageFiles/SocialFont/whatsapp (1).png';
 import AboutUs from './ImageFiles/about.webp';
 import AboutUs2 from './ImageFiles/about-us 2.png';
 import AboutUs3 from './ImageFiles/business-professional-using-laptop-digital-600nw-2729153227.webp';
+import AboutUs4 from './ImageFiles/Aboutus 4.jpg';
+import AboutUs5 from './ImageFiles/Aboutus5.jpg';
 
 function App() {
 
@@ -146,17 +150,16 @@ function App() {
           <div className="container">
             <div className="row align-items-center">
 
-              <div className="col-lg-6 col-md-6 col-12 text-center text-md-start">
-                <span>🏠 2nd Floor New World.</span>
-                <span className="ms-3">📞 98556778345</span>
-                <span className="ms-3">✉ demo@example.com</span>
+              <div className="col-lg-9 col-md-9 col-12 text-center text-md-start">
+                <span>1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218.</span>
+                <span className="ms-3">📞 +91 99000 19885 | +91 89763 37049</span>
+                <span className="ms-3">✉ info@la-sani.com</span>
               </div>
 
-              <div className="col-lg-6 col-md-6 col-12 text-center text-md-end">
+              <div className="col-lg-3 col-md-3 col-12 text-center text-md-end">
                 <span>Open: 9am–6pm Mon–Sat</span>
                 <span className="ms-3">f</span>
                 <span className="ms-2">X</span>
-                <span className="ms-2">🎵</span>
               </div>
 
             </div>
@@ -276,7 +279,7 @@ function App() {
                     <img src={AboutUs} className="d-block w-100 rounded" alt="1" />
                   </div>
                   <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                    <img src={AboutUs2} className="d-block w-100 rounded" alt="2" />
+                    <img src={AboutUs5} className="d-block w-100 rounded" alt="2" />
                   </div>
                   <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                     <img src={AboutUs3} className="d-block w-100 rounded" alt="2" />
@@ -296,12 +299,14 @@ function App() {
 
             {/* Heading */}
             <div id='PRODUCTSANDSERVICES' className="mb-5 Product-Heading">
-              <h2 className="fw-bold">PRODUCTS AND SERVICES</h2>
+              <h2 className="fw-bold">PRODUCTS</h2>
               <div className="underline underline-PRODUCTS"></div>
-              <h4 className='mt-3'>PIPES AND TUBES</h4>
+              {/* <h4 className='mt-3'>PIPES AND TUBES</h4> */}
               {/* <div className="underline-Product-Points underline-TUBES-ROD"></div> */}
               <div className='Product-Para'>
-                <p className='para-content mt-2'><span><h6>CYLINDER TUBES AND ROD</h6> </span> Lasani, the market leader in the supply of hydraulic tube and rod products in India.</p>
+                <p className='para-content mt-2'><span>
+                  <h6>PIPES AND TUBES</h6>
+                </span> Lasani, the market leader in the supply of hydraulic tube and rod products in India.</p>
                 <p className='para-content'>Our main product that suits Hydraulic and pneumatic cylinder industries are:</p>
               </div>
 
@@ -512,8 +517,11 @@ function App() {
 
             {/* Heading */}
             <div className=" mb-5 Product-Heading">
-              <h6>OTHER INDUSTRIAL TUBES</h6>
-              <div className="underline-Product-Points INDUSTRIAL-TUBES"></div>
+              <div className='Product-Para'>
+                <h6>OTHER INDUSTRIAL TUBES</h6>
+                {/* <div className="underline-Product-Points INDUSTRIAL-TUBES"></div> */}
+              </div>
+
               <div className='Product-Para'>
                 <p className='para-content mt-2'>We supply the conveyance and pressure, energy, automotive and engineering and precision tube markets.</p>
                 <p className='para-content'>We make a difference for all our customers. Our customer orientated business structure allows us to offer
@@ -657,7 +665,7 @@ function App() {
 
       {/* MACHINING SERVICE */}
       <div>
-        <section class="services py-5">
+        <section class="services">
           <div className="feature-section py-5">
             {/* Product 1 Section */}
             <div className="container">
@@ -670,9 +678,9 @@ function App() {
                   parts that require difficult internal features with tight positional tolerances. We guarantee exceptional quality with a
                   focus on our customers' economic drivers, resulting in cost savings and shorter lead times. We are committed to providing
                   the highest level of service and on-time delivery.</p>
-                <h5>Our services and areas of expertise include: </h5>
+                {/* <h5>Our services and areas of expertise include: </h5>
                 <h5>Machining Services</h5>
-                <div className="underline-Machining underline"></div>
+                <div className="underline-Machining underline"></div> */}
                 <div className='Product-Para'>
                 </div>
               </div>
@@ -779,7 +787,7 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Boring</h3>
+                      <h3>Deep Hole Boring</h3>
 
                       {/* <p>
                         Honed tube or skived/roller burnished tube for are...
@@ -809,6 +817,51 @@ function App() {
                       {/* <p>
                         Precision Cold Drawn Seamless and DRAWN-ON MANDREL (DOM) welded...
                       </p> */}
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+              <div className='row Product-row-Two'>
+                {/* Card 5 */}
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="report-card ">
+                    <div class="report-image">
+                      <img
+                        src={DeepHoleHoning}
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="report-content">
+                      <h3>Deep Hole Honing</h3>
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Card 6 */}
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="report-card ">
+                    <div class="report-image">
+                      <img
+                        src={CuttingMachine}
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="report-content">
+                      <h3>Cutting Machine</h3>
 
                       <a href="#" class="read-btn">
                         Read more →
