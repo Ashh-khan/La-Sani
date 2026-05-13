@@ -13,6 +13,8 @@ import ODTurning from './ImageFiles/Machining Services/OD Turning.jpg';
 import Trepanning from './ImageFiles/Machining Services/Trepanning.jpg';
 import DeepHoleHoning from './ImageFiles/Machining Services/Deep Hole Honing.jpg';
 import CuttingMachine from './ImageFiles/Machining Services/Cutting Machine.jpg';
+import Welding from './ImageFiles/Machining Services/port-end-cap-welding.jpg';
+import HardChromePlating from './ImageFiles/Machining Services/hard-chrome-plating-service.jpg';
 
 import honed1 from './ImageFiles/Honed/11.jpg';
 import Suitabletoskive from './ImageFiles/SuitableToSkiveHone/Suitable-(Ready)-To-SkiveHone.jpg';
@@ -46,6 +48,14 @@ import AboutUs4 from './ImageFiles/Aboutus 4.jpg';
 import AboutUs5 from './ImageFiles/Aboutus5.jpg';
 
 function App() {
+
+  // Page URL-----
+  useEffect(() => {
+    if (window.location.pathname === "/") {
+      window.location.replace("/La-Sani");
+    }
+  }, []);
+  // Page URL-----
 
   const [open, setOpen] = useState(false);
 
@@ -170,7 +180,7 @@ function App() {
         <nav className="custom-navbar">
           <div className="row navbar-row-main align-items-center">
             {/* LOGO */}
-            <div className="col-6 col-md-3">
+            <div className="col-4 col-md-3">
               <h3 className="logo"><img src={Logo} alt="" /></h3>
             </div>
 
@@ -187,7 +197,7 @@ function App() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="col-6 col-md-3 text-end">
+            <div className="col-4 col-md-3 text-end">
               <button className="search-btn">🔍</button>
               <button className="support-btn ms-2"><a
                 href="https://wa.me/918976337049?text=Hello%20I%20am%20interested"
@@ -253,7 +263,8 @@ function App() {
             {/* About Info */}
             <div className="row">
               <div className='About-Info col-lg-6 col-md-6 col-12' >
-                <p className='para-content'>Lasani has over 40 years of experience in tube trading, mainly catering to Hydraulic Cylinder
+                <h4>Manufacturer and Supplier of Hydraulic Cylinder Tubes</h4>
+                <p className='para-content Manufacturer-paraone'>Lasani has over 40 years of experience in tube trading, mainly catering to Hydraulic Cylinder
                   Industries, Lasani Fluid Power LLP was redefined as an independent company in 2017.</p>
 
                 <p className='para-content'>Lasani has evolved as premier supplier of Hydraulic Tubes, (RTH) Pre honed Tubes, Honed Tubes,
@@ -261,11 +272,12 @@ function App() {
                   500 metric tonnes stocks.Being part of trading activity and acumens for engineering activity we added
                   many values addition to meet customer requirements, such as boring, deep hole drilling, honing, etc.</p>
 
-                <p className='para-content'>We take full advantage of the innovative machining techniques and equipment developed through our engineering
+                {/* <p className='para-content'>We take full advantage of the innovative machining techniques and equipment developed through our engineering
                   and carry on a tradition of high-quality, sophisticated manufacturing processes. Providing drilled holes with
                   tight positional tolerances facilitates the amount of subsequent machine work being performed by the customer.
                   This means that a part with a tightly placed drilled hole eliminates the requirement to purchase grossly oversized
-                  material and the associated complex machining operations to machine the outer diameter's position relative to the bore.</p>
+                  material and the associated complex machining operations to machine the outer diameter's position relative to the bore.
+                  </p> */}
               </div>
 
               {/* <div className='ABOUT-Img-Section col-lg-6 col-md-6 col-12 mb-4'>
@@ -290,6 +302,7 @@ function App() {
           </div>
         </div>
       </div>
+
 
       {/* PRODUCT SECTION */}
       <div>
@@ -714,69 +727,6 @@ function App() {
                 </div>
 
                 {/* Card 2 */}
-                {/* <div class="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
-                      <img
-                        src={Suitabletoskive}
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="report-content">
-                      <h3>Gun Drilling</h3>
-
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
-                    </div>
-
-                  </div>
-                </div> */}
-                <div class="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
-                      <img
-                        src={ODTurning}
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="report-content">
-                      <h3>OD Turning</h3>
-
-                      {/* <p>
-                        Bored & Honed tube for hydraulic cylinders are obtained from...
-                      </p> */}
-
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
-                    </div>
-
-                  </div>
-                </div>
-
-                {/* Card 3 */}
-                {/* <div class="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
-                      <img
-                        src={HotFinished}
-                        alt=""
-                      />
-                    </div>
-
-                    <div class="report-content">
-                      <h3>BTA Drilling</h3>
-
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
-                    </div>
-
-                  </div>
-                </div> */}
                 <div class="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
@@ -792,6 +742,27 @@ function App() {
                       {/* <p>
                         Honed tube or skived/roller burnished tube for are...
                       </p> */}
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Card 3 */}
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="report-card ">
+                    <div class="report-image">
+                      <img
+                        src={DeepHoleHoning}
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="report-content">
+                      <h3>Deep Hole Honing</h3>
 
                       <a href="#" class="read-btn">
                         Read more →
@@ -834,13 +805,17 @@ function App() {
                   <div class="report-card ">
                     <div class="report-image">
                       <img
-                        src={DeepHoleHoning}
+                        src={ODTurning}
                         alt=""
                       />
                     </div>
 
                     <div class="report-content">
-                      <h3>Deep Hole Honing</h3>
+                      <h3>OD Turning</h3>
+
+                      {/* <p>
+                        Bored & Honed tube for hydraulic cylinders are obtained from...
+                      </p> */}
 
                       <a href="#" class="read-btn">
                         Read more →
@@ -862,6 +837,48 @@ function App() {
 
                     <div class="report-content">
                       <h3>Cutting Machine</h3>
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Card 7 */}
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="report-card ">
+                    <div class="report-image">
+                      <img
+                        src={HardChromePlating}
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="report-content">
+                      <h3>Hard Chrome Plating</h3>
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
+
+                  </div>
+                </div>
+
+                {/* Card 8 */}
+                <div class="col-lg-3 col-md-6 col-12">
+                  <div class="report-card ">
+                    <div class="report-image">
+                      <img
+                        src={Welding}
+                        alt=""
+                      />
+                    </div>
+
+                    <div class="report-content">
+                      <h3>Welding and Cladding</h3>
 
                       <a href="#" class="read-btn">
                         Read more →
@@ -1127,8 +1144,268 @@ function App() {
 
             </div>
           </div>
+          <div className="container">
+
+            {/* Section Heading */}
+            <h5 className="fw-bold">Our Geographical Location and Infrastructure :</h5>
+            {/* <div className="underline underline-WhyUs"></div> */}
+
+            <div className="row">
+
+              {/* Left Content */}
+              <div className='WhyUs-Info col-lg-6 col-md-6 col-12'>
+
+                {/* Key Points */}
+                <ul className="para-content">
+                  <li> <span className='GeogList-Class'>Strategic Location:</span> Based in
+                    <span className='GeogList-Class'> Navi Mumbai, Maharashtra, </span>
+                    near the <span className='GeogList-Class'>Mumbai–Pune Expressway</span></li>
+                  <li>Connectivity: Easy access to Mumbai and Pune.</li>
+                  <li>Logistics Advantage: Close to JNPT Port, a key hub for trade and exports.</li>
+                </ul>
+
+              </div>
+
+              {/* Right Image Section (kept structure same, only class renamed) */}
+              <div className='WhyUs-Info col-lg-6 col-md-6 col-12'>
+
+                {/* Key Points */}
+                <ul className="para-content">
+                  <li>Industrial Proximity: Well-connected to major industrial zones in Navi Mumbai and the Mumbai Metropolitan Region (MMR).</li>
+                  <li>Future Growth: Near the upcoming Navi Mumbai International Airport.</li>
+                  <li>Transport Network: Supported by major highways and railways for smooth logistics and supply chain movement</li>
+                </ul>
+
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
+
+      {/* ========================================================= */}
+      {/* MISSION VISION QUALITY SECTION  */}
+      {/* ========================================================= */}
+      <section className="mission-vision-section py-5">
+
+        <div className="container">
+
+          {/* HEADING */}
+          <div className="text-center mb-5">
+            <h2 className="fw-bold">Our Core Values</h2>
+            <div className="underline underline-Partners mx-auto"></div>
+          </div>
+
+          <div className="row g-4">
+
+            {/* ================================================= */}
+            {/* MISSION CARD */}
+            {/* ================================================= */}
+
+            <div className="col-lg-4 col-md-6 col-12">
+
+              <div className="mission-card text-center">
+
+                <div className="mission-icon">
+                  <i className="fa-solid fa-handshake"></i>
+                </div>
+
+                <h3>Mission</h3>
+
+                <p>
+                  "Our mission is to deliver innovative,
+                  high-quality storage solutions that meet
+                  the diverse needs of our clients."
+                </p>
+
+                <div className="mission-socials">
+
+                  <span>
+                    <a
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faXTwitter}
+                      />
+                    </a>
+                  </span>
+
+                  <span>
+                    <a
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faFacebook}
+                      />
+                    </a>
+                  </span>
+
+                  <span>
+                    <a
+                      href="https://linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faLinkedin}
+                      />
+                    </a>
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* ================================================= */}
+            {/* VISION CARD */}
+            {/* ================================================= */}
+
+            <div className="col-lg-4 col-md-6 col-12">
+
+              <div className="mission-card text-center">
+
+                <div className="mission-icon">
+                  <i className="fa-solid fa-eye-slash"></i>
+                </div>
+
+                <h3>Vision</h3>
+
+                <p>
+                  "Our vision is to be the leading provider
+                  of cutting-edge storage solutions, driving
+                  industry innovation and exceeding customer
+                  expectations."
+                </p>
+
+                <div className="mission-socials">
+
+                  <span>
+                    <a
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faXTwitter}
+                      />
+                    </a>
+                  </span>
+
+                  <span>
+                    <a
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faFacebook}
+                      />
+                    </a>
+                  </span>
+
+                  <span>
+                    <a
+                      href="https://linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faLinkedin}
+                      />
+                    </a>
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* ================================================= */}
+            {/* QUALITY CARD */}
+            {/* ================================================= */}
+            <div className="col-lg-4 col-md-6 col-12">
+
+              <div className="mission-card text-center">
+
+                <div className="mission-icon">
+                  <i className="fa-solid fa-thumbs-up"></i>
+                </div>
+
+                <h3>Quality</h3>
+
+                <p>
+                  "We are dedicated to delivering exceptional
+                  quality, ensuring every product meets the
+                  highest standards of durability and
+                  performance."
+                </p>
+
+                <div className="mission-socials">
+
+                  <span>
+                    <a
+                      href="https://twitter.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faXTwitter}
+                      />
+                    </a>
+                  </span>
+
+                  <span>
+                    <a
+                      href="https://facebook.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faFacebook}
+                      />
+                    </a>
+                  </span>
+
+                  <span>
+                    <a
+                      href="https://linkedin.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="social-icons"
+                        icon={faLinkedin}
+                      />
+                    </a>
+                  </span>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
 
       {/* FOOTER SECTION */}
       <footer className="lasani-footer pt-5 pb-3 text-white">

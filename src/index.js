@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { BrowserRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const basename = process.env.NODE_ENV === "production" ? "/La-Sani" : "/";
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename={basename}> 
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
