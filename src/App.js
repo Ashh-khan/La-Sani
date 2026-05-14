@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faHandshake, faEyeSlash, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from 'bootstrap';
 
 import img1 from './ImageFiles/115.1.jpg';
@@ -180,7 +181,7 @@ function App() {
         <nav className="custom-navbar">
           <div className="row navbar-row-main align-items-center">
             {/* LOGO */}
-            <div className="col-4 col-md-3">
+            <div className="col-md-3">
               <h3 className="logo"><img src={Logo} alt="" /></h3>
             </div>
 
@@ -197,7 +198,7 @@ function App() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="col-4 col-md-3 text-end">
+            <div className=" col-md-3 text-end">
               <button className="search-btn">🔍</button>
               <button className="support-btn ms-2"><a
                 href="https://wa.me/918976337049?text=Hello%20I%20am%20interested"
@@ -336,27 +337,23 @@ function App() {
                       src={honed1}
                       alt=""
                     />
-
-                    {/* <div class="overlay-content">
-                      <h2>SUSTAINABILITY</h2>
-                      <p>SUSTAINABILITY <br />REPORT 2024</p>
-                    </div>
-
-                    <div class="vertical-text">
-                      BURV
-                    </div> */}
                   </div>
 
                   <div class="report-content">
-                    <h3>Honed/Skived Tube</h3>
+                    <div>
+                      <h3>Honed/Skived Tube</h3>
+                    </div>
 
-                    <p>
-                      Honed tube or skived/roller burnished tube for are obtained from high quality precision cold dra....
-                    </p>
+                    <div>
+                      <p>
+                        Honed tube or skived/roller burnished tube for are obtained from high
+                        quality precision cold drawn drawn or DOM tubes Material can be arranged...
+                      </p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -370,27 +367,23 @@ function App() {
                       src={Suitabletoskive}
                       alt=""
                     />
-
-                    {/* <div class="overlay-content">
-                      <h2>SUSTAINABILITY</h2>
-                      <p>SUSTAINABILITY <br />REPORT 2024</p>
-                    </div>
-
-                    <div class="vertical-text">
-                      BURV
-                    </div> */}
                   </div>
 
                   <div class="report-content">
-                    <h3>Suitable (Ready) To Skive/Hone</h3>
+                    <div>
+                      <h3>Suitable (Ready) To Skive/Hone</h3>
+                    </div>
 
-                    <p>
-                      Precision Cold Drawn Seamless and DRAWN-ON MANDREL (DOM) welded...
-                    </p>
+                    <div>
+                      <p>
+                        Precision Cold Drawn Seamless and DRAWN-ON MANDREL (DOM) welded tubes are ready to
+                        skive/ Hone to make hydraulic cylinders pipe...
+                      </p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -407,15 +400,20 @@ function App() {
                   </div>
 
                   <div class="report-content">
-                    <h3>Hot Finished Seamless Bored & Honed Tube</h3>
+                    <div>
+                      <h3>Hot Finished Seamless Bored & Honed Tube</h3>
+                    </div>
 
-                    <p>
-                      Bored & Honed tube for hydraulic cylinders are...
-                    </p>
+                    <div>
+                      <p>
+                        Bored & Honed tube for hydraulic cylinders are obtained from high quality
+                        hot finished raw materialOur In house processing facility ...
+                      </p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -432,16 +430,20 @@ function App() {
                   </div>
 
                   <div class="report-content">
-                    <h3>Chrome Plated Bar</h3>
+                    <div>
+                      <h3>Chrome Plated Bar</h3>
+                    </div>
 
-                    <p>
-                      Hard Chrome Plated Shafts are produced in state of art manufacturing facility
-                      by world renowned manufacturers....
-                    </p>
+                    <div>
+                      <p>
+                        Hard Chrome Plated Shafts are produced in state of art manufacturing facility
+                        by world renowned manufacturers Stringent Quality Control....
+                      </p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -465,26 +467,23 @@ function App() {
                       alt=""
                     />
 
-                    {/* <div class="overlay-content">
-                      <h2>SUSTAINABILITY</h2>
-                      <p>SUSTAINABILITY <br />REPORT 2024</p>
-                    </div>
-
-                    <div class="vertical-text">
-                      BURV
-                    </div> */}
                   </div>
 
                   <div class="report-content">
-                    <h3>Smooth Bore</h3>
+                    <div>
+                      <h3>Smooth Bore</h3>
+                    </div>
 
-                    <p>
-                      Cold drawn welded tubes with H9 inner diameter tolerance from...
-                    </p>
+                    <div>
+                      <p>
+                        Cold drawn welded tubes with H9 inner diameter tolerance from from
+                        offer precise dimensional accuracy, high concentricity, and...
+                      </p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -498,25 +497,21 @@ function App() {
                       src={HydraulicLinePipe}
                       alt=""
                     />
-
-                    {/* <div class="overlay-content">
-                      <h2>SUSTAINABILITY</h2>
-                      <p>SUSTAINABILITY <br />REPORT 2024</p>
-                    </div>
-
-                    <div class="vertical-text">
-                      BURV
-                    </div> */}
                   </div>
 
                   <div class="report-content">
-                    <h3>Hydraulic Line Pipe</h3>
+                    <div>
+                      <h3>Hydraulic Line Pipe</h3>
+                    </div>
 
-                    <p>HPL Tubes are seamless cold-drawn precision steel tubes primarily...</p>
+                    <div>
+                      <p>HPL Tubes are seamless cold-drawn precision steel tubes primarily used
+                        as pressure lines in hydraulic or pneumatic systems...</p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -555,25 +550,21 @@ function App() {
                       src={CarbonSteelAlloy}
                       alt=""
                     />
-
-                    {/* <div class="overlay-content">
-                      <h2>SUSTAINABILITY</h2>
-                      <p>SUSTAINABILITY <br />REPORT 2024</p>
-                    </div>
-
-                    <div class="vertical-text">
-                      BURV
-                    </div> */}
                   </div>
 
                   <div class="report-content report-content-INDUSTRIAL-Tubes">
-                    <h3>Carbon Steel & Alloy Steel Grade Seamless Tube</h3>
+                    <div>
+                      <h3>Carbon Steel & Alloy Steel Grade Seamless Tube</h3>
+                    </div>
 
-                    <p> Our range of seamless tubes includes both Carbon Steel grades designed
-                      for high performance under demanding operating conditions These tubes are widely....</p>
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                    <div>
+                      <p> Our range of seamless tubes includes both Carbon Steel grades designed
+                        for high performance under demanding operating conditions The....</p>
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -587,27 +578,21 @@ function App() {
                       src={StainlessSteel}
                       alt=""
                     />
-
-                    {/* <div class="overlay-content">
-                      <h2>SUSTAINABILITY</h2>
-                      <p>SUSTAINABILITY <br />REPORT 2024</p>
-                    </div>
-
-                    <div class="vertical-text">
-                      BURV
-                    </div> */}
                   </div>
 
                   <div class="report-content report-content-INDUSTRIAL-Tubes">
-                    <h3>Stainless Steel Pipes & Tubes</h3>
+                    <div>
+                      <h3>Stainless Steel Pipes & Tubes</h3>
+                    </div>
 
-                    <p>Our Stainless Steel Pipes and Tubes are manufactured from
-                      premium-grade stainless steels to deliver exceptional corrosion resistance, strength
-                      , and durability under a wide range of operating conditions...</p>
+                    <div>
+                      <p>Our Stainless Steel Pipes and Tubes are manufactured from
+                        premium-grade stainless steels to deliver exceptional corrosion resistance, strength...</p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -621,29 +606,21 @@ function App() {
                       src={HollowSections}
                       alt=""
                     />
-
-                    {/* <div class="overlay-content">
-                      <h2>SUSTAINABILITY</h2>
-                      <p>SUSTAINABILITY <br />REPORT 2024</p>
+                  </div>
+                  <div class="report-content report-content-INDUSTRIAL-Tubes">
+                    <div>
+                      <h3>Hollow Sections, Rectangular & Square</h3>
                     </div>
 
-                    <div class="vertical-text">
-                      BURV
-                    </div> */}
+                    <div>
+                      <p>Rectangular and Square Hollow Sections (RHS & SHS) are manufactured from
+                        high-quality hot rolled or cold formed steel, offering excellent strength...</p>
+
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
-
-                  <div class="report-content report-content-INDUSTRIAL-Tubes">
-                    <h3>Hollow Sections, Rectangular & Square</h3>
-
-                    <p>Rectangular and Square Hollow Sections (RHS & SHS) are manufactured from
-                      high-quality hot rolled or cold formed steel, offering excellent strength-to-weight
-                      ratio, dimensional...</p>
-
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
-                  </div>
-
                 </div>
               </div>
 
@@ -658,13 +635,18 @@ function App() {
                   </div>
 
                   <div class="report-content report-content-INDUSTRIAL-Tubes">
-                    <h3>ERW (Welded) - HFW / Longitudinally SAW Pipes (LSAW) / Helical SAW Pipes (Spiral / HSAW Pipes)</h3>
+                    <div>
+                      <h3>ERW (Welded)</h3>
+                    </div>
 
-                    <p>Our range of Electric Resistance Welded (ERW), High-...</p>
+                    <div>
+                      <p>Our range of Electric Resistance Welded (ERW), High-Frequency Welded
+                        (HFW), Longitudinally Submerged Arc Welded (LSAW), and Helical...</p>
 
-                    <a href="#" class="read-btn">
-                      Read more →
-                    </a>
+                      <a href="#" class="read-btn">
+                        Read more →
+                      </a>
+                    </div>
                   </div>
 
                 </div>
@@ -712,15 +694,20 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Deep Hole Drilling</h3>
+                      <div>
+                        <h3>Deep Hole Drilling</h3>
+                      </div>
 
-                      {/* <p>
-                        Honed tube or skived/roller burnished tube for are...
-                      </p> */}
+                      <div>
+                        <p>
+                          Deep hole drilling ensures accurate, straight holes with high depth-to-diameter
+                          ratios, suitable for complex components in the oil...
+                        </p>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -737,15 +724,20 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Deep Hole Boring</h3>
+                      <div>
+                        <h3>Deep Hole Boring</h3>
+                      </div>
 
-                      {/* <p>
-                        Honed tube or skived/roller burnished tube for are...
-                      </p> */}
+                      <div>
+                        <p>
+                          Our gun drilling capabilities are ideal for creating small, deep holes with exceptional
+                          straightness and finish, often required in hydraulic...
+                        </p>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -762,11 +754,18 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Deep Hole Honing</h3>
+                      <div>
+                        <h3>Deep Hole Honing</h3>
+                      </div>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                      <div>
+                        <p>Honing refines the surface finish of bores, improving dimensional accuracy,
+                          roundness, and surface texture. This process is particularly beneficial...</p>
+
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -783,15 +782,20 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Trepanning</h3>
+                      <div>
+                        <h3>Trepanning</h3>
+                      </div>
 
-                      {/* <p>
-                        Precision Cold Drawn Seamless and DRAWN-ON MANDREL (DOM) welded...
-                      </p> */}
+                      <div>
+                        <p>
+                          Trepanning efficiently removes a solid core from the centre of a workpiece,
+                          reducing material waste and lowering production costs. This process is...
+                        </p>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -811,15 +815,20 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>OD Turning</h3>
+                      <div>
+                        <h3>OD Turning</h3>
+                      </div>
 
-                      {/* <p>
-                        Bored & Honed tube for hydraulic cylinders are obtained from...
-                      </p> */}
+                      <div>
+                        <p>
+                          OD turning services provide precision shaping and finishing of cylindrical parts,
+                          ensuring tight concentricity and roundness tolerances...
+                        </p>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -836,11 +845,19 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Cutting Machine</h3>
+                      <div>
+                        <h3>Cutting Machine</h3>
+                      </div>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                      <div>
+                        <p>
+                          OD turning services provide precision shaping and finishing of cylindrical parts,
+                          ensuring tight concentricity and roundness tolerances...
+                        </p>
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -857,11 +874,19 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Hard Chrome Plating</h3>
+                      <div>
+                        <h3>Hard Chrome Plating</h3>
+                      </div>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                      <div>
+                        <p>
+                          OD turning services provide precision shaping and finishing of cylindrical parts,
+                          ensuring tight concentricity and roundness tolerances...
+                        </p>
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -878,11 +903,19 @@ function App() {
                     </div>
 
                     <div class="report-content">
-                      <h3>Welding and Cladding</h3>
+                      <div>
+                        <h3>Welding and Cladding</h3>
+                      </div>
 
-                      <a href="#" class="read-btn">
-                        Read more →
-                      </a>
+                      <div>
+                        <p>
+                          OD turning services provide precision shaping and finishing of cylindrical parts,
+                          ensuring tight concentricity and roundness tolerances...
+                        </p>
+                        <a href="#" class="read-btn">
+                          Read more →
+                        </a>
+                      </div>
                     </div>
 
                   </div>
@@ -1201,13 +1234,16 @@ function App() {
             {/* ================================================= */}
             {/* MISSION CARD */}
             {/* ================================================= */}
-
             <div className="col-lg-4 col-md-6 col-12">
 
               <div className="mission-card text-center">
 
                 <div className="mission-icon">
-                  <i className="fa-solid fa-handshake"></i>
+                  {/* <i className="fa-solid fa-handshake"></i> */}
+                  <FontAwesomeIcon
+                    className="mission-main-icon"
+                    icon={faHandshake}
+                  />
                 </div>
 
                 <h3>Mission</h3>
@@ -1218,49 +1254,6 @@ function App() {
                   the diverse needs of our clients."
                 </p>
 
-                <div className="mission-socials">
-
-                  <span>
-                    <a
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faXTwitter}
-                      />
-                    </a>
-                  </span>
-
-                  <span>
-                    <a
-                      href="https://facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faFacebook}
-                      />
-                    </a>
-                  </span>
-
-                  <span>
-                    <a
-                      href="https://linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faLinkedin}
-                      />
-                    </a>
-                  </span>
-
-                </div>
-
               </div>
 
             </div>
@@ -1268,13 +1261,16 @@ function App() {
             {/* ================================================= */}
             {/* VISION CARD */}
             {/* ================================================= */}
-
             <div className="col-lg-4 col-md-6 col-12">
 
               <div className="mission-card text-center">
 
                 <div className="mission-icon">
-                  <i className="fa-solid fa-eye-slash"></i>
+                  {/* <i className="fa-solid fa-eye-slash"></i> */}
+                  <FontAwesomeIcon
+                    className="mission-main-icon"
+                    icon={faEyeSlash}
+                  />
                 </div>
 
                 <h3>Vision</h3>
@@ -1285,49 +1281,6 @@ function App() {
                   industry innovation and exceeding customer
                   expectations."
                 </p>
-
-                <div className="mission-socials">
-
-                  <span>
-                    <a
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faXTwitter}
-                      />
-                    </a>
-                  </span>
-
-                  <span>
-                    <a
-                      href="https://facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faFacebook}
-                      />
-                    </a>
-                  </span>
-
-                  <span>
-                    <a
-                      href="https://linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faLinkedin}
-                      />
-                    </a>
-                  </span>
-
-                </div>
 
               </div>
 
@@ -1341,7 +1294,11 @@ function App() {
               <div className="mission-card text-center">
 
                 <div className="mission-icon">
-                  <i className="fa-solid fa-thumbs-up"></i>
+                  {/* <i className="fa-solid fa-thumbs-up"></i> */}
+                  <FontAwesomeIcon
+                    className="mission-main-icon"
+                    icon={faThumbsUp}
+                  />
                 </div>
 
                 <h3>Quality</h3>
@@ -1352,49 +1309,6 @@ function App() {
                   highest standards of durability and
                   performance."
                 </p>
-
-                <div className="mission-socials">
-
-                  <span>
-                    <a
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faXTwitter}
-                      />
-                    </a>
-                  </span>
-
-                  <span>
-                    <a
-                      href="https://facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faFacebook}
-                      />
-                    </a>
-                  </span>
-
-                  <span>
-                    <a
-                      href="https://linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FontAwesomeIcon
-                        className="social-icons"
-                        icon={faLinkedin}
-                      />
-                    </a>
-                  </span>
-
-                </div>
 
               </div>
 
