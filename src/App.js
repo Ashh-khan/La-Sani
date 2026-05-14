@@ -224,16 +224,16 @@ function App() {
 
       {/* Carousel */}
       <div>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
           {/* <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div> */}
           <div className="carousel-inner">
-            <div class="carousel-item active">
-              <img src={img1} class="d-block w-100" alt="..." />
-              <div class="carousel-caption carousel-caption-div">
+            <div className="carousel-item active">
+              <img src={img1} className="d-block w-100" alt="..." />
+              <div className="carousel-caption carousel-caption-div">
               </div>
             </div>
             {/* <div class="carousel-item">
@@ -330,16 +330,16 @@ function App() {
             <div className="row">
 
               {/* Card 1 */}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={honed1}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content">
+                  <div className="report-content">
                     <div>
                       <h3>Honed/Skived Tube</h3>
                     </div>
@@ -350,7 +350,7 @@ function App() {
                         quality precision cold drawn drawn or DOM tubes Material can be arranged...
                       </p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -360,16 +360,16 @@ function App() {
               </div>
 
               {/* Card 2 */}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={Suitabletoskive}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content">
+                  <div className="report-content">
                     <div>
                       <h3>Suitable (Ready) To Skive/Hone</h3>
                     </div>
@@ -380,7 +380,7 @@ function App() {
                         skive/ Hone to make hydraulic cylinders pipe...
                       </p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -390,16 +390,16 @@ function App() {
               </div>
 
               {/* Card 3 */}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={HotFinished}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content">
+                  <div className="report-content">
                     <div>
                       <h3>Hot Finished Seamless Bored & Honed Tube</h3>
                     </div>
@@ -410,7 +410,7 @@ function App() {
                         hot finished raw materialOur In house processing facility ...
                       </p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -420,16 +420,16 @@ function App() {
               </div>
 
               {/* Cards 4*/}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={ChromePlateBar}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content">
+                  <div className="report-content">
                     <div>
                       <h3>Chrome Plated Bar</h3>
                     </div>
@@ -440,7 +440,7 @@ function App() {
                         by world renowned manufacturers Stringent Quality Control....
                       </p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
