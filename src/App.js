@@ -51,11 +51,11 @@ import AboutUs5 from './ImageFiles/Aboutus5.jpg';
 function App() {
 
   // Page URL-----
-  useEffect(() => {
-    if (window.location.pathname === "/") {
-      window.location.replace("/La-Sani");
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.pathname === "/") {
+  //     window.location.replace("/La-Sani");
+  //   }
+  // }, []);
   // Page URL-----
 
   const [open, setOpen] = useState(false);
@@ -230,7 +230,7 @@ function App() {
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div> */}
-          <div class="carousel-inner">
+          <div className="carousel-inner">
             <div class="carousel-item active">
               <img src={img1} class="d-block w-100" alt="..." />
               <div class="carousel-caption carousel-caption-div">
@@ -459,7 +459,7 @@ function App() {
             <div className="row Product-row-Two">
 
               {/* Card 1 */}
-              <div class="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12">
                 <div class="report-card ">
                   <div class="report-image">
                     <img
@@ -490,7 +490,7 @@ function App() {
               </div>
 
               {/* Card 2 */}
-              <div class="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12">
                 <div class="report-card ">
                   <div class="report-image">
                     <img
@@ -660,7 +660,7 @@ function App() {
 
       {/* MACHINING SERVICE */}
       <div>
-        <section class="services">
+        <section className="services">
           <div className="feature-section py-5">
             {/* Product 1 Section */}
             <div className="container">
@@ -684,7 +684,7 @@ function App() {
               <div className="row">
 
                 {/* Card 1 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -714,7 +714,7 @@ function App() {
                 </div>
 
                 {/* Card 2 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -744,7 +744,7 @@ function App() {
                 </div>
 
                 {/* Card 3 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -772,7 +772,7 @@ function App() {
                 </div>
 
                 {/* Card 4 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -805,7 +805,7 @@ function App() {
 
               <div className='row Product-row-Two'>
                 {/* Card 5 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -835,7 +835,7 @@ function App() {
                 </div>
 
                 {/* Card 6 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -864,7 +864,7 @@ function App() {
                 </div>
 
                 {/* Card 7 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -893,7 +893,7 @@ function App() {
                 </div>
 
                 {/* Card 8 */}
-                <div class="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12">
                   <div class="report-card ">
                     <div class="report-image">
                       <img
@@ -929,9 +929,9 @@ function App() {
 
       {/*CYLINDER REPAIR SERVICES */}
       <div>
-        <section class="services py-5">
-          <div id='MACHININGSERVICES' class="container">
-            <h2 class="fw-bold">CYLINDER REPAIR SERVICES</h2>
+        <section className="services py-5">
+          <div id='MACHININGSERVICES' className="container">
+            <h2 className="fw-bold">CYLINDER REPAIR SERVICES</h2>
             <div className="underline underline-CYLINDER"></div>
             <h5 className='mt-2'>All Cylinder Types — Quickly Restored to Full Functionality</h5>
             <p className='para-content mb-5'>
@@ -967,9 +967,9 @@ function App() {
 
 
       {/* PARTNERS SECTION  */}
-      <section class="services services-content py-5">
-        <div id='MACHININGSERVICES' class="container">
-          <h2 class="fw-bold">Our Partners</h2>
+      <section className="services services-content py-5">
+        <div id='MACHININGSERVICES' className="container">
+          <h2 className="fw-bold">Our Partners</h2>
           <div className="underline underline-Partners"></div>
           <p className='para-content mt-2'>
             At Lasani, our senior team comprises seasoned professionals who bring a wealth of experience, innovative thinking,
