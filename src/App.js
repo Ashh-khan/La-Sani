@@ -225,8 +225,8 @@ function App() {
       {/* Carousel */}
       <div>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-          {/* <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          {/* <div className="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div> */}
@@ -236,20 +236,20 @@ function App() {
               <div className="carousel-caption carousel-caption-div">
               </div>
             </div>
-            {/* <div class="carousel-item">
-              <img src={img2} class="d-block w-100" alt="..." />
+            {/* <div className="carousel-item">
+              <img src={img2} className="d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <img src={img3} class="d-block w-100" alt="..." />
+            <div className="carousel-item">
+              <img src={img3} className="d-block w-100" alt="..." />
             </div> */}
           </div>
-          {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+          {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
           </button> */}
-          {/* <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+          {/* <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
           </button> */}
         </div>
       </div>
@@ -259,7 +259,7 @@ function App() {
         <div id='ABOUT' className="feature-section ABOUTus-Section-Main py-5">
           {/*	ABOUT Section */}
           <div className="container">
-            <h2 class="fw-bold">ABOUT US</h2>
+            <h2 className="fw-bold">ABOUT US</h2>
             <div className="underline  underline-ABOUT"></div>
             {/* About Info */}
             <div className="row">
@@ -460,8 +460,8 @@ function App() {
 
               {/* Card 1 */}
               <div className="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={SmallTubePic}
                       alt=""
@@ -469,7 +469,7 @@ function App() {
 
                   </div>
 
-                  <div class="report-content">
+                  <div className="report-content">
                     <div>
                       <h3>Smooth Bore</h3>
                     </div>
@@ -480,7 +480,7 @@ function App() {
                         offer precise dimensional accuracy, high concentricity, and...
                       </p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -491,15 +491,15 @@ function App() {
 
               {/* Card 2 */}
               <div className="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={HydraulicLinePipe}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content">
+                  <div className="report-content">
                     <div>
                       <h3>Hydraulic Line Pipe</h3>
                     </div>
@@ -508,7 +508,7 @@ function App() {
                       <p>HPL Tubes are seamless cold-drawn precision steel tubes primarily used
                         as pressure lines in hydraulic or pneumatic systems...</p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -543,16 +543,16 @@ function App() {
             <div className="row">
 
               {/* Card 1 */}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={CarbonSteelAlloy}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content report-content-INDUSTRIAL-Tubes">
+                  <div className="report-content report-content-INDUSTRIAL-Tubes">
                     <div>
                       <h3>Carbon Steel & Alloy Steel Grade Seamless Tube</h3>
                     </div>
@@ -561,7 +561,7 @@ function App() {
                       <p> Our range of seamless tubes includes both Carbon Steel grades designed
                         for high performance under demanding operating conditions The....</p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -571,16 +571,16 @@ function App() {
               </div>
 
               {/* Card 2 */}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={StainlessSteel}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content report-content-INDUSTRIAL-Tubes">
+                  <div className="report-content report-content-INDUSTRIAL-Tubes">
                     <div>
                       <h3>Stainless Steel Pipes & Tubes</h3>
                     </div>
@@ -589,7 +589,7 @@ function App() {
                       <p>Our Stainless Steel Pipes and Tubes are manufactured from
                         premium-grade stainless steels to deliver exceptional corrosion resistance, strength...</p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -599,15 +599,15 @@ function App() {
               </div>
 
               {/* Card 3 */}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={HollowSections}
                       alt=""
                     />
                   </div>
-                  <div class="report-content report-content-INDUSTRIAL-Tubes">
+                  <div className="report-content report-content-INDUSTRIAL-Tubes">
                     <div>
                       <h3>Hollow Sections, Rectangular & Square</h3>
                     </div>
@@ -616,7 +616,7 @@ function App() {
                       <p>Rectangular and Square Hollow Sections (RHS & SHS) are manufactured from
                         high-quality hot rolled or cold formed steel, offering excellent strength...</p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -625,16 +625,16 @@ function App() {
               </div>
 
               {/* Card 4*/}
-              <div class="col-lg-3 col-md-6 col-12">
-                <div class="report-card ">
-                  <div class="report-image">
+              <div className="col-lg-3 col-md-6 col-12">
+                <div className="report-card ">
+                  <div className="report-image">
                     <img
                       src={ERWWelded}
                       alt=""
                     />
                   </div>
 
-                  <div class="report-content report-content-INDUSTRIAL-Tubes">
+                  <div className="report-content report-content-INDUSTRIAL-Tubes">
                     <div>
                       <h3>ERW (Welded)</h3>
                     </div>
@@ -643,7 +643,7 @@ function App() {
                       <p>Our range of Electric Resistance Welded (ERW), High-Frequency Welded
                         (HFW), Longitudinally Submerged Arc Welded (LSAW), and Helical...</p>
 
-                      <a href="#" class="read-btn">
+                      <a href="#" className="read-btn">
                         Read more →
                       </a>
                     </div>
@@ -685,15 +685,15 @@ function App() {
 
                 {/* Card 1 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={DeepTurning}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>Deep Hole Drilling</h3>
                       </div>
@@ -704,7 +704,7 @@ function App() {
                           ratios, suitable for complex components in the oil...
                         </p>
 
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
@@ -715,15 +715,15 @@ function App() {
 
                 {/* Card 2 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={Boring}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>Deep Hole Boring</h3>
                       </div>
@@ -734,7 +734,7 @@ function App() {
                           straightness and finish, often required in hydraulic...
                         </p>
 
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
@@ -745,15 +745,15 @@ function App() {
 
                 {/* Card 3 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={DeepHoleHoning}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>Deep Hole Honing</h3>
                       </div>
@@ -762,7 +762,7 @@ function App() {
                         <p>Honing refines the surface finish of bores, improving dimensional accuracy,
                           roundness, and surface texture. This process is particularly beneficial...</p>
 
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
@@ -773,15 +773,15 @@ function App() {
 
                 {/* Card 4 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={Trepanning}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>Trepanning</h3>
                       </div>
@@ -792,7 +792,7 @@ function App() {
                           reducing material waste and lowering production costs. This process is...
                         </p>
 
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
@@ -806,15 +806,15 @@ function App() {
               <div className='row Product-row-Two'>
                 {/* Card 5 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={ODTurning}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>OD Turning</h3>
                       </div>
@@ -825,7 +825,7 @@ function App() {
                           ensuring tight concentricity and roundness tolerances...
                         </p>
 
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
@@ -836,15 +836,15 @@ function App() {
 
                 {/* Card 6 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={CuttingMachine}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>Cutting Machine</h3>
                       </div>
@@ -854,7 +854,7 @@ function App() {
                           OD turning services provide precision shaping and finishing of cylindrical parts,
                           ensuring tight concentricity and roundness tolerances...
                         </p>
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
@@ -865,15 +865,15 @@ function App() {
 
                 {/* Card 7 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={HardChromePlating}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>Hard Chrome Plating</h3>
                       </div>
@@ -883,7 +883,7 @@ function App() {
                           OD turning services provide precision shaping and finishing of cylindrical parts,
                           ensuring tight concentricity and roundness tolerances...
                         </p>
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
@@ -894,15 +894,15 @@ function App() {
 
                 {/* Card 8 */}
                 <div className="col-lg-3 col-md-6 col-12">
-                  <div class="report-card ">
-                    <div class="report-image">
+                  <div className="report-card ">
+                    <div className="report-image">
                       <img
                         src={Welding}
                         alt=""
                       />
                     </div>
 
-                    <div class="report-content">
+                    <div className="report-content">
                       <div>
                         <h3>Welding and Cladding</h3>
                       </div>
@@ -912,7 +912,7 @@ function App() {
                           OD turning services provide precision shaping and finishing of cylindrical parts,
                           ensuring tight concentricity and roundness tolerances...
                         </p>
-                        <a href="#" class="read-btn">
+                        <a href="#" className="read-btn">
                           Read more →
                         </a>
                       </div>
