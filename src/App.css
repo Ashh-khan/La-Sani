@@ -38,6 +38,10 @@ h6 {
   font-size: 14px;
 }
 
+.top-header {
+  padding: 20px;
+}
+
 
 .logo img {
   height: 80px;
@@ -52,7 +56,7 @@ h6 {
   border-bottom: 1px solid #eee;
 }
 
-.navbar-row-main{
+.navbar-row-main {
   width: 100%;
 }
 
@@ -305,9 +309,13 @@ h6 {
   transition: transform 0.5s ease-in-out;
 }
 
+.WHYUS-Img-Section {
+  align-content: center;
+}
+
 .WHYUS-Img-Section img {
-  width: 490px !important;
-  height: 390px;
+  width: 500px !important;
+  height: 480px;
   border-radius: 20px;
 }
 
@@ -417,6 +425,167 @@ h6 {
 .underline-Partners {
   width: 240px;
 }
+
+.underline-CaseStudies {
+  width: 240px;
+}
+
+.underline-testimonials{
+  width: 240px;
+}
+
+.underline-CoreValues {
+  width: 300px;
+}
+
+
+/* Case Studies */
+.CaseStudies-frist-part {
+  display: flex;
+}
+
+.CaseStudies-frist-part h2{
+  text-align: left;
+}
+
+.CaseStudies-second-part {
+  display: flex;
+  gap: 145px;
+}
+
+.CaseStudies-frist-part p {
+  text-align: justify;
+}
+
+.CS-Sec-POne {
+  align-content: center;
+}
+
+.CS-Sec-POne p {
+  text-align: justify;
+}
+
+
+/*------------ COMPANY LOGO -------------*/
+.certification-section,
+.achievement-section,
+.map-section {
+  background: #44596b;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 200px;
+}
+
+.certification-section::before,
+.achievement-section::before,
+.map-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at top left,
+      rgba(255, 255, 255, 0.06) 2px,
+      transparent 2px);
+  background-size: 200px 200px;
+  opacity: 0.3;
+}
+
+/* Slider */
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-track {
+  display: flex;
+  gap: 30px;
+  width: max-content;
+  animation: scrollLeft 38s linear infinite;
+}
+
+.logo-card {
+  width: 230px;
+  height: 220px;
+  background: #fff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  flex-shrink: 0;
+}
+
+.logo-card img {
+  max-width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+/* Auto Moving Right To Left */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/*------------ COMPANY LOGO -------------*/
+
+/*------------ TESTIMONIALS CARDS -------------*/
+.testimonials-section {
+  background-color: #f9f9f9;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* LEFT SIDE */
+.testimonial-left {
+  width: 50%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.testimonial-name {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.testimonial-stars {
+  color: #f4b400;
+  font-size: 14px;
+}
+
+/* RIGHT SIDE */
+.testimonial-right {
+  width: 50%;
+}
+
+.testimonial-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*------------ TESTIMONIALS CARDS -------------*/
+
+
+
 
 /* BUTTON */
 .read-btn {
@@ -534,6 +703,15 @@ h6 {
   width: 490px !important;
   height: 390px;
   border-radius: 20px;
+}
+
+.custom-carousel-wrapper {
+  overflow: hidden;
+  display: flex;
+}
+
+.about-custom-carousel-wrapper{
+  margin-left: 90px;
 }
 
 /* ---------------About Us CSS-------------- */
@@ -682,7 +860,7 @@ h6 {
 /* ========================================================= */
 
 .mission-main-icon {
-  font-size: 70px;
+  font-size: 44px;
   color: #1D3B64;
 }
 
@@ -710,13 +888,13 @@ h6 {
   margin-bottom: 25px;
 }
 
-.mission-icon i {
-  font-size: 70px;
+.mission-icon h3 {
+  font-size: 40px;
   color: #b7dceb;
 }
 
 .mission-card h3 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
   margin-bottom: 20px;
   color: #000;
@@ -727,6 +905,31 @@ h6 {
   line-height: 20px;
   color: #8b8b8b;
   margin-bottom: 30px;
+}
+
+.WhyUs-Info {
+  align-content: center;
+}
+
+.section-two {
+  margin-top: 30px !important;
+}
+
+.techinical-card {
+  padding: 30px 30px;
+}
+
+.techinical-icon {
+  margin-bottom: 15px;
+}
+
+.techinical-main-icon {
+  font-size: 32px;
+  color: #1D3B64;
+}
+
+.techinical-card h3 {
+  font-size: 18px;
 }
 
 /* ========================================================= */
@@ -879,6 +1082,154 @@ h6 {
   font-weight: bold;
   color: #1D3B64;
 }
+
+
+
+/* 1200px CSS Of All CSS*/
+@media screen and (max-width: 1200px) {
+  .ABOUTus-Section-Main h2 {
+    font-size: 26px;
+  }
+
+  .underline-ABOUT {
+    width: 155px;
+  }
+
+  .ABOUTus-Section-Main h4 {
+    font-size: 20px;
+  }
+
+  .para-content {
+    font-size: 13px;
+  }
+
+  .ABOUT-Img-Section img {
+    width: 430px !important;
+    height: 330px;
+  }
+
+  .custom-carousel-wrapper {
+    margin-left: 5px;
+  }
+
+  /* Products */
+  .Product-Heading h2 {
+    font-size: 26px;
+  }
+
+  .underline-PRODUCTS {
+    width: 170px;
+  }
+
+  .report-content h3 {
+    font-size: 17px;
+  }
+
+  .report-content p {
+    font-size: 11px;
+    text-align: justify;
+  }
+
+  .read-btn {
+    font-size: 12px;
+  }
+
+  .underline-MACHINING {
+    width: 340px;
+  }
+
+  .services h2 {
+    font-size: 26px;
+  }
+
+  .underline-CYLINDER {
+    width: 430px;
+  }
+
+  .services h5 {
+    font-size: 18px;
+  }
+
+  .List-content {
+    font-size: 13px;
+  }
+
+  .underline-Partners {
+    width: 200px;
+  }
+
+  .team-card img {
+    height: 150px;
+  }
+
+  .team-info p {
+    font-size: 14px;
+  }
+
+  .history-item p {
+    font-size: 13px;
+  }
+
+  .team-card {
+    width: 300px;
+  }
+
+  .history-section h2 {
+    font-size: 26px;
+  }
+
+  .underline-HISTORY {
+    width: 140px;
+  }
+
+  .history-item p {
+    font-size: 13px;
+  }
+
+  .WhyUs-Section-Main h2 {
+    font-size: 26px;
+  }
+
+  .underline-WhyUs {
+    width: 140px;
+  }
+
+  .mission-vision-section h2 {
+    font-size: 26px;
+  }
+
+  .underline-CoreValues {
+    width: 250px;
+  }
+
+  .mission-main-icon {
+    font-size: 50px;
+  }
+
+  .mission-card h3 {
+    font-size: 25px;
+  }
+
+  .Header-Details span {
+    font-size: 12px;
+  }
+
+  .Header-Time span {
+    font-size: 12px;
+  }
+
+  .top-header {
+    padding: 20px;
+  }
+
+  .menu-list .nav-link {
+    font-size: 14px !important;
+  }
+
+
+}
+
+
 
 /* Responsive adjustment for Mobile */
 @media (max-width: 768px) {

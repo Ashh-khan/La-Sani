@@ -3,6 +3,7 @@ import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faHandshake, faEyeSlash, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot, faUsers, faLaptopCode, faCogs, faBriefcase, faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from 'bootstrap';
 
 import img1 from './ImageFiles/115.1.jpg';
@@ -48,15 +49,10 @@ import AboutUs3 from './ImageFiles/business-professional-using-laptop-digital-60
 import AboutUs4 from './ImageFiles/Aboutus 4.jpg';
 import AboutUs5 from './ImageFiles/Aboutus5.jpg';
 
-function App() {
+import Person1 from './ImageFiles/DemoPerson/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg';
+import Person2 from './ImageFiles/DemoPerson/360_F_376478182_yPuPo2qi6rYcu9ilwGWR6gQ7QBBC8Isw.jpg';
 
-  // Page URL-----
-  // useEffect(() => {
-  //   if (window.location.pathname === "/") {
-  //     window.location.replace("/La-Sani");
-  //   }
-  // }, []);
-  // Page URL-----
+function App() {
 
   const [open, setOpen] = useState(false);
 
@@ -109,6 +105,7 @@ function App() {
 
 
   // WHYUS Carousel
+  // part-1
   useEffect(() => {
 
     const carouselItems = document.querySelectorAll(".whyus-carousel-item");
@@ -151,6 +148,12 @@ function App() {
     },
   ];
 
+  // COMPNAY MOVE 
+  useEffect(() => {
+    const track = document.querySelector(".logo-track");
+    track.innerHTML += track.innerHTML; // duplicate automatically
+  }, []);
+
   return (
     <div className="App">
 
@@ -158,19 +161,19 @@ function App() {
       <div>
         {/* HEADER */}
         <div className="top-header py-2">
-          <div className="container">
+          <div className="Header-container">
             <div className="row align-items-center">
 
-              <div className="col-lg-9 col-md-9 col-12 text-center text-md-start">
+              <div className="col-lg-10 col-md-10 col-12 text-center Header-Details text-md-start">
                 <span>1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218.</span>
                 <span className="ms-3">📞 +91 99000 19885 | +91 89763 37049</span>
                 <span className="ms-3">✉ info@la-sani.com</span>
               </div>
 
-              <div className="col-lg-3 col-md-3 col-12 text-center text-md-end">
+              <div className="col-lg-2 col-md-3 col-12 text-center text-md-end Header-Time">
                 <span>Open: 9am–6pm Mon–Sat</span>
-                <span className="ms-3">f</span>
-                <span className="ms-2">X</span>
+                {/* <span className="ms-3">f</span>
+                <span className="ms-2">X</span> */}
               </div>
 
             </div>
@@ -273,21 +276,12 @@ function App() {
                   500 metric tonnes stocks.Being part of trading activity and acumens for engineering activity we added
                   many values addition to meet customer requirements, such as boring, deep hole drilling, honing, etc.</p>
 
-                {/* <p className='para-content'>We take full advantage of the innovative machining techniques and equipment developed through our engineering
-                  and carry on a tradition of high-quality, sophisticated manufacturing processes. Providing drilled holes with
-                  tight positional tolerances facilitates the amount of subsequent machine work being performed by the customer.
-                  This means that a part with a tightly placed drilled hole eliminates the requirement to purchase grossly oversized
-                  material and the associated complex machining operations to machine the outer diameter's position relative to the bore.
-                  </p> */}
               </div>
 
-              {/* <div className='ABOUT-Img-Section col-lg-6 col-md-6 col-12 mb-4'>
-                <img src={AboutUs} alt="" />
-              </div> */}
               {/* Carousel Section */}
               <div className='ABOUT-Img-Section col-lg-6 col-md-6 col-12 mb-4'>
                 {/* Wrapper with overflow hidden is crucial */}
-                <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex', marginLeft: "70px" }}>
+                <div className="custom-carousel-wrapper about-custom-carousel-wrapper">
                   <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                     <img src={AboutUs} className="d-block w-100 rounded" alt="1" />
                   </div>
@@ -477,7 +471,7 @@ function App() {
                     <div>
                       <p>
                         Cold drawn welded tubes with H9 inner diameter tolerance from from
-                        offer precise dimensional accuracy, high concentricity, and...
+                        offer precise dimensional accuracy, high concentricity...
                       </p>
 
                       <a href="#" className="read-btn">
@@ -587,7 +581,7 @@ function App() {
 
                     <div>
                       <p>Our Stainless Steel Pipes and Tubes are manufactured from
-                        premium-grade stainless steels to deliver exceptional corrosion resistance, strength...</p>
+                        premium-grade stainless steels to deliver exceptional corrosion resistance,...</p>
 
                       <a href="#" className="read-btn">
                         Read more →
@@ -614,7 +608,7 @@ function App() {
 
                     <div>
                       <p>Rectangular and Square Hollow Sections (RHS & SHS) are manufactured from
-                        high-quality hot rolled or cold formed steel, offering excellent strength...</p>
+                        high-quality hot rolled or cold formed steel, offering excellent...</p>
 
                       <a href="#" className="read-btn">
                         Read more →
@@ -1117,48 +1111,193 @@ function App() {
             <h2 className="fw-bold">WHY US?</h2>
             <div className="underline underline-WhyUs"></div>
 
-            <div className="row">
+            {/* First-Card Why Us */}
+            <div className="row mt-3">
 
               {/* Left Content */}
-              <div className='WhyUs-Info col-lg-6 col-md-6 col-12'>
+              <div className='WhyUs-Info col-lg-8 col-md-6 col-12'>
+                <div>
+                  <div className="row text-center col-lg-12 section-one">
 
-                <p className='para-content mt-2'>
-                  There are many companies in the world, but more than any of them we create true value
-                  by the way we work together in partnerships — with our colleagues, our customers,
-                  our communities, and all our stakeholders.
-                </p>
+                    {/* ================================================= */}
+                    {/* TECHNICAL CARD */}
+                    {/* ================================================= */}
+                    <div className="col-lg-4 col-md-3 col-12">
 
-                {/* Key Points */}
-                <ul className="para-content">
-                  <li>Customer Range: First Tier, Second Tier & Network</li>
-                  <li>Product Range, Stocking Program, Forward Delivery, Custom Solution</li>
-                  <li>Unique Solution – Cost & Lead Time Reduction, Smooth Operations</li>
-                  <li>Product Quality & Process Excellence</li>
-                  <li>Organisational Strength – People</li>
-                </ul>
+                      <div className="mission-card techinical-card text-center">
 
-                {/* Closing Content */}
-                <p className='para-content'>
-                  Our strength lies in people and the pride we take in our work.
-                </p>
+                        <div className="techinical-icon">
+                          {/* <i className="fa-solid fa-handshake"></i> */}
+                          <FontAwesomeIcon
+                            className="techinical-main-icon"
+                            icon={faCogs}
+                          />
+                        </div>
 
-                <p className='para-content'>
-                  Whatever we are doing today, we are working closely with our customers to make them
-                  more successful in their markets. Our pride drives everything we do.
-                </p>
+                        <h3>TECHNICAL</h3>
 
-                <p className='para-content'>
-                  We focus on exceeding customer expectations, investing in cleaner and safer processes,
-                  contributing to our communities, and building a company that lasts for generations.
-                </p>
+                        <p>
+                          "Our mission is to deliver innovative,
+                          high-quality storage solutions that meet
+                          the diverse needs of our clients."
+                        </p>
 
+                      </div>
+
+                    </div>
+
+                    {/* ================================================= */}
+                    {/* EXPERIENCE CARD */}
+                    {/* ================================================= */}
+                    <div className="col-lg-4 col-md-3 col-12">
+
+                      <div className="mission-card text-center techinical-card">
+
+                        <div className="techinical-icon">
+                          {/* <i className="fa-solid fa-eye-slash"></i> */}
+                          <FontAwesomeIcon
+                            className="techinical-main-icon"
+                            icon={faBriefcase}
+                          />
+                        </div>
+
+                        <h3>EXPERIENCE</h3>
+
+                        <p>
+                          "Our vision is to be the leading provider
+                          of cutting-edge storage solutions, driving
+                          industry innovation and exceeding customer
+                          expectations."
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    {/* ================================================= */}
+                    {/* INFRASTRUCTURE CARD */}
+                    {/* ================================================= */}
+                    <div className="col-lg-4 col-md-3 col-12">
+
+                      <div className="mission-card text-center techinical-card">
+
+                        <div className="techinical-icon">
+                          {/* <i className="fa-solid fa-thumbs-up"></i> */}
+                          <FontAwesomeIcon
+                            className="techinical-main-icon"
+                            icon={faBuilding}
+                          />
+                        </div>
+
+                        <h3>INFRASTRUCTURE</h3>
+
+                        <p>
+                          "We are dedicated to delivering exceptional
+                          quality, ensuring every product meets the
+                          highest standards of durability and
+                          performance."
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div className="row text-center col-lg-12 section-two">
+
+                    {/* ================================================= */}
+                    {/* LOCATION CARD */}
+                    {/* ================================================= */}
+                    <div className="col-lg-4 col-md-3 col-12">
+
+                      <div className="mission-card techinical-card text-center">
+
+                        <div className="techinical-icon">
+                          {/* <i className="fa-solid fa-handshake"></i> */}
+                          <FontAwesomeIcon
+                            className="techinical-main-icon"
+                            icon={faLocationDot}
+                          />
+                        </div>
+
+                        <h3>LOCATION</h3>
+
+                        <p>
+                          "Our mission is to deliver innovative,
+                          high-quality storage solutions that meet
+                          the diverse needs of our clients."
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    {/* ================================================= */}
+                    {/* TEAM CARD */}
+                    {/* ================================================= */}
+                    <div className="col-lg-4 col-md-3 col-12">
+
+                      <div className="mission-card text-center techinical-card">
+
+                        <div className="techinical-icon">
+                          {/* <i className="fa-solid fa-eye-slash"></i> */}
+                          <FontAwesomeIcon
+                            className="techinical-main-icon"
+                            icon={faUsers}
+                          />
+                        </div>
+
+                        <h3>TEAM</h3>
+
+                        <p>
+                          "Our vision is to be the leading provider
+                          of cutting-edge storage solutions, driving
+                          industry innovation and exceeding customer
+                          expectations."
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                    {/* ================================================= */}
+                    {/* TECHNOLOGY CARD */}
+                    {/* ================================================= */}
+                    <div className="col-lg-4 col-md-3 col-12">
+
+                      <div className="mission-card text-center techinical-card">
+
+                        <div className="techinical-icon">
+                          {/* <i className="fa-solid fa-thumbs-up"></i> */}
+                          <FontAwesomeIcon
+                            className="techinical-main-icon"
+                            icon={faLaptopCode}
+                          />
+                        </div>
+
+                        <h3>TECHNOLOGY</h3>
+
+                        <p>
+                          "We are dedicated to delivering exceptional
+                          quality, ensuring every product meets the
+                          highest standards of durability and
+                          performance."
+                        </p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
               </div>
 
               {/* Right Image Section (kept structure same, only class renamed) */}
-              <div className='WHYUS-Img-Section col-lg-6 col-md-6 col-12 mb-4'>
+              <div className='WHYUS-Img-Section col-lg-4 col-md-6 col-12 mb-4'>
 
                 {/* Carousel Wrapper */}
-                <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex', marginLeft: "70px" }} >
+                <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex' }} >
 
                   <div className="whyus-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                     <img src={whyus2} className="d-block w-100 rounded" alt="1" />
@@ -1176,45 +1315,246 @@ function App() {
               </div>
 
             </div>
-          </div>
-          <div className="container">
 
-            {/* Section Heading */}
-            <h5 className="fw-bold">Our Geographical Location and Infrastructure :</h5>
-            {/* <div className="underline underline-WhyUs"></div> */}
-
-            <div className="row">
+            {/* Second-Card Why Us */}
+            <div className="row mt-3">
 
               {/* Left Content */}
-              <div className='WhyUs-Info col-lg-6 col-md-6 col-12'>
+              <div className='WhyUs-Info col-lg-8 col-md-6 col-12'>
 
-                {/* Key Points */}
-                <ul className="para-content">
-                  <li> <span className='GeogList-Class'>Strategic Location:</span> Based in
-                    <span className='GeogList-Class'> Navi Mumbai, Maharashtra, </span>
-                    near the <span className='GeogList-Class'>Mumbai–Pune Expressway</span></li>
-                  <li>Connectivity: Easy access to Mumbai and Pune.</li>
-                  <li>Logistics Advantage: Close to JNPT Port, a key hub for trade and exports.</li>
-                </ul>
-
-              </div>
-
-              {/* Right Image Section (kept structure same, only class renamed) */}
-              <div className='WhyUs-Info col-lg-6 col-md-6 col-12'>
-
-                {/* Key Points */}
-                <ul className="para-content">
-                  <li>Industrial Proximity: Well-connected to major industrial zones in Navi Mumbai and the Mumbai Metropolitan Region (MMR).</li>
-                  <li>Future Growth: Near the upcoming Navi Mumbai International Airport.</li>
-                  <li>Transport Network: Supported by major highways and railways for smooth logistics and supply chain movement</li>
-                </ul>
 
               </div>
 
             </div>
+
           </div>
         </div>
       </div>
+
+
+      {/* Case Studies Section  */}
+      <section className="mission-vision-section py-5">
+
+        <div className="container">
+
+          {/* HEADING */}
+          <div className=" mb-5">
+            <h2 className="fw-bold">Case Studies</h2>
+            <div className="underline underline-CaseStudies"></div>
+          </div>
+
+          <div className="row g-4 text-center">
+
+            <div className='CaseStudies-Main-Section'>
+              {/* CaseStudies P1 */}
+              <div className='CaseStudies-frist-part'>
+                <div className='col-lg-4'>
+                  <h2>Precision Systems Enhancing La-Sani Performance Standards</h2>
+                </div>
+                <div className='col-lg-8'>
+                  <p>La-Sani represents a benchmark in modern industrial execution, where engineering precision meets
+                    operational efficiency. Through the integration of advanced mechanical systems and optimized process
+                    frameworks, the organization has successfully enhanced productivity while maintaining superior quality
+                    standards. The structured approach toward resource management and system design ensures minimal
+                    downtime and maximum output reliability. Furthermore, La-Sani’s commitment to continuous innovation
+                    and performance optimization has enabled scalable growth and long-term sustainability.
+                  </p>
+                </div>
+              </div>
+
+              {/* CaseStudies P2 */}
+              <div className='CaseStudies-second-part col-lg-12'>
+                <div className='CS-Sec-POne col-lg-6'>
+                  <p>
+                    This case study highlights how strategic engineering methodologies and disciplined execution can transform operational
+                    challenges into measurable success outcomes, positioning La-Sani as a leader in its domain.
+                    La-Sani demonstrates strong industrial performance through well-planned engineering and efficient system execution.
+                    By using advanced mechanical processes and structured workflows, the company has improved productivity and maintained
+                    high-quality standards. Its focus on innovation, reliability, and continuous improvement helps ensure smooth operations
+                    and long-term growth. This case study reflects how effective planning and modern engineering can deliver consistent
+                    and scalable success.
+                  </p>
+                  <p>
+                    La-Sani demonstrates strong industrial performance through well-planned engineering and efficient system execution.
+                    By using advanced mechanical processes and structured workflows, the company has improved productivity and maintained
+                    high-quality standards. Its focus on innovation, reliability, and continuous improvement helps ensure smooth operations
+                    and long-term growth. This case study reflects how effective planning and modern engineering can deliver consistent
+                    and scalable success.
+                  </p>
+                </div>
+
+                <div className='CS-Sec-PTwo col-lg-6'>
+                  <div className='WHYUS-Img-Section col-lg-12 col-md-12 col-12 mb-4'>
+
+                    {/* Carousel Wrapper */}
+                    <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex' }} >
+
+                      <div className="whyus-" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                        <img src={whyus2} className="d-block w-100 rounded" alt="1" />
+                      </div>
+
+                      <div className="whyus-" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                        <img src={whyus3} className="d-block w-100 rounded" alt="2" />
+                      </div>
+
+                      <div className="whyus-" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                        <img src={whyus4} className="d-block w-100 rounded" alt="3" />
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* <!-- ===================================================== --> */}
+      {/* <!-- Compnay LOGO --> */}
+      {/* <!-- ===================================================== --> */}
+      <section class="certification-section">
+
+        <div class="container">
+          <div class="text-center section-header">
+            {/* <h2>Certifications</h2>
+
+            <p>
+              Certified excellence, ensuring compliance,
+              quality, and global logistics reliability.
+            </p> */}
+          </div>
+
+          {/* <!-- Carousel Wrapper --> */}
+          <div class="logo-slider">
+
+            <div class="logo-track">
+
+              {/* <!-- Card 1 --> */}
+              <div class="logo-card">
+                <img src={Logo} alt="AEO" />
+              </div>
+
+              {/* <!-- Card 2 --> */}
+              <div class="logo-card">
+                <img src={Logo} alt="FIATA" />
+              </div>
+
+              {/* <!-- Card 3 --> */}
+              <div class="logo-card">
+                <img src={Logo} alt="ISO" />
+              </div>
+
+              {/* <!-- Card 4 --> */}
+              <div class="logo-card">
+                <img src={Logo} alt="India" />
+              </div>
+
+              {/* <!-- Card 5 --> */}
+              <div class="logo-card">
+                <img src={Logo} alt="IATA" />
+              </div>
+
+              {/* <!-- Duplicate for Infinite Loop --> */}
+              <div class="logo-card">
+                <img src={Logo} alt="AEO" />
+              </div>
+
+              <div class="logo-card">
+                <img src={Logo} alt="FIATA" />
+              </div>
+
+              <div class="logo-card">
+                <img src={Logo} alt="ISO" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TESTIMONIALS CARDS */}
+      <section className="testimonials-section py-5">
+        <div className="container">
+          <h2 className="fw-bold">Testimonials</h2>
+          <div className="underline underline-testimonials"></div>
+
+          <div className="row mt-4">
+
+            {/* Card 1 */}
+            <div className="col-md-3">
+              <div className="testimonial-card d-flex">
+
+                {/* LEFT */}
+                <div className="testimonial-left">
+                  <p className="testimonial-text">
+                    "Lasani delivers exceptional engineering precision and reliability in every project."
+                  </p>
+
+                  <h6 className="testimonial-name">— Ahmed Khan</h6>
+
+                  <div className="testimonial-stars">
+                    ⭐⭐⭐⭐
+                  </div>
+                </div>
+
+                {/* RIGHT */}
+                <div className="testimonial-right">
+                  <img src={Person1} alt="user" />
+                </div>
+
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="col-md-3">
+              <div className="testimonial-card d-flex">
+                <div className="testimonial-left">
+                  <p className="testimonial-text">"Outstanding service quality and highly professional team execution."</p>
+                  <h6 className="testimonial-name">— Sara Ali</h6>
+                  <div className="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div className="testimonial-right">
+                  <img src={Person2} alt="user" />
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="col-md-3">
+              <div className="testimonial-card d-flex">
+                <div className="testimonial-left">
+                  <p className="testimonial-text">"Innovative solutions with strong technical expertise and support."</p>
+                  <h6 className="testimonial-name">— Imran Sheikh</h6>
+                  <div className="testimonial-stars">⭐⭐⭐⭐</div>
+                </div>
+                <div className="testimonial-right">
+                  <img src={Person1} alt="user" />
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="col-md-3">
+              <div className="testimonial-card d-flex">
+                <div className="testimonial-left">
+                  <p className="testimonial-text">"Highly efficient processes with excellent customer satisfaction."</p>
+                  <h6 className="testimonial-name">— Fatima Noor</h6>
+                  <div className="testimonial-stars">⭐⭐⭐</div>
+                </div>
+                <div className="testimonial-right">
+                  <img src={Person2} alt="user" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
       {/* ========================================================= */}
       {/* MISSION VISION QUALITY SECTION  */}
@@ -1224,12 +1564,12 @@ function App() {
         <div className="container">
 
           {/* HEADING */}
-          <div className="text-center mb-5">
+          <div className=" mb-5">
             <h2 className="fw-bold">Our Core Values</h2>
-            <div className="underline underline-Partners mx-auto"></div>
+            <div className="underline underline-CoreValues"></div>
           </div>
 
-          <div className="row g-4">
+          <div className="row g-4 text-center">
 
             {/* ================================================= */}
             {/* MISSION CARD */}
