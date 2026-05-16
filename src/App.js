@@ -274,7 +274,7 @@ function App() {
                 <p className='para-content'>Lasani has evolved as premier supplier of Hydraulic Tubes, (RTH) Pre honed Tubes, Honed Tubes,
                   Hard Chrome Plated Rods, Raw Material and Other Specialised Grade Tubes, support quick delivery from
                   500 metric tonnes stocks.Being part of trading activity and acumens for engineering activity we added
-                  many values addition to meet customer requirements, such as boring, deep hole drilling, honing, etc.</p>
+                  many values addition to meet customer requirements, such as boring, deep hole drilling, honing,etc.</p>
 
               </div>
 
