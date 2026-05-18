@@ -6,7 +6,12 @@ import { faHandshake, faEyeSlash, faThumbsUp } from "@fortawesome/free-solid-svg
 import { faLocationDot, faUsers, faLaptopCode, faCogs, faBriefcase, faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from 'bootstrap';
 
-import img1 from './ImageFiles/115.1.jpg';
+import img1 from './ImageFiles/BannerImg/115.1.jpg';
+import Banner1 from './ImageFiles/BannerImg/Banner1.jpeg';
+import Banner2 from './ImageFiles/BannerImg/Banner2.jpeg';
+import Banner3 from './ImageFiles/BannerImg/Banner3.jpeg';
+import Banner4 from './ImageFiles/BannerImg/Banner4.jpeg';
+
 import Logo from './ImageFiles/Lasani logo White PNG.png';
 
 import Boring from './ImageFiles/Machining Services/Boring.jpeg';
@@ -227,33 +232,45 @@ function App() {
 
       {/* Carousel */}
       <div>
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
-          {/* <div className="carousel-indicators">
+        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+          <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div> */}
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={img1} className="d-block w-100" alt="..." />
-              <div className="carousel-caption carousel-caption-div">
-              </div>
-            </div>
-            {/* <div className="carousel-item">
-              <img src={img2} className="d-block w-100" alt="..." />
-            </div>
-            <div className="carousel-item">
-              <img src={img3} className="d-block w-100" alt="..." />
-            </div> */}
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
-          {/* <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <div className="carousel-inner Banner-carousel-inner">
+
+            <div className="carousel-item Banner-carousel-item active">
+              <img src={img1} className="d-block w-100" alt="..." />
+            </div>
+
+            <div className="carousel-item Banner-carousel-item">
+              <img src={Banner1} className="d-block w-100" alt="..." />
+            </div>
+
+            <div className="carousel-item Banner-carousel-item">
+              <img src={Banner2} className="d-block w-100" alt="..." />
+            </div>
+
+            <div className="carousel-item Banner-carousel-item">
+              <img src={Banner3} className="d-block w-100" alt="..." />
+            </div>
+
+            <div className="carousel-item Banner-carousel-item">
+              <img src={Banner4} className="d-block w-100" alt="..." />
+            </div>
+
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span className="carousel-control-prev-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Previous</span>
-          </button> */}
-          {/* <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span className="carousel-control-next-icon" aria-hidden="true"></span>
             <span className="visually-hidden">Next</span>
-          </button> */}
+          </button>
         </div>
       </div>
 
@@ -262,19 +279,20 @@ function App() {
         <div id='ABOUT' className="feature-section ABOUTus-Section-Main py-5">
           {/*	ABOUT Section */}
           <div className="container">
-            <h2 className="fw-bold">ABOUT US</h2>
-            <div className="underline  underline-ABOUT"></div>
+            {/* <h2 className="fw-bold">ABOUT US</h2> */}
+            {/* <div className="underline  underline-ABOUT"></div> */}
             {/* About Info */}
             <div className="row">
               <div className='About-Info col-lg-6 col-md-6 col-12' >
-                <h4>Manufacturer and Supplier of Hydraulic Cylinder Tubes</h4>
-                <p className='para-content Manufacturer-paraone'>Lasani has over 40 years of experience in tube trading, mainly catering to Hydraulic Cylinder
-                  Industries, Lasani Fluid Power LLP was redefined as an independent company in 2017.</p>
+                {/* <h4>Manufacturer and Supplier of Hydraulic Cylinder Tubes</h4> */}
+                <p className='para-content Manufacturer-paraone'>With over <span className='para-about-highlight'> 50 years of experience </span> in tube trading for the hydraulic cylinder industry, Lasani Fluid Power LLP was redefined as an independent company in 2017.
+                  Lasani is a leading supplier of Hydraulic Tubes, Ready-to-Hone (RTH) Tubes, Honed Tubes, Hard Chrome Plated Rods, raw materials, and specialized grade tubes and pipes, supported by ready stock of over 500 metric tonnes for quick delivery across India.
+                  Backed by strong technical expertise and engineering understanding, Lasani provides value-added services including boring, deep hole drilling, honing, cutting, and machining to meet customer-specific requirements.</p>
 
-                <p className='para-content'>Lasani has evolved as premier supplier of Hydraulic Tubes, (RTH) Pre honed Tubes, Honed Tubes,
-                  Hard Chrome Plated Rods, Raw Material and Other Specialised Grade Tubes, support quick delivery from
-                  500 metric tonnes stocks.Being part of trading activity and acumens for engineering activity we added
-                  many values addition to meet customer requirements, such as boring, deep hole drilling, honing,etc.</p>
+                <p className='para-content Manufacturer-paraone'>The company has strong knowledge of tube grades, material quality, tolerances, and hydraulic applications, ensuring reliable and application-oriented solutions.
+                  Lasani has built a strong network of dealers, stockists, and transporting partners across major cities in India, with a presence in one of India’s leading steel markets and a strategic location close to Jawaharlal Nehru Port (Nhava Sheva Port), enabling efficient logistics, faster sourcing, and reliable nationwide supply support.
+                  To strengthen operational efficiency and customer service, Lasani utilizes advanced ERP and CRM systems powered by Microsoft Dynamics 365 Business Central along with AI-driven Copilot and predictive analysis tools. These systems help in demand forecasting, inventory planning, process automation, customer alerts, order tracking, and faster decision-making, enabling better supply chain visibility and improved customer responsiveness.
+                  With robust infrastructure, technology-driven operations, and ISO-oriented quality standards, Lasani remains committed to delivering reliable products, consistent quality, and long-term customer value.</p>
 
               </div>
 
@@ -312,10 +330,12 @@ function App() {
               {/* <h4 className='mt-3'>PIPES AND TUBES</h4> */}
               {/* <div className="underline-Product-Points underline-TUBES-ROD"></div> */}
               <div className='Product-Para'>
-                <p className='para-content mt-2'><span>
-                  <h6>PIPES AND TUBES</h6>
-                </span> Lasani, the market leader in the supply of hydraulic tube and rod products in India.</p>
-                <p className='para-content'>Our main product that suits Hydraulic and pneumatic cylinder industries are:</p>
+                <p className='para-content mt-3'><span>
+                  <h6>CYLINDER TUBES</h6>
+                </span> Lasani Fluid Power LLP is a market leader in the supply of hydraulic cylinder tube and rod products in India.</p>
+                <p className='para-content'>Our primary products cater to hydraulic and pneumatic cylinder industries, with specialization in precision Cylinder Tubes selected from reputed mills and trusted manufacturers.</p>
+                <p className='para-content'>We supply Cylinder Tubes in grades such as ST52 / E355, S355JR, and S355J2H, conforming to international standards including DIN 2391, EN 10305-1, EN 10305-2, EN 10305-3, EN 10305-4, ASTM A519, ASTM A513, EN 10217, and EN 10216.</p>
+                <p className='para-content'>The tubes are available in various delivery conditions including SR (+SR), BKS (+C), AR (As Rolled), and Normalized condition, depending on customer application and performance requirements.</p>
               </div>
 
             </div>
@@ -519,8 +539,8 @@ function App() {
 
             {/* Heading */}
             <div className=" mb-5 Product-Heading">
-              <div className='Product-Para'>
-                <h6>OTHER INDUSTRIAL TUBES</h6>
+              <div className='Product-Para mt-2'>
+                <h6>INDUSTRIAL TUBES</h6>
                 {/* <div className="underline-Product-Points INDUSTRIAL-TUBES"></div> */}
               </div>
 
@@ -1112,7 +1132,7 @@ function App() {
             <div className="underline underline-WhyUs"></div>
 
             {/* First-Card Why Us */}
-            <div className="row mt-3">
+            <div className="row mt-3 whyus-">
 
               {/* Left Content */}
               <div className='WhyUs-Info col-lg-8 col-md-6 col-12'>

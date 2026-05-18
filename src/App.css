@@ -18,7 +18,8 @@ h6 {
 }
 
 .Manufacturer-paraone {
-  margin-top: 35px;
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .List-content {
@@ -154,6 +155,10 @@ h6 {
 
 .carousel-caption-div p {
   color: black;
+}
+
+.Banner-carousel-inner img{
+  height: 650px;
 }
 
 
@@ -430,7 +435,7 @@ h6 {
   width: 240px;
 }
 
-.underline-testimonials{
+.underline-testimonials {
   width: 240px;
 }
 
@@ -444,7 +449,7 @@ h6 {
   display: flex;
 }
 
-.CaseStudies-frist-part h2{
+.CaseStudies-frist-part h2 {
   text-align: left;
 }
 
@@ -532,6 +537,7 @@ h6 {
     transform: translateX(-50%);
   }
 }
+
 /*------------ COMPANY LOGO -------------*/
 
 /*------------ TESTIMONIALS CARDS -------------*/
@@ -544,7 +550,7 @@ h6 {
   border-radius: 12px;
   overflow: hidden;
   height: 100%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 /* LEFT SIDE */
@@ -582,6 +588,7 @@ h6 {
   height: 100%;
   object-fit: cover;
 }
+
 /*------------ TESTIMONIALS CARDS -------------*/
 
 
@@ -688,6 +695,11 @@ h6 {
   margin-top: 20px !important;
 }
 
+.para-about-highlight {
+  color: #1D3B64;
+  font-weight: bold;
+}
+
 .ABOUT-Img-Section {
   display: flex;
   justify-content: center;
@@ -710,7 +722,7 @@ h6 {
   display: flex;
 }
 
-.about-custom-carousel-wrapper{
+.about-custom-carousel-wrapper {
   margin-left: 90px;
 }
 
@@ -1207,6 +1219,14 @@ h6 {
 
   .mission-card h3 {
     font-size: 25px;
+  }
+
+  .techinical-card h3 {
+    font-size: 14px;
+  }
+
+  .techinical-card p {
+    font-size: 11px;
   }
 
   .Header-Details span {
