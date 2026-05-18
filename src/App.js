@@ -81,6 +81,32 @@ function App() {
     };
   }, []);
 
+  //BannerCrousel
+  useEffect(() => {
+
+    const carousel = document.querySelector(".Banner-carousel-inner");
+
+    let index = 0;
+
+    const totalSlides =
+      document.querySelectorAll(".Banner-carousel-item").length;
+
+    const interval = setInterval(() => {
+
+      index++;
+
+      if (index >= totalSlides) {
+        index = 0;
+      }
+
+      carousel.style.transform = `translateX(-${index * 100}%)`;
+
+    }, 3000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
   // aboutCarousel
   useEffect(() => {
     const carouselItems = document.querySelectorAll(".about-carousel-item");
@@ -230,47 +256,38 @@ function App() {
         </nav>
       </div>
 
-      {/* Carousel */}
+      {/*Banner Carousel */}
       <div>
-        <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          </div>
-          <div className="carousel-inner Banner-carousel-inner">
+        <div className="container-fluid p-0">
 
-            <div className="carousel-item Banner-carousel-item active">
-              <img src={img1} className="d-block w-100" alt="..." />
-            </div>
+          <div className="Banner-main">
 
-            <div className="carousel-item Banner-carousel-item">
-              <img src={Banner1} className="d-block w-100" alt="..." />
-            </div>
+            <div className="Banner-carousel-inner">
 
-            <div className="carousel-item Banner-carousel-item">
-              <img src={Banner2} className="d-block w-100" alt="..." />
-            </div>
+              <div className="Banner-carousel-item">
+                <img src={img1} alt="" className="img-fluid" />
+              </div>
 
-            <div className="carousel-item Banner-carousel-item">
-              <img src={Banner3} className="d-block w-100" alt="..." />
-            </div>
+              <div className="Banner-carousel-item">
+                <img src={Banner1} alt="" className="img-fluid" />
+              </div>
 
-            <div className="carousel-item Banner-carousel-item">
-              <img src={Banner4} className="d-block w-100" alt="..." />
+              <div className="Banner-carousel-item">
+                <img src={Banner2} alt="" className="img-fluid" />
+              </div>
+
+              <div className="Banner-carousel-item">
+                <img src={Banner3} alt="" className="img-fluid" />
+              </div>
+
+              <div className="Banner-carousel-item">
+                <img src={Banner4} alt="" className="img-fluid" />
+              </div>
+
             </div>
 
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+
         </div>
       </div>
 
