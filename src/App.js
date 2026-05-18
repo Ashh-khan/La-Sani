@@ -1400,7 +1400,7 @@ function App() {
               </div>
 
               {/* CaseStudies P2 */}
-              <div className='CaseStudies-second-part col-lg-11'>
+              <div className='CaseStudies-second-part col-lg-11 col-md-6'>
                 <div className='CS-Sec-POne col-lg-6'>
                   <p>
                     This case study highlights how strategic engineering methodologies and disciplined execution can transform operational
