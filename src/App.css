@@ -519,23 +519,30 @@ h6 {
 
 .CaseStudies-frist-part h2 {
   text-align: left;
+  font-size: 35px;
 }
 
 .CaseStudies-second-part {
   display: flex;
-  gap: 200px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .CaseStudies-frist-part p {
   text-align: justify;
 }
 
-.CS-Sec-POne {
-  align-content: center;
-}
-
 .CS-Sec-POne p {
   text-align: justify;
+}
+
+.CS-Sec-PTwo {
+  height: fit-content;
+}
+
+.ABOUT-Img-Section .CaseStudies img {
+  width: 650px !important;
+  height: 455px;
 }
 
 
@@ -1278,19 +1285,31 @@ h6 {
   }
 
   .underline-CoreValues {
-    width: 250px;
+    width: 240px;
+  }
+
+  .underline-CaseStudies {
+    width: 200px;
+  }
+
+  .underline-testimonials {
+    width: 235px;
   }
 
   .mission-main-icon {
     font-size: 50px;
   }
 
-  .mission-card h3 {
-    font-size: 25px;
+  .NewMission-Card h3 {
+    font-size: 20px;
+  }
+
+  .NewMission-Card p {
+    font-size: 13px;
   }
 
   .techinical-card h3 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .techinical-card p {
@@ -1313,8 +1332,162 @@ h6 {
     font-size: 14px !important;
   }
 
+  .testimonial-text {
+    font-size: 13px;
+  }
+
+  .testimonial-name {
+    font-size: 11px;
+  }
+
+  .testimonial-stars {
+    font-size: 12px;
+  }
+
+  .CaseStudies-frist-part h2 {
+    font-size: 29px;
+  }
+
+  .CaseStudies-frist-part p {
+    font-size: 13px;
+  }
+
+  .CS-Sec-POne p {
+    font-size: 13px;
+  }
 
 }
+
+
+/* 1024px All CSS */
+@media screen and (max-width: 1024px) {
+  .Header-Details span {
+    font-size: 10px;
+  }
+
+  .Header-Time span {
+    font-size: 10px;
+  }
+
+  .menu-list .nav-link {
+    font-size: 11px !important;
+  }
+
+  .logo img {
+    height: 70px;
+    width: 180px;
+  }
+
+  .para-content {
+    font-size: 12px;
+  }
+
+  .CaseStudies-frist-part p {
+    font-size: 12px;
+  }
+
+  .CS-Sec-POne p {
+    font-size: 12px;
+  }
+
+  .CaseStudies-frist-part h2 {
+    font-size: 25px;
+  }
+
+  .mission-main-icon {
+    font-size: 45px;
+  }
+
+  .mission-card h3 {
+    font-size: 11px;
+  }
+
+  .mission-card p {
+    font-size: 12px;
+  }
+
+  .NewMission-Card h3 {
+    font-size: 18px;
+  }
+
+  .footer-description {
+    font-size: 12px !important;
+  }
+
+  .footer-list li {
+    font-size: 12px !important;
+  }
+
+  .business-info p {
+    font-size: 12px;
+  }
+
+  .bank-card span {
+    font-size: 12px;
+  }
+
+}
+
+/* 992px All CSS */
+@media screen and (max-width: 992px) {
+  .menu-list .nav-link {
+    font-size: 10px !important;
+  }
+
+  .custom-carousel-wrapper{
+    margin-left: 125px;
+  }
+
+  .Product-Service .report-card {
+    height: 95%;
+  }
+
+  .Machining-Service .report-card {
+    height: 95%;
+  }
+
+  .report-content {
+    height: 300px;
+  }
+
+  .WHYUS-Img-Section{
+    margin-top: 20px !important;
+  }
+
+  .WHYUS-Img-Section .custom-carousel-wrapper{
+    margin-left: 100px;
+  }
+
+  .CaseStudies-second-part{
+    flex-direction: column;
+  }
+
+  .CaseStudies-Img-Section .custom-carousel-wrapper{
+     margin-left: 20px;
+  }
+
+  .mission-vision-section .row{
+    justify-content: center;
+  }
+}
+
+
+/* 922px All CSS */
+@media screen and (max-width: 922px) {
+ .menu-list .nav-link {
+    font-size: 9px !important;
+  }
+
+  .ABOUTus-Section-Main .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
 
 
 

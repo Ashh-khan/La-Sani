@@ -157,6 +157,28 @@ function App() {
   }, []);
 
 
+  // CaseStudies Carousel
+  useEffect(() => {
+
+    const carouselItems = document.querySelectorAll(".CaseStudies");
+
+    let index = 0;
+
+    const interval = setInterval(() => {
+
+      index = (index + 1) % carouselItems.length;
+
+      carouselItems.forEach((item) => {
+        item.style.transform = `translateX(-${index * 100}%)`;
+      });
+
+    }, 3000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
+
   const teamData = [
     {
       name: "Abdul Mannan",
@@ -299,7 +321,7 @@ function App() {
             {/* <div className="underline  underline-ABOUT"></div> */}
             {/* About Info */}
             <div className="row">
-              <div className='About-Info col-lg-6 col-md-6 col-12' >
+              <div className='About-Info col-lg-6 col-md-12 col-12' >
                 {/* <h4>Manufacturer and Supplier of Hydraulic Cylinder Tubes</h4> */}
                 <p className='para-content Manufacturer-paraone'>With over <span className='para-about-highlight'> 50 years of experience </span> in tube trading for the hydraulic cylinder industry, Lasani Fluid Power LLP was redefined as an independent company in 2017.
                   Lasani is a leading supplier of Hydraulic Tubes, Ready-to-Hone (RTH) Tubes, Honed Tubes, Hard Chrome Plated Rods, raw materials, and specialized grade tubes and pipes, supported by ready stock of over 500 metric tonnes for quick delivery across India.
@@ -313,7 +335,7 @@ function App() {
               </div>
 
               {/* Carousel Section */}
-              <div className='ABOUT-Img-Section col-lg-6 col-md-6 col-12 mb-4'>
+              <div className='ABOUT-Img-Section col-lg-6 col-md-12 col-12 mb-4'>
                 {/* Wrapper with overflow hidden is crucial */}
                 <div className="custom-carousel-wrapper about-custom-carousel-wrapper">
                   <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
@@ -360,7 +382,7 @@ function App() {
             <div className="row">
 
               {/* Card 1 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -390,7 +412,7 @@ function App() {
               </div>
 
               {/* Card 2 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -420,7 +442,7 @@ function App() {
               </div>
 
               {/* Card 3 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -450,7 +472,7 @@ function App() {
               </div>
 
               {/* Cards 4*/}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -489,7 +511,7 @@ function App() {
             <div className="row Product-row-Two">
 
               {/* Card 1 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -520,7 +542,7 @@ function App() {
               </div>
 
               {/* Card 2 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -574,7 +596,7 @@ function App() {
             <div className="row">
 
               {/* Card 1 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -602,7 +624,7 @@ function App() {
               </div>
 
               {/* Card 2 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -630,7 +652,7 @@ function App() {
               </div>
 
               {/* Card 3 */}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -656,7 +678,7 @@ function App() {
               </div>
 
               {/* Card 4*/}
-              <div className="col-lg-3 col-md-6 col-12">
+              <div className="col-lg-3 col-md-6 col-12 Product-Service">
                 <div className="report-card ">
                   <div className="report-image">
                     <img
@@ -715,7 +737,7 @@ function App() {
               <div className="row">
 
                 {/* Card 1 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -745,7 +767,7 @@ function App() {
                 </div>
 
                 {/* Card 2 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -775,7 +797,7 @@ function App() {
                 </div>
 
                 {/* Card 3 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -803,7 +825,7 @@ function App() {
                 </div>
 
                 {/* Card 4 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -836,7 +858,7 @@ function App() {
 
               <div className='row Product-row-Two'>
                 {/* Card 5 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -866,7 +888,7 @@ function App() {
                 </div>
 
                 {/* Card 6 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -895,7 +917,7 @@ function App() {
                 </div>
 
                 {/* Card 7 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -924,7 +946,7 @@ function App() {
                 </div>
 
                 {/* Card 8 */}
-                <div className="col-lg-3 col-md-6 col-12">
+                <div className="col-lg-3 col-md-6 col-12 Machining-Service">
                   <div className="report-card ">
                     <div className="report-image">
                       <img
@@ -1059,6 +1081,7 @@ function App() {
 
       </section>
 
+
       {/* HISTORY SECTION */}
       <section className="history-section py-5 bg-light">
         <div id="HISTORY" className="container">
@@ -1138,6 +1161,7 @@ function App() {
         </div>
       </section>
 
+
       {/* WHY US SECTION */}
       <div>
         <div id='WHYUS' className="feature-section WhyUs-Section-Main py-5">
@@ -1152,14 +1176,14 @@ function App() {
             <div className="row mt-3 whyus-">
 
               {/* Left Content */}
-              <div className='WhyUs-Info col-lg-8 col-md-6 col-12'>
+              <div className='WhyUs-Info col-lg-8 col-md-12 col-12'>
                 <div>
                   <div className="row text-center col-lg-12 section-one">
 
                     {/* ================================================= */}
                     {/* TECHNICAL CARD */}
                     {/* ================================================= */}
-                    <div className="col-lg-4 col-md-3 col-12">
+                    <div className="col-lg-4 col-md-4 col-12">
 
                       <div className="mission-card techinical-card text-center">
 
@@ -1186,7 +1210,7 @@ function App() {
                     {/* ================================================= */}
                     {/* EXPERIENCE CARD */}
                     {/* ================================================= */}
-                    <div className="col-lg-4 col-md-3 col-12">
+                    <div className="col-lg-4 col-md-4 col-12">
 
                       <div className="mission-card text-center techinical-card">
 
@@ -1213,7 +1237,7 @@ function App() {
                     {/* ================================================= */}
                     {/* INFRASTRUCTURE CARD */}
                     {/* ================================================= */}
-                    <div className="col-lg-4 col-md-3 col-12">
+                    <div className="col-lg-4 col-md-4 col-12">
 
                       <div className="mission-card text-center techinical-card">
 
@@ -1244,7 +1268,7 @@ function App() {
                     {/* ================================================= */}
                     {/* LOCATION CARD */}
                     {/* ================================================= */}
-                    <div className="col-lg-4 col-md-3 col-12">
+                    <div className="col-lg-4 col-md-4 col-12">
 
                       <div className="mission-card techinical-card text-center">
 
@@ -1271,7 +1295,7 @@ function App() {
                     {/* ================================================= */}
                     {/* TEAM CARD */}
                     {/* ================================================= */}
-                    <div className="col-lg-4 col-md-3 col-12">
+                    <div className="col-lg-4 col-md-4 col-12">
 
                       <div className="mission-card text-center techinical-card">
 
@@ -1286,8 +1310,8 @@ function App() {
                         <h3>TEAM</h3>
 
                         <p>
-                          "Highly qualified and experienced partners, professionals, 
-                          and process-driven teams ensure efficient operations, 
+                          "Highly qualified and experienced partners, professionals,
+                          and process-driven teams ensure efficient operations,
                           technical support, and reliable customer service excellence."
                         </p>
 
@@ -1298,7 +1322,7 @@ function App() {
                     {/* ================================================= */}
                     {/* TECHNOLOGY CARD */}
                     {/* ================================================= */}
-                    <div className="col-lg-4 col-md-3 col-12">
+                    <div className="col-lg-4 col-md-4 col-12">
 
                       <div className="mission-card text-center techinical-card">
 
@@ -1327,7 +1351,7 @@ function App() {
               </div>
 
               {/* Right Image Section (kept structure same, only class renamed) */}
-              <div className='WHYUS-Img-Section col-lg-4 col-md-6 col-12 mb-4'>
+              <div className='WHYUS-Img-Section col-lg-4 col-md-12 col-12 mb-4'>
 
                 {/* Carousel Wrapper */}
                 <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex' }} >
@@ -1381,10 +1405,10 @@ function App() {
             <div className='CaseStudies-Main-Section'>
               {/* CaseStudies P1 */}
               <div className='CaseStudies-frist-part'>
-                <div className='col-lg-4'>
+                <div className='col-lg-5'>
                   <h2>Precision Systems Enhancing La-Sani Performance Standards</h2>
                 </div>
-                <div className='col-lg-8'>
+                <div className='col-lg-7'>
                   <p>La-Sani represents a benchmark in modern industrial execution, where engineering precision meets
                     operational efficiency. Through the integration of advanced mechanical systems and optimized process
                     frameworks, the organization has successfully enhanced productivity while maintaining superior quality
@@ -1396,8 +1420,8 @@ function App() {
               </div>
 
               {/* CaseStudies P2 */}
-              <div className='CaseStudies-second-part col-lg-11 col-md-6'>
-                <div className='CS-Sec-POne col-lg-6'>
+              <div className='CaseStudies-second-part'>
+                <div className='CS-Sec-POne col-lg-5 col-md-12 col-12'>
                   <p>
                     This case study highlights how strategic engineering methodologies and disciplined execution can transform operational
                     challenges into measurable success outcomes, positioning La-Sani as a leader in its domain.
@@ -1416,24 +1440,22 @@ function App() {
                   </p>
                 </div>
 
-                <div className='CS-Sec-PTwo col-lg-6'>
-                  <div className='WHYUS-Img-Section col-lg-12 col-md-12 col-12 mb-4'>
-
-                    {/* Carousel Wrapper */}
+                <div className='CS-Sec-PTwo col-lg-6 col-md-12 col-12'>
+                  {/* Carousel Wrapper */}
+                  <div className='ABOUT-Img-Section CaseStudies-Img-Section'>
                     <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex' }} >
 
-                      <div className="whyus-" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                      <div className="CaseStudies" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                         <img src={whyus2} className="d-block w-100 rounded" alt="1" />
                       </div>
 
-                      <div className="whyus-" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                      <div className="CaseStudies" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                         <img src={whyus3} className="d-block w-100 rounded" alt="2" />
                       </div>
 
-                      <div className="whyus-" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                      <div className="CaseStudies" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                         <img src={whyus4} className="d-block w-100 rounded" alt="3" />
                       </div>
-
                     </div>
                   </div>
                 </div>
@@ -1518,7 +1540,7 @@ function App() {
           <div className="row mt-4">
 
             {/* Card 1 */}
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
 
                 {/* LEFT */}
@@ -1543,7 +1565,7 @@ function App() {
             </div>
 
             {/* Card 2 */}
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
                 <div className="testimonial-left">
                   <p className="testimonial-text">"Outstanding service quality and highly professional team execution."</p>
@@ -1557,7 +1579,7 @@ function App() {
             </div>
 
             {/* Card 3 */}
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
                 <div className="testimonial-left">
                   <p className="testimonial-text">"Innovative solutions with strong technical expertise and support."</p>
@@ -1571,7 +1593,7 @@ function App() {
             </div>
 
             {/* Card 4 */}
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
                 <div className="testimonial-left">
                   <p className="testimonial-text">"Highly efficient processes with excellent customer satisfaction."</p>
@@ -1609,7 +1631,7 @@ function App() {
             {/* ================================================= */}
             <div className="col-lg-4 col-md-6 col-12">
 
-              <div className="mission-card text-center">
+              <div className="mission-card NewMission-Card text-center">
 
                 <div className="mission-icon">
                   {/* <i className="fa-solid fa-handshake"></i> */}
@@ -1636,7 +1658,7 @@ function App() {
             {/* ================================================= */}
             <div className="col-lg-4 col-md-6 col-12">
 
-              <div className="mission-card text-center">
+              <div className="mission-card NewMission-Card text-center">
 
                 <div className="mission-icon">
                   {/* <i className="fa-solid fa-eye-slash"></i> */}
@@ -1664,7 +1686,7 @@ function App() {
             {/* ================================================= */}
             <div className="col-lg-4 col-md-6 col-12">
 
-              <div className="mission-card text-center">
+              <div className="mission-card NewMission-Card text-center">
 
                 <div className="mission-icon">
                   {/* <i className="fa-solid fa-thumbs-up"></i> */}
@@ -1711,7 +1733,7 @@ function App() {
             <div className="col-lg-4 col-md-6 footer-column">
               <h5 className="footer-header">Contact Us</h5>
               <ul className="list-unstyled footer-list">
-                <li><span className="icon">📍</span> 1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218</li>
+                <li><span className="icon">📍</span > 1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218</li>
                 <li><span className="icon">📞</span> +91 99000 19885 | +91 89763 37049</li>
                 <li><span className="icon">📧</span> info@la-sani.com</li>
               </ul>
@@ -1724,9 +1746,11 @@ function App() {
                 <p><strong>GST:</strong> 27AAGFL8451Q1ZJ</p>
                 <p><strong>MSME:</strong> UDYAM-MH-27-0002276</p>
                 <div className="bank-card mt-3">
+                  <span>
                   <strong>Axis Bank Ltd.</strong><br />
                   A/C: 920030066350101 <br />
                   IFSC: UTIB0000489
+                  </span>
                 </div>
               </div>
             </div>
