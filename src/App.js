@@ -557,16 +557,17 @@ function App() {
             {/* Heading */}
             <div className=" mb-5 Product-Heading">
               <div className='Product-Para mt-2'>
-                <h6>INDUSTRIAL TUBES</h6>
+                <h6>INDUSTRIAL TUBES & PIPES</h6>
                 {/* <div className="underline-Product-Points INDUSTRIAL-TUBES"></div> */}
               </div>
 
               <div className='Product-Para'>
-                <p className='para-content mt-2'>We supply the conveyance and pressure, energy, automotive and engineering and precision tube markets.</p>
-                <p className='para-content'>We make a difference for all our customers. Our customer orientated business structure allows us to offer
-                  competitive market solutions and  ensures that our products and services will exceed your expectations.</p>
-                <p className='para-content'>Our close working relationship with customers has helped with the most simple through to the most challenging of
-                  solutions.  Whatever the specification, grade or service, we offer the best  solutions for you - making the difference.</p>
+                <p className='para-content mt-2'>Lasani Fluid Power LLP supplies a wide range of Industrial Tubes and Pipes for conveyance, pressure, energy, automotive, engineering, and structural applications.</p>
+                <p className='para-content'>Our range includes API 5L Grade B Pipes, ASTM A335 P91 Pipes, ASTM A210 Grade A1 Tubes, Mild Steel Pipes, Structural Steel Pipes, GI Pipes, Hot Rolled Seamless Pipes,
+                  ERW Pipes, and Seamless Pipes in various sizes from 1/2” NB to 36” NB with SCH 20, SCH 40, SCH 80, SCH 160, and SCH XXS options.</p>
+                <p className='para-content'>We supply materials conforming to international standards such as API, ASTM, EN, and IS specifications with EN 10204 3.1 & 3.2 certification support. Additional
+                  services including beveling, grooving, painting, coating, and anti-corrosion solutions are also available to meet diverse industrial requirements with reliable quality and quick delivery
+                  support across India.</p>
               </div>
             </div>
 
@@ -1174,9 +1175,9 @@ function App() {
                         <h3>TECHNICAL</h3>
 
                         <p>
-                          "Our mission is to deliver innovative,
-                          high-quality storage solutions that meet
-                          the diverse needs of our clients."
+                          "Strong technical understanding of hydraulic applications,
+                          tube grades, machining processes, tolerances, and
+                          customer-specific engineering requirements across industries."
                         </p>
 
                       </div>
@@ -1201,10 +1202,9 @@ function App() {
                         <h3>EXPERIENCE</h3>
 
                         <p>
-                          "Our vision is to be the leading provider
-                          of cutting-edge storage solutions, driving
-                          industry innovation and exceeding customer
-                          expectations."
+                          "Over 40 years of industry experience in hydraulic
+                          cylinder tubes, industrial pipes, sourcing,
+                          processing, and supply chain solutions."
                         </p>
 
                       </div>
@@ -1229,10 +1229,9 @@ function App() {
                         <h3>INFRASTRUCTURE</h3>
 
                         <p>
-                          "We are dedicated to delivering exceptional
-                          quality, ensuring every product meets the
-                          highest standards of durability and
-                          performance."
+                          "Large ready stock, processing support, warehouse
+                          facilities, and strong logistics capabilities ensure
+                          faster delivery and reliable material availability."
                         </p>
 
                       </div>
@@ -1261,9 +1260,9 @@ function App() {
                         <h3>LOCATION</h3>
 
                         <p>
-                          "Our mission is to deliver innovative,
-                          high-quality storage solutions that meet
-                          the diverse needs of our clients."
+                          "Strategically located near Jawaharlal Nehru Port and
+                          India’s leading steel market for efficient sourcing
+                          and nationwide distribution support"
                         </p>
 
                       </div>
@@ -1316,10 +1315,9 @@ function App() {
                         <h3>TECHNOLOGY</h3>
 
                         <p>
-                          "We are dedicated to delivering exceptional
-                          quality, ensuring every product meets the
-                          highest standards of durability and
-                          performance."
+                          "Advanced ERP and CRM systems with AI-driven Copilot,
+                          predictive analysis, automation, and customer alert
+                          systems improve operational efficiency."
                         </p>
 
                       </div>
