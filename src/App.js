@@ -35,9 +35,9 @@ import ERWWelded from './ImageFiles/ERW/ERW(Welded).jpg';
 import HollowSections from './ImageFiles/HollowSections/HollowSection.webp';
 import StainlessSteel from './ImageFiles/StainlessSteelPipes/StainlessSteelPipes.jpg';
 
-import AbdulMannan from './ImageFiles/Partner/Abdul Mannan - Director.jpg';
-import AbdulRehman from './ImageFiles/Partner/Abdul Rehman - Managing Director.jpg';
-import EhsanKhan from './ImageFiles/Partner/Ehsan Ahmad Khan- Director.jpg';
+import AbdulMannan from './ImageFiles/Partner/Abdul Mannan_Director.jpeg';
+import AbdulRehman from './ImageFiles/Partner/Abdul Rehman_Managing Director.jpeg';
+import EhsanKhan from './ImageFiles/Partner/Ehsan Khan_Director.jpeg';
 
 import whyus1 from './ImageFiles/WHYUS/IMG-20221217-WA0007.jpg';
 import whyus2 from './ImageFiles/WHYUS/asa.jpg';
@@ -136,7 +136,6 @@ function App() {
 
 
   // WHYUS Carousel
-  // part-1
   useEffect(() => {
 
     const carouselItems = document.querySelectorAll(".whyus-carousel-item");
@@ -1287,10 +1286,9 @@ function App() {
                         <h3>TEAM</h3>
 
                         <p>
-                          "Our vision is to be the leading provider
-                          of cutting-edge storage solutions, driving
-                          industry innovation and exceeding customer
-                          expectations."
+                          "Highly qualified and experienced partners, professionals, 
+                          and process-driven teams ensure efficient operations, 
+                          technical support, and reliable customer service excellence."
                         </p>
 
                       </div>
