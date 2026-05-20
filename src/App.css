@@ -132,6 +132,11 @@ h6 {
 }
 
 /* MOBILE TOGGLE */
+.close-navbar-btn {
+  display: none;
+  cursor: pointer;
+}
+
 .menu-toggle {
   display: none;
   font-size: 24px;
@@ -931,13 +936,6 @@ h6 {
   cursor: not-allowed;
 }
 
-/* FIX MOBILE STACK */
-@media (max-width: 767px) {
-  .slider-track {
-    display: block;
-  }
-}
-
 /* --------------Slider CSS --------------- */
 
 
@@ -1430,11 +1428,12 @@ h6 {
 
 /* 992px All CSS */
 @media screen and (max-width: 992px) {
+
   .menu-list .nav-link {
     font-size: 10px !important;
   }
 
-  .custom-carousel-wrapper{
+  .custom-carousel-wrapper {
     margin-left: 125px;
   }
 
@@ -1450,23 +1449,23 @@ h6 {
     height: 300px;
   }
 
-  .WHYUS-Img-Section{
+  .WHYUS-Img-Section {
     margin-top: 20px !important;
   }
 
-  .WHYUS-Img-Section .custom-carousel-wrapper{
+  .WHYUS-Img-Section .custom-carousel-wrapper {
     margin-left: 100px;
   }
 
-  .CaseStudies-second-part{
+  .CaseStudies-second-part {
     flex-direction: column;
   }
 
-  .CaseStudies-Img-Section .custom-carousel-wrapper{
-     margin-left: 20px;
+  .CaseStudies-Img-Section .custom-carousel-wrapper {
+    margin-left: 20px;
   }
 
-  .mission-vision-section .row{
+  .mission-vision-section .row {
     justify-content: center;
   }
 }
@@ -1474,15 +1473,244 @@ h6 {
 
 /* 922px All CSS */
 @media screen and (max-width: 922px) {
- .menu-list .nav-link {
+  .Header-Details span {
+    font-size: 9px;
+  }
+
+  .Header-Time span {
+    font-size: 9px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu-list .nav-link {
     font-size: 9px !important;
   }
 
-  .ABOUTus-Section-Main .row{
+  .ABOUTus-Section-Main .row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .slider-track {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    width: 500px;
+  }
+}
+
+/* 768px All CSS */
+@media screen and (max-width: 768px) {
+  .custom-navbar .navbar-row-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Header-Details span {
+    font-size: 9px;
+  }
+
+  .Header-Time span {
+    font-size: 9px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .slider-track {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-card {
+    width: 500px;
+  }
+
+  .history-sub-item {
+    margin-top: 15px;
+  }
+
+  .custom-carousel-wrapper {
+    margin-left: 50px;
+  }
+
+  .WhyUs-Info .section-two,
+  .section-one {
+    gap: 12px;
+  }
+
+  .WHYUS-Img-Section .custom-carousel-wrapper {
+    margin-left: 8px;
+  }
+
+  .CaseStudies-frist-part {
+    gap: 5px;
+  }
+
+  .CaseStudies-frist-part h2 {
+    font-size: 22px;
+  }
+
+  .CaseStudies-frist-part p {
+    font-size: 11px;
+  }
+
+  .CS-Sec-POne p {
+    font-size: 11px;
+  }
+
+  .CaseStudies-Img-Section .custom-carousel-wrapper {
+    margin-left: 2px;
+  }
+
+  .testimonials-section .row {
+    gap: 20px;
+  }
+}
+
+
+/* 650px All CSS */
+@media (max-width: 820px) {
+
+  .certification-section {
+    padding: 40px 20px;
+  }
+
+  .logo-track {
+    gap: 15px;
+    animation: scrollLeft 20s linear infinite;
+  }
+
+  .logo-card {
+    width: 140px;
+    height: 130px;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .logo-card img {
+    max-height: 70px;
+  }
+}
+
+
+/* 425px All CSS */
+@media screen and (max-width: 425px) {
+  .services h2 {
+    font-size: 19px;
+  }
+
+  .history-section h2 {
+    font-size: 19px;
+  }
+
+  .WhyUs-Section-Main h2 {
+    font-size: 19px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 19px;
+  }
+
+  .mission-vision-section h2 {
+    font-size: 19px;
+  }
+
+  .underline-CaseStudies {
+    width: 150px;
+  }
+
+  .underline-CYLINDER {
+    width: 320px;
+  }
+
+   .underline-MACHINING {
+    width: 280px;
+  }
+
+  .underline-Partners {
+    width: 150px;
+  }
+
+  .underline-HISTORY {
+    width: 105px;
+  }
+
+  .underline-WhyUs {
+    width: 103px;
+  }
+
+  .underline-testimonials {
+    width: 150px;
+  }
+
+  .underline-CoreValues {
+    width: 180px;
+  }
+}
+
+
+/* 355px All CSS */
+@media screen and (max-width: 355px) {
+  .custom-carousel-wrapper {
+    margin-left: 5px;
+  }
+
+  .services h2 {
+    font-size: 19px;
+  }
+
+  .history-section h2 {
+    font-size: 19px;
+  }
+
+  .WhyUs-Section-Main h2 {
+    font-size: 19px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 19px;
+  }
+
+  .mission-vision-section h2 {
+    font-size: 19px;
+  }
+
+  .underline-MACHINING {
+    width: 260px;
+  }
+
+  .underline-CaseStudies {
+    width: 120px;
+  }
+
+  .underline-CYLINDER {
+    width: 280px;
+  }
+
+  .underline-Partners {
+    width: 120px;
+  }
+
+  .underline-HISTORY {
+    width: 80px;
+  }
+
+  .underline-WhyUs {
+    width: 90px;
+  }
+
+  .underline-testimonials {
+    width: 120px;
+  }
+
+  .underline-CoreValues {
+    width: 150px;
   }
 }
 
@@ -1534,6 +1762,31 @@ h6 {
     display: inline-block;
   }
 
+  .Header-Details {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .close-navbar-btn {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: #1D3B64;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  .menu-list .nav-link {
+    font-size: 11px !important;
+  }
+
   .nav-menu {
     position: absolute;
     top: 70px;
@@ -1546,6 +1799,7 @@ h6 {
 
   .nav-menu.active {
     left: 0;
+    z-index: 99;
   }
 
   .menu-list {
@@ -1561,10 +1815,7 @@ h6 {
   .search-btn {
     display: none;
   }
-}
 
-/* MOBILE */
-@media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }

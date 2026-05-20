@@ -72,14 +72,14 @@ import PartnerLogo11 from './ImageFiles/PartnerLogo/Pennar Industries.jpg';
 import PartnerLogo12 from './ImageFiles/PartnerLogo/PREAC Logo.png';
 import PartnerLogo13 from './ImageFiles/PartnerLogo/Suvera Fluid Power Pvt Ltd.png';
 import PartnerLogo14 from './ImageFiles/PartnerLogo/tafe-logo.png';
-import PartnerLogo15 from './ImageFiles/PartnerLogo/TIL Limited Logo.png';
+import PartnerLogo15 from './ImageFiles/PartnerLogo/TIL Limited Logo.jpg';
 
 
 function App() {
 
   const [open, setOpen] = useState(false);
 
-  // Smooth scroll (React way)
+  // Navbar Toogle
   useEffect(() => {
     const links = document.querySelectorAll(".nav-link");
 
@@ -254,12 +254,15 @@ function App() {
         <nav className="custom-navbar">
           <div className="row navbar-row-main align-items-center">
             {/* LOGO */}
-            <div className="col-md-3">
+            <div className="col-md-3 col-sm-6">
               <h3 className="logo"><img src={Logo} alt="" /></h3>
             </div>
 
             {/* MENU */}
             <div className={`col-md-6 nav-menu ${open ? "active" : ""}`}>
+              <div className="close-btn close-navbar-btn" onClick={() => setOpen(false)}>
+                ✖
+              </div>
               <ul className="menu-list">
                 <li className="nav-item"><a href="#home" className="nav-link active">HOME</a></li>
                 <li className="nav-item"><a href="#ABOUT" className="nav-link">ABOUT US</a></li>
@@ -271,7 +274,7 @@ function App() {
             </div>
 
             {/* RIGHT SIDE */}
-            <div className=" col-md-3 text-end">
+            <div className=" col-md-3 col-sm-6 text-end">
               <button className="search-btn">🔍</button>
               <button className="support-btn ms-2"><a
                 href="https://wa.me/918976337049?text=Hello%20I%20am%20interested"
@@ -1545,31 +1548,31 @@ function App() {
                 <img src={PartnerLogo8} alt="ISO" />
               </div>
 
-               <div class="logo-card">
+              <div class="logo-card">
                 <img src={PartnerLogo9} alt="ISO" />
               </div>
 
-               <div class="logo-card">
+              <div class="logo-card">
                 <img src={PartnerLogo10} alt="ISO" />
               </div>
 
-               <div class="logo-card">
+              <div class="logo-card">
                 <img src={PartnerLogo11} alt="ISO" />
               </div>
 
-               <div class="logo-card">
+              <div class="logo-card">
                 <img src={PartnerLogo12} alt="ISO" />
               </div>
 
-               <div class="logo-card">
+              <div class="logo-card">
                 <img src={PartnerLogo13} alt="ISO" />
               </div>
 
-               <div class="logo-card">
+              <div class="logo-card">
                 <img src={PartnerLogo14} alt="ISO" />
               </div>
 
-               <div class="logo-card">
+              <div class="logo-card PartnerLogo15">
                 <img src={PartnerLogo15} alt="ISO" />
               </div>
             </div>
@@ -1768,7 +1771,7 @@ function App() {
           <div className="row g-4">
 
             {/* Column 1: Logo */}
-            <div className="col-lg-4 col-md-12 footer-column text-center text-lg-start">
+            <div className="col-lg-3 col-md-12 footer-column text-center text-lg-start">
               <img src={Logo} alt="Lasani Logo" className="footer-logo mb-3" />
               <p className="footer-description small">
                 Lasani Fluid Power LLP – Delivering excellence in hydraulic tubes and engineering services for over 5 decades.
@@ -1776,12 +1779,18 @@ function App() {
             </div>
 
             {/* Column 2: Contact Info */}
-            <div className="col-lg-4 col-md-6 footer-column">
+            <div className="col-lg-5 col-md-6 footer-column">
               <h5 className="footer-header">Contact Us</h5>
               <ul className="list-unstyled footer-list">
-                <li><span className="icon">📍</span > 1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218</li>
-                <li><span className="icon">📞</span> +91 99000 19885 | +91 89763 37049</li>
-                <li><span className="icon">📧</span> info@la-sani.com</li>
+                <li><span className="icon">📍</span > Plot No 1219-T, Kalamboli Steel Market, Near Khedupada Marathi School,
+                                                      Kalamboli, Panvel , Maharshtra, India – 410218</li>
+
+                <li><span className="icon">📞</span>Abdul Rehman (Director) +91 99000 19885 | (abdul.rehman@la-sani.com)</li>
+                <li><span className="icon">📞</span>Arsalan Khan (Sales) +91 89763 37049 | (arsalan.khan@la-sani.com)</li>
+                <li><span className="icon">📞</span>Gazi Khan (Sales) +91 84510 97608 | (gazi.khan@la-sani.com)</li>
+                <li><span className="icon">📞</span>Ganesh Bhandari (Account) +91 93248 61346 | (account@la-sani.com)</li>
+                <li><span className="icon">📞</span>Vishal Rathod (Operations) +91 93248 61346 | (response@la-sani.com)</li>
+                {/* <li><span className="icon">📧</span> info@la-sani.com</li> */}
               </ul>
             </div>
 
@@ -1790,12 +1799,13 @@ function App() {
               <h5 className="footer-header">Business Details</h5>
               <div className="business-info small">
                 <p><strong>GST:</strong> 27AAGFL8451Q1ZJ</p>
+                <p><strong>PAN:</strong> 27AAGFL8451</p>
                 <p><strong>MSME:</strong> UDYAM-MH-27-0002276</p>
                 <div className="bank-card mt-3">
                   <span>
-                  <strong>Axis Bank Ltd.</strong><br />
-                  A/C: 920030066350101 <br />
-                  IFSC: UTIB0000489
+                    <strong>Axis Bank Ltd.</strong><br />
+                    A/C: 920030066350101 <br />
+                    IFSC: UTIB0000489
                   </span>
                 </div>
               </div>
