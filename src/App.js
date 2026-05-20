@@ -23,9 +23,9 @@ import CuttingMachine from './ImageFiles/Machining Services/Cutting Machine.jpg'
 import Welding from './ImageFiles/Machining Services/port-end-cap-welding.jpg';
 import HardChromePlating from './ImageFiles/Machining Services/hard-chrome-plating-service.jpg';
 
-import honed1 from './ImageFiles/Honed/11.jpg';
-import Suitabletoskive from './ImageFiles/SuitableToSkiveHone/Suitable-(Ready)-To-SkiveHone.jpg';
-import HotFinished from './ImageFiles/HotFinishedSeamless/Hot-Finished-Seamless-Tubes-1-new.jpg';
+import honed1 from './ImageFiles/Honed/SRB Tube 1.jpg';
+import Suitabletoskive from './ImageFiles/SuitableToSkiveHone/Suitable-(Ready)-To-SkiveHone (2).jpg';
+import HotFinished from './ImageFiles/HotFinishedSeamless/Hot-Finished-Seamless-Tubes-1-new (2).jpg';
 import ChromePlateBar from './ImageFiles/ChromePlatedBar/Chrome-Plated-Steel-Rods-CK45.jpg';
 import SmallTubePic from './ImageFiles/SmootBore/small tube pic.jpg';
 import HydraulicLinePipe from './ImageFiles/Hydraulic-Line-Pipe/hydraulic-line-pipe-500x500.webp';
@@ -56,6 +56,24 @@ import AboutUs5 from './ImageFiles/Aboutus5.jpg';
 
 import Person1 from './ImageFiles/DemoPerson/360_F_299042079_vGBD7wIlSeNl7vOevWHiL93G4koMM967.jpg';
 import Person2 from './ImageFiles/DemoPerson/360_F_376478182_yPuPo2qi6rYcu9ilwGWR6gQ7QBBC8Isw.jpg';
+
+// PartnerLogo
+import PartnerLogo1 from './ImageFiles/PartnerLogo/Ace Hydraulics Logo.png';
+import PartnerLogo2 from './ImageFiles/PartnerLogo/Bicelli Geco Hydraulics.png';
+import PartnerLogo3 from './ImageFiles/PartnerLogo/Canara Hydraulics.jpg';
+import PartnerLogo4 from './ImageFiles/PartnerLogo/Cangold Engineers Logo.png';
+import PartnerLogo5 from './ImageFiles/PartnerLogo/Danfoss Logo.png';
+import PartnerLogo6 from './ImageFiles/PartnerLogo/Galaxy Hydraulics Logo.png';
+import PartnerLogo7 from './ImageFiles/PartnerLogo/Geco Legend Geco.png';
+import PartnerLogo8 from './ImageFiles/PartnerLogo/Genner Hydraulics Logo.png';
+import PartnerLogo9 from './ImageFiles/PartnerLogo/Hydac Logo.png';
+import PartnerLogo10 from './ImageFiles/PartnerLogo/Metexim Sourcing Pvt Ltd.png';
+import PartnerLogo11 from './ImageFiles/PartnerLogo/Pennar Industries.jpg';
+import PartnerLogo12 from './ImageFiles/PartnerLogo/PREAC Logo.png';
+import PartnerLogo13 from './ImageFiles/PartnerLogo/Suvera Fluid Power Pvt Ltd.png';
+import PartnerLogo14 from './ImageFiles/PartnerLogo/tafe-logo.png';
+import PartnerLogo15 from './ImageFiles/PartnerLogo/TIL Limited Logo.png';
+
 
 function App() {
 
@@ -869,7 +887,7 @@ function App() {
 
                     <div className="report-content">
                       <div>
-                        <h3>OD Turning</h3>
+                        <h3>Machining</h3>
                       </div>
 
                       <div>
@@ -1491,40 +1509,68 @@ function App() {
 
               {/* <!-- Card 1 --> */}
               <div class="logo-card">
-                <img src={Logo} alt="AEO" />
+                <img src={PartnerLogo1} alt="AEO" />
               </div>
 
               {/* <!-- Card 2 --> */}
               <div class="logo-card">
-                <img src={Logo} alt="FIATA" />
+                <img src={PartnerLogo2} alt="FIATA" />
               </div>
 
               {/* <!-- Card 3 --> */}
               <div class="logo-card">
-                <img src={Logo} alt="ISO" />
+                <img src={PartnerLogo3} alt="ISO" />
               </div>
 
               {/* <!-- Card 4 --> */}
               <div class="logo-card">
-                <img src={Logo} alt="India" />
+                <img src={PartnerLogo4} alt="India" />
               </div>
 
               {/* <!-- Card 5 --> */}
               <div class="logo-card">
-                <img src={Logo} alt="IATA" />
+                <img src={PartnerLogo5} alt="IATA" />
               </div>
 
               {/* <!-- Duplicate for Infinite Loop --> */}
               <div class="logo-card">
-                <img src={Logo} alt="AEO" />
+                <img src={PartnerLogo6} alt="AEO" />
               </div>
 
               <div class="logo-card">
-                <img src={Logo} alt="FIATA" />
+                <img src={PartnerLogo7} alt="FIATA" />
               </div>
 
               <div class="logo-card">
-                <img src={Logo} alt="ISO" />
+                <img src={PartnerLogo8} alt="ISO" />
+              </div>
+
+               <div class="logo-card">
+                <img src={PartnerLogo9} alt="ISO" />
+              </div>
+
+               <div class="logo-card">
+                <img src={PartnerLogo10} alt="ISO" />
+              </div>
+
+               <div class="logo-card">
+                <img src={PartnerLogo11} alt="ISO" />
+              </div>
+
+               <div class="logo-card">
+                <img src={PartnerLogo12} alt="ISO" />
+              </div>
+
+               <div class="logo-card">
+                <img src={PartnerLogo13} alt="ISO" />
+              </div>
+
+               <div class="logo-card">
+                <img src={PartnerLogo14} alt="ISO" />
+              </div>
+
+               <div class="logo-card">
+                <img src={PartnerLogo15} alt="ISO" />
               </div>
             </div>
           </div>
