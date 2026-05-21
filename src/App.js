@@ -1771,36 +1771,94 @@ function App() {
           <div className="row g-4">
 
             {/* Column 1: Logo */}
-            <div className="col-lg-3 col-md-12 footer-column text-center text-lg-start">
+            {/* <div className="col-lg-3 col-md-12 footer-column text-center text-lg-start">
               <img src={Logo} alt="Lasani Logo" className="footer-logo mb-3" />
               <p className="footer-description small">
                 Lasani Fluid Power LLP – Delivering excellence in hydraulic tubes and engineering services for over 5 decades.
               </p>
-            </div>
+            </div> */}
 
             {/* Column 2: Contact Info */}
-            <div className="col-lg-5 col-md-6 footer-column">
+            {/* Column 2: Contact Info */}
+            <div className="col-lg-6 col-md-6 footer-column">
               <h5 className="footer-header">Contact Us</h5>
-              <ul className="list-unstyled footer-list">
-                <li><span className="icon">📍</span > Plot No 1219-T, Kalamboli Steel Market, Near Khedupada Marathi School,
-                                                      Kalamboli, Panvel , Maharshtra, India – 410218</li>
 
-                <li><span className="icon">📞</span>Abdul Rehman (Director) +91 99000 19885 | (abdul.rehman@la-sani.com)</li>
-                <li><span className="icon">📞</span>Arsalan Khan (Sales) +91 89763 37049 | (arsalan.khan@la-sani.com)</li>
-                <li><span className="icon">📞</span>Gazi Khan (Sales) +91 84510 97608 | (gazi.khan@la-sani.com)</li>
-                <li><span className="icon">📞</span>Ganesh Bhandari (Account) +91 93248 61346 | (account@la-sani.com)</li>
-                <li><span className="icon">📞</span>Vishal Rathod (Operations) +91 93248 61346 | (response@la-sani.com)</li>
-                {/* <li><span className="icon">📧</span> info@la-sani.com</li> */}
+              <ul className="list-unstyled footer-list">
+
+                <li>
+                  <span className="icon">📍</span>
+                  <span>
+                    Plot No 1219-T, Kalamboli Steel Market, Near Khedupada Marathi School,
+                    Kalamboli, Panvel, Maharashtra, India – 410218
+                  </span>
+                </li>
+
+                <li>
+                  <span className="icon">📞</span>
+                  <div>
+                    Abdul Rehman <strong>(Director)</strong><br />
+                    <a href="tel:+919900019885">+91 99000 19885</a> |
+                    <a href="mailto:abdul.rehman@la-sani.com" className="mail-link">
+                      📧 abdul.rehman@la-sani.com
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="icon">📞</span>
+                  <div>
+                    Arsalan Khan <strong>(Sales)</strong><br />
+                    <a href="tel:+918976337049">+91 89763 37049</a> |
+                    <a href="mailto:arsalan.khan@la-sani.com" className="mail-link">
+                      📧 arsalan.khan@la-sani.com
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="icon">📞</span>
+                  <div>
+                    Gazi Khan <strong>(Sales)</strong><br />
+                    <a href="tel:+918451097608">+91 84510 97608</a> |
+                    <a href="mailto:gazi.khan@la-sani.com" className="mail-link">
+                      📧 gazi.khan@la-sani.com
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="icon">📞</span>
+                  <div>
+                    Ganesh Bhandari <strong>(Account)</strong><br />
+                    <a href="tel:+919324861346">+91 93248 61346</a> |
+                    <a href="mailto:account@la-sani.com" className="mail-link">
+                      📧 account@la-sani.com
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <span className="icon">📞</span>
+                  <div>
+                    Vishal Rathod <strong>(Operations)</strong>
+                    <a href="tel:+919324861346">+91 93248 61346</a> |
+                    <a href="mailto:response@la-sani.com" className="mail-link">
+                      📧 response@la-sani.com
+                    </a>
+                  </div>
+                </li>
+
               </ul>
             </div>
 
             {/* Column 3: Business Details */}
-            <div className="col-lg-4 col-md-6 footer-column">
+            <div className="col-lg-6 col-md-6 footer-column">
               <h5 className="footer-header">Business Details</h5>
               <div className="business-info small">
                 <p><strong>GST:</strong> 27AAGFL8451Q1ZJ</p>
                 <p><strong>PAN:</strong> 27AAGFL8451</p>
                 <p><strong>MSME:</strong> UDYAM-MH-27-0002276</p>
+                <p><strong>CIN:</strong> AAI-6069</p>
                 <div className="bank-card mt-3">
                   <span>
                     <strong>Axis Bank Ltd.</strong><br />
