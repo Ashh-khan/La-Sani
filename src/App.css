@@ -1808,6 +1808,7 @@ h6 {
   .nav-menu.active {
     left: 0;
     z-index: 99;
+    width: 100% !important;
   }
 
   .menu-list {
@@ -1909,8 +1910,12 @@ h6 {
 }
 
 .footer-list li div {
-  display: flex;
+  /* display: flex; */
   gap: 3px;
+}
+
+.footer-header li{
+  list-style: none;
 }
 
 .icon {
