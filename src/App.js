@@ -218,11 +218,42 @@ function App() {
     },
   ];
 
-  // COMPNAY MOVE 
+  // COMPANY MOVE 
   useEffect(() => {
     const track = document.querySelector(".logo-track");
     track.innerHTML += track.innerHTML; // duplicate automatically
   }, []);
+
+  // Form Conidition 
+  const [formData, setFormData] = useState({
+    company: "",
+    number: "",
+    email: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+
+    const { company, number, email } = formData;
+
+    // Validation
+    if (!company || !number || !email) {
+      e.preventDefault();
+
+      alert(
+        "Please write Company Name, Number and Email. These fields are mandatory."
+      );
+
+      return;
+    }
+  };
 
   return (
     <div className="App">
@@ -235,15 +266,13 @@ function App() {
             <div className="row align-items-center">
 
               <div className="col-lg-10 col-md-10 col-12 text-center Header-Details text-md-start">
-                <span>1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218.</span>
+                {/* <span>1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218.</span>
                 <span className="ms-3">📞 +91 99000 19885 | +91 89763 37049</span>
-                <span className="ms-3">✉ info@la-sani.com</span>
+                <span className="ms-3">✉ info@la-sani.com</span> */}
               </div>
 
               <div className="col-lg-2 col-md-3 col-12 text-center text-md-end Header-Time">
-                <span>Open: 9am–6pm Mon–Sat</span>
-                {/* <span className="ms-3">f</span>
-                <span className="ms-2">X</span> */}
+                {/* <span>Open: 9am–6pm Mon–Sat</span> */}
               </div>
 
             </div>
@@ -266,10 +295,10 @@ function App() {
               <ul className="menu-list">
                 <li className="nav-item"><a href="#home" className="nav-link active">HOME</a></li>
                 <li className="nav-item"><a href="#ABOUT" className="nav-link">ABOUT US</a></li>
-                <li className="nav-item"><a href="#PRODUCTSANDSERVICES" className="nav-link">PRODUCTS▾</a></li>
+                <li className="nav-item"><a href="#PRODUCTSANDSERVICES" className="nav-link">PRODUCTS</a></li>
                 <li className="nav-item"><a href="#MACHININGSERVICES" className="nav-link">SERVICE</a></li>
-                <li className="nav-item"><a href="#project" className="nav-link">PROJECT</a></li>
-                <li><a href="#contact" className="nav-link">CONTACT</a></li>
+                <li className="nav-item"><a href="#HISTORY" className="nav-link">HISTORY</a></li>
+                <li><a href="#ContactUs" className="nav-link">CONTACT</a></li>
               </ul>
             </div>
 
@@ -1104,7 +1133,7 @@ function App() {
 
 
       {/* HISTORY SECTION */}
-      <section className="history-section py-5 bg-light">
+      <section id='HISTORY' className="history-section py-5 bg-light">
         <div id="HISTORY" className="container">
           <h2 className="fw-bold">HISTORY</h2>
           <div className="underline underline-HISTORY"></div>
@@ -1770,12 +1799,96 @@ function App() {
         <div className="container">
           <div className="row g-4">
 
-            {/* Column 1: About Company */}
-            <div className="col-lg-3 col-md-6 footer-column text-center text-lg-start">
-              <h5 className="footer-header">About Company</h5>
-              <p className="footer-description small">
-                Products and Services - all product of cylinder tube and machining services
-              </p>
+            {/* Column 1: Contact Form */}
+            <div id='ContactUs' className="col-lg-3 col-md-6 footer-column text-center text-lg-start">
+
+              <h5 className="footer-header">Contact Form</h5>
+
+              <div className='child-footer'>
+
+                <form
+                  className="footer-contact-form"
+                  action="https://formsubmit.co/tyesionkhan2001@gmail.com"
+                  method="POST"
+                  onSubmit={handleSubmit}
+                >
+
+                  {/* Disable Captcha */}
+                  <input type="hidden" name="_captcha" value="false" />
+
+                  {/* Success Redirect */}
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="https://yourwebsite.com/thankyou"
+                  />
+
+                  {/* Company Name */}
+                  <div className="form-group form-Contact">
+
+                    <label>Your Company Name *</label>
+
+                    <input
+                      type="text"
+                      name="company"
+                      placeholder="Enter your Company Name"
+                      value={formData.company}
+                      onChange={handleChange}
+                    />
+
+                  </div>
+
+                  {/* Number */}
+                  <div className="form-group form-Contact">
+
+                    <label>Your Number *</label>
+
+                    <input
+                      type="tel"
+                      name="number"
+                      placeholder="Enter Your Number"
+                      value={formData.number}
+                      onChange={handleChange}
+                    />
+
+                  </div>
+
+                  {/* Email */}
+                  <div className="form-group form-Contact">
+
+                    <label>Your Email *</label>
+
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+
+                  </div>
+
+                  {/* Message */}
+                  <div className="form-group form-Contact">
+
+                    <label>Your Message</label>
+
+                    <textarea
+                      name="message"
+                      rows="4"
+                      placeholder="Write your message..."
+                      value={formData.message}
+                      onChange={handleChange}
+                    ></textarea>
+
+                  </div>
+
+                  <button type="submit" className="submit-btn">
+                    Submit Message
+                  </button>
+
+                </form>
+              </div>
             </div>
 
             {/* Column 2: Contact Info */}
@@ -1800,9 +1913,9 @@ function App() {
               </ul>
             </div>
 
-            {/* Column 3: Business Hours */}
+            {/* Column 3:  Address */}
             <div className="col-lg-3 col-md-6 footer-column">
-              <h5 className="footer-header">Bussines Hours</h5>
+              <h5 className="footer-header"> Address</h5>
 
               <li>
                 <span>📍 Plot No 1219-T, Kalamboli Steel Market, Near Khedupada Marathi School,
