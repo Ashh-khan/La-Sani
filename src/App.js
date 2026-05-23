@@ -74,6 +74,8 @@ import PartnerLogo13 from './ImageFiles/PartnerLogo/Suvera Fluid Power Pvt Ltd.p
 import PartnerLogo14 from './ImageFiles/PartnerLogo/tafe-logo.png';
 import PartnerLogo15 from './ImageFiles/PartnerLogo/TIL Limited Logo.jpg';
 
+import WhatAppQR from './ImageFiles/whatappQR.png';
+
 
 function App() {
 
@@ -226,6 +228,7 @@ function App() {
 
   // Form Conidition 
   const [formData, setFormData] = useState({
+    name: "",
     company: "",
     number: "",
     email: "",
@@ -241,10 +244,10 @@ function App() {
 
   const handleSubmit = (e) => {
 
-    const { company, number, email } = formData;
+    const { name, company, number, email } = formData;
 
     // Validation
-    if (!company || !number || !email) {
+    if (!name || !company || !number || !email) {
       e.preventDefault();
 
       alert(
@@ -339,7 +342,7 @@ function App() {
                 <img src={img1} alt="" className="img-fluid" />
               </div>
 
-              <div className="Banner-carousel-item">
+              {/* <div className="Banner-carousel-item">
                 <img src={Banner1} alt="" className="img-fluid" />
               </div>
 
@@ -353,7 +356,7 @@ function App() {
 
               <div className="Banner-carousel-item">
                 <img src={Banner4} alt="" className="img-fluid" />
-              </div>
+              </div> */}
 
             </div>
 
@@ -361,6 +364,7 @@ function App() {
 
         </div>
       </div>
+
 
       {/* ABOUT US  */}
       <div>
@@ -1823,8 +1827,31 @@ function App() {
                     value="https://yourwebsite.com/thankyou"
                   />
 
+                  <div className="form-group form-Contact form-name-number">
+
+                    {/* <label>Your Name *</label> */}
+
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Enter Name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+
+                    <input
+                      type="tel"
+                      name="number"
+                      placeholder="Enter Number"
+                      value={formData.number}
+                      onChange={handleChange}
+                    />
+
+
+                  </div>
+
                   {/* Company Name */}
-                  <div className="form-group form-Contact">
+                  {/* <div className="form-group form-Contact">
 
                     <label>Your Company Name *</label>
 
@@ -1836,32 +1863,24 @@ function App() {
                       onChange={handleChange}
                     />
 
-                  </div>
+                  </div> */}
 
                   {/* Number */}
                   <div className="form-group form-Contact">
 
-                    <label>Your Number *</label>
-
-                    <input
-                      type="tel"
-                      name="number"
-                      placeholder="Enter Your Number"
-                      value={formData.number}
-                      onChange={handleChange}
-                    />
+                    {/* <label>Your Number *</label> */}
 
                   </div>
 
                   {/* Email */}
                   <div className="form-group form-Contact">
 
-                    <label>Your Email *</label>
+                    {/* <label>Your Email *</label> */}
 
                     <input
                       type="email"
                       name="email"
-                      placeholder="Enter your email"
+                      placeholder="Enter email"
                       value={formData.email}
                       onChange={handleChange}
                     />
@@ -1871,19 +1890,20 @@ function App() {
                   {/* Message */}
                   <div className="form-group form-Contact">
 
-                    <label>Your Message</label>
+                    {/* <label>Your Message</label> */}
 
                     <textarea
                       name="message"
+                      className='message-box'
                       rows="4"
                       placeholder="Write your message..."
                       value={formData.message}
                       onChange={handleChange}
-                    ></textarea>
+                    />
 
                   </div>
 
-                  <button type="submit" className="submit-btn">
+                  <button type="submit" className="submit-btn contact-formbtn">
                     Submit Message
                   </button>
 
@@ -1900,14 +1920,18 @@ function App() {
                 <li>
                   <div>
                     {/* Abdul Rehman <strong>(Director) :</strong> <br /> */}
-                    <a href="tel:+919900019885">📞 +91 99000 19885</a> |
-                    <a href="tel:+919324861346"> +91 93248 61346</a> <br />
+                    <a href="tel:+919900019885">📞 +91 99000 19885</a> <br />
+                    <a href="tel:+919324861346">📞 +91 93248 61346</a> <br />
                     <a href="mailto:info@la-sani.com " className="mail-link">
                       📧 info@la-sani.com
                     </a> <br />
                     <a href="mailto: account@la-sani.com" className="mail-link">
                       📧 account@la-sani.com
                     </a>
+
+                    <div class="right-sticky-brand">
+                      <span class="brand-orange"><img src={WhatAppQR} alt="" /></span>
+                    </div>
                   </div>
                 </li>
               </ul>

@@ -11,6 +11,25 @@ h6 {
   color: #1D3B64 !important;
 }
 
+/* ========================================================= */
+/* STICKY LEFT SIDE BRAND */
+/* ========================================================= */
+
+.right-sticky-brand {
+ display: flex;
+ margin-top: 20px;
+}
+
+.brand-orange {
+  padding: 4px 4px;
+}
+
+.brand-orange img{
+    height: 97px;
+    width: 97px;
+}
+
+
 .para-content {
   color: rgb(101, 101, 101);
   font-size: 15px;
@@ -1187,7 +1206,7 @@ h6 {
   width: 90%;
 }
 
-.form-Contact label{
+.form-Contact label {
   color: #ffffff !important;
 }
 
@@ -1210,16 +1229,33 @@ h6 {
   color: #555;
 }
 
+.form-name-number {
+  display: flex;
+  gap: 5px;
+}
+
 .form-group input,
 .form-group textarea {
   width: 100%;
   border: 2px solid #e5e5e5;
   background-color: #f3f3f3;
-  padding: 5px 7px;
+  padding: 2px 4px;
   border-radius: 12px;
   outline: none;
   transition: 0.3s ease;
   font-size: 14px;
+}
+
+.message-box {
+  padding: 5px 8px !important;
+  max-height: 70px;
+  overflow-y: auto;
+  resize: none;
+}
+
+.contact-formbtn {
+  padding: 7px 10px !important;
+
 }
 
 .form-group input:focus,
@@ -1595,6 +1631,7 @@ h6 {
 
 /* 768px All CSS */
 @media screen and (max-width: 768px) {
+
   .custom-navbar .navbar-row-main {
     display: flex;
     flex-direction: row;
