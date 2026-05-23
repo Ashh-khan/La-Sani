@@ -15,6 +15,11 @@ h6 {
 /* STICKY LEFT SIDE BRAND */
 /* ========================================================= */
 
+.nav-menu{
+  display: flex;
+  justify-content: end;
+}
+
 .right-sticky-brand {
  display: flex;
  margin-top: 20px;
@@ -376,6 +381,10 @@ h6 {
   height: 400px;
 }
 
+.report-Machining{
+  height: 365px;
+}
+
 .report-content h3 {
   font-size: 22px;
   font-weight: 700;
@@ -578,7 +587,7 @@ h6 {
 .certification-section,
 .achievement-section,
 .map-section {
-  background: #44596b;
+  background: #1D3B64;
   position: relative;
   overflow: hidden;
   padding: 50px 200px;
@@ -1188,6 +1197,14 @@ h6 {
   font-size: 14px;
   font-weight: bold;
   color: #1D3B64;
+}
+
+.business-info{
+  margin-top: 7px;
+}
+
+.business-info p{
+  margin-bottom: 0px;
 }
 
 

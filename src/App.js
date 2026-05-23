@@ -291,7 +291,7 @@ function App() {
             </div>
 
             {/* MENU */}
-            <div className={`col-md-6 nav-menu ${open ? "active" : ""}`}>
+            <div className={`col-md-7 nav-menu ${open ? "active" : ""}`}>
               <div className="close-btn close-navbar-btn" onClick={() => setOpen(false)}>
                 ✖
               </div>
@@ -300,16 +300,17 @@ function App() {
                 <li className="nav-item"><a href="#ABOUT" className="nav-link">ABOUT US</a></li>
                 <li className="nav-item"><a href="#PRODUCTSANDSERVICES" className="nav-link">PRODUCTS</a></li>
                 <li className="nav-item"><a href="#MACHININGSERVICES" className="nav-link">SERVICE</a></li>
-                <li className="nav-item"><a href="#HISTORY" className="nav-link">HISTORY</a></li>
+                {/* <li className="nav-item"><a href="#HISTORY" className="nav-link">HISTORY</a></li> */}
                 <li><a href="#ContactUs" className="nav-link">CONTACT</a></li>
               </ul>
             </div>
 
             {/* RIGHT SIDE */}
-            <div className=" col-md-3 col-sm-6 text-end">
+            <div className=" col-md-2 col-sm-6 text-end">
               <button className="search-btn">🔍</button>
+
               <button className="support-btn ms-2"><a
-                href="https://wa.me/918976337049?text=Hello%20I%20am%20interested"
+                href="https://wa.me/918976337049?text=Hello"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="support-btn"
@@ -575,7 +576,7 @@ function App() {
 
                   </div>
 
-                  <div className="report-content">
+                  <div className="report-content report-Machining">
                     <div>
                       <h3>Smooth Bore</h3>
                     </div>
@@ -605,7 +606,7 @@ function App() {
                     />
                   </div>
 
-                  <div className="report-content">
+                  <div className="report-content report-Machining">
                     <div>
                       <h3>Hydraulic Line Pipe</h3>
                     </div>
@@ -800,7 +801,7 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Deep Hole Drilling</h3>
                       </div>
@@ -830,7 +831,7 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Deep Hole Boring</h3>
                       </div>
@@ -860,7 +861,7 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Deep Hole Honing</h3>
                       </div>
@@ -888,7 +889,7 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Trepanning</h3>
                       </div>
@@ -921,15 +922,15 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Machining</h3>
                       </div>
 
                       <div>
                         <p>
-                          OD turning services provide precision shaping and finishing of cylindrical parts,
-                          ensuring tight concentricity and roundness tolerances...
+                          We provide precision OD and ID Turning Machining Services for a wide range
+                           of industrial components and engineering applications....
                         </p>
 
                         <a href="#" className="read-btn">
@@ -951,15 +952,15 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Cutting Machine</h3>
                       </div>
 
                       <div>
                         <p>
-                          OD turning services provide precision shaping and finishing of cylindrical parts,
-                          ensuring tight concentricity and roundness tolerances...
+                          We provide high-precision Bandsaw Cutting Machine Services for all types of industrial
+                          raw materials and components...
                         </p>
                         <a href="#" className="read-btn">
                           Read more →
@@ -980,15 +981,15 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Hard Chrome Plating</h3>
                       </div>
 
                       <div>
                         <p>
-                          OD turning services provide precision shaping and finishing of cylindrical parts,
-                          ensuring tight concentricity and roundness tolerances...
+                          We provide high-quality Hard Chrome Plating Services for hydraulic rods, shafts,
+                          rollers, and industrial components. Our plating process...
                         </p>
                         <a href="#" className="read-btn">
                           Read more →
@@ -1009,15 +1010,15 @@ function App() {
                       />
                     </div>
 
-                    <div className="report-content">
+                    <div className="report-content report-Machining">
                       <div>
                         <h3>Welding and Cladding</h3>
                       </div>
 
                       <div>
                         <p>
-                          OD turning services provide precision shaping and finishing of cylindrical parts,
-                          ensuring tight concentricity and roundness tolerances...
+                          Welding and Cladding Machining Services for hydraulic cylinders, including repair and
+                          restoration of barrels, rods, glands, and other components....
                         </p>
                         <a href="#" className="read-btn">
                           Read more →
@@ -1160,7 +1161,7 @@ function App() {
                     <div className="history-dot"></div>
                     <div className='history-sub-item'>
                       <h6 className="fw-bold">1970</h6>
-                      <p className="small">Aman Tube Company incorporated</p>
+                      <p className="small">Aman Tube Company</p>
                     </div>
                   </div>
 
@@ -1169,7 +1170,7 @@ function App() {
                     <div className="history-dot"></div>
                     <div className='history-sub-item'>
                       <h6 className="fw-bold">1984</h6>
-                      <p className="small">Associated Tube Company incorporated</p>
+                      <p className="small">Associated Tube Company</p>
                     </div>
                   </div>
 
@@ -1178,7 +1179,7 @@ function App() {
                     <div className="history-dot"></div>
                     <div className='history-sub-item'>
                       <h6 className="fw-bold">1996</h6>
-                      <p className="small">GK Fluid Power Corporation incorporated</p>
+                      <p className="small">GK Fluid Corporation</p>
                     </div>
                   </div>
 
@@ -1187,7 +1188,7 @@ function App() {
                     <div className="history-dot"></div>
                     <div className='history-sub-item'>
                       <h6 className="fw-bold">2009</h6>
-                      <p className="small">Lasani Enterprises incorporated</p>
+                      <p className="small">Lasani Enterprises</p>
                     </div>
                   </div>
 
@@ -1196,7 +1197,7 @@ function App() {
                     <div className="history-dot"></div>
                     <div className='history-sub-item'>
                       <h6 className="fw-bold">2017</h6>
-                      <p className="small">Lasani Fluid Power LLP incorporated</p>
+                      <p className="small">Lasani Fluid Power LLP</p>
                     </div>
                   </div>
 
@@ -1205,7 +1206,7 @@ function App() {
                     <div className="history-dot"></div>
                     <div className='history-sub-item'>
                       <h6 className="fw-bold">2019</h6>
-                      <p className="small">Lasani Engineering Works incorporated</p>
+                      <p className="small">Lasani Engineering Works</p>
                     </div>
                   </div>
                 </div>
@@ -1947,8 +1948,8 @@ function App() {
                 </span>
               </li>
               <div className="business-info small">
-                <p><strong>Business Hours -</strong> Monday to Saturday</p>
-                <p><strong>Time:</strong> 9:30am  to 7 pm</p>
+                <p><strong>Business Hours:- </strong></p>
+                <p><strong> Monday to Saturday</strong> 9:30am  to 7 pm</p>
                 <p><strong>Sunday :</strong> Closed</p>
               </div>
             </div>
