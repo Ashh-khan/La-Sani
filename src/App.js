@@ -6,7 +6,7 @@ import { faHandshake, faEyeSlash, faThumbsUp } from "@fortawesome/free-solid-svg
 import { faLocationDot, faUsers, faLaptopCode, faCogs, faBriefcase, faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from 'bootstrap';
 
-import img1 from './ImageFiles/BannerImg/115.1.jpg';
+import img1 from './ImageFiles/BannerImg/LandingPage.png';
 import Banner1 from './ImageFiles/BannerImg/Banner1.jpeg';
 import Banner2 from './ImageFiles/BannerImg/Banner2.jpeg';
 import Banner3 from './ImageFiles/BannerImg/Banner3.jpeg';
@@ -1117,7 +1117,7 @@ function App() {
 
                     {/* HOVER OVERLAY */}
                     <div className="team-overlay">
-                      <h5>{member.name}</h5>
+                      <h5></h5>
                       <p>{member.role}</p>
 
                       <div className='Partners-details'>

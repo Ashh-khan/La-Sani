@@ -8,7 +8,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1D3B64 !important;
+  color: #145491 !important;
 }
 
 /* ========================================================= */
@@ -55,14 +55,14 @@ h6 {
 }
 
 .Product-Para H6 {
-  color: #1D3B64;
+  color: #145491;
   font-weight: bold;
   padding-right: 3px;
 }
 
 /* TOP HEADER */
 .top-header {
-  background-color: #1D3B64;
+  background-color: #145491;
   color: white;
   font-size: 14px;
 }
@@ -115,7 +115,7 @@ h6 {
 /* ACTIVE + HOVER ORANGE */
 .nav-link:hover,
 .nav-link.active {
-  color: #1D3B64;
+  color: #145491;
 }
 
 /* UNDERLINE EFFECT */
@@ -123,7 +123,7 @@ h6 {
   content: "";
   width: 0;
   height: 2px;
-  background: #1D3B64;
+  background: #145491;
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -492,7 +492,7 @@ h6 {
   justify-content: flex-start;
   width: 280px;
   height: 2px;
-  background: #1D3B64;
+  background: #145491;
   margin-top: 2px;
 }
 
@@ -508,7 +508,7 @@ h6 {
 .underline {
   width: 160px;
   height: 3px;
-  background: #1D3B64;
+  background: #145491;
   margin-top: 2px;
 }
 
@@ -587,7 +587,7 @@ h6 {
 .certification-section,
 .achievement-section,
 .map-section {
-  background: #1D3B64;
+  background: #145491;
   position: relative;
   overflow: hidden;
   padding: 50px 200px;
@@ -708,7 +708,7 @@ h6 {
 
 /* BUTTON */
 .read-btn {
-  background: #1D3B64;
+  background: #145491;
   color: white;
   border: none;
   padding: 8px 18px;
@@ -718,14 +718,14 @@ h6 {
 
 .read-btn:hover {
   background: white;
-  color: #1D3B64;
+  color: #145491;
 }
 
 .service-card {
   background-color: #f8f3f3;
   padding: 20px;
-  border-top: 3px solid #1D3B64;
-  border-left: 3px solid #1D3B64;
+  border-top: 3px solid #145491;
+  border-left: 3px solid #145491;
   border-radius: 0px 20px;
   height: 260px;
 }
@@ -735,8 +735,8 @@ h6 {
 }
 
 .service-card:hover {
-  border-bottom: 3px solid #1D3B64;
-  border-right: 3px solid #1D3B64;
+  border-bottom: 3px solid #145491;
+  border-right: 3px solid #145491;
   border-top: none;
   border-left: none;
   margin-top: -10px;
@@ -761,7 +761,7 @@ h6 {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #1D3B64;
+  background: #145491;
   color: white;
   padding: 30px 20px;
 
@@ -783,7 +783,7 @@ h6 {
 .feature-overlay button {
   margin-top: 10px;
   background: white;
-  color: #1D3B64;
+  color: #145491;
   border: none;
   padding: 8px 18px;
   border-radius: 20px;
@@ -808,7 +808,7 @@ h6 {
 }
 
 .para-about-highlight {
-  color: #1D3B64;
+  color: #145491;
   font-weight: bold;
 }
 
@@ -925,7 +925,7 @@ h6 {
 }
 
 .socials .soical-icons {
-  color: white;
+  color: #8dd4ff;
 }
 
 /* SHOW ON HOVER */
@@ -958,7 +958,7 @@ h6 {
   width: 45px;
   height: 45px;
   border: none;
-  background: #1D3B64;
+  background: #145491;
   color: #fff;
   margin-right: 5px;
 }
@@ -977,7 +977,7 @@ h6 {
 
 .mission-main-icon {
   font-size: 44px;
-  color: #1D3B64;
+  color: #145491;
 }
 
 .mission-vision-section {
@@ -997,7 +997,7 @@ h6 {
 
 .mission-card:hover {
   transform: translateY(-8px);
-  box-shadow: 1px 2px 2px 1px #1D3B64;
+  box-shadow: 1px 2px 2px 1px #145491;
 }
 
 .mission-icon {
@@ -1041,7 +1041,7 @@ h6 {
 
 .techinical-main-icon {
   font-size: 32px;
-  color: #1D3B64;
+  color: #145491;
 }
 
 .techinical-card h3 {
@@ -1133,7 +1133,7 @@ h6 {
 .underline-HISTORY {
   width: 170px;
   height: 4px;
-  background-color: #1D3B64;
+  background-color: #145491;
   /* Adjust to your brand color */
   margin-top: 2px;
 }
@@ -1168,7 +1168,7 @@ h6 {
   border-radius: 50%;
   margin: 0 auto 15px auto;
   border: 3px solid #fff;
-  box-shadow: 0 0 0 2px #1D3B64;
+  box-shadow: 0 0 0 2px #145491;
 }
 
 .history-sub-item {
@@ -1179,7 +1179,7 @@ h6 {
 
 .history-sub-item:hover {
   border-radius: 10px;
-  box-shadow: 1px 1px 2px 1px #1D3B64;
+  box-shadow: 1px 1px 2px 1px #145491;
   transform: translateY(-10px);
 }
 
@@ -1196,7 +1196,7 @@ h6 {
 .GeogList-Class {
   font-size: 14px;
   font-weight: bold;
-  color: #1D3B64;
+  color: #145491;
 }
 
 .business-info{
@@ -1277,7 +1277,7 @@ h6 {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #1D3B64;
+  border-color: #145491;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(255, 255, 254, 0.2);
 }
@@ -1285,7 +1285,7 @@ h6 {
 .submit-btn {
   width: 100%;
   border: none;
-  background: linear-gradient(135deg, #1D3B64, #1D3B64);
+  background: linear-gradient(135deg, #145491, #145491);
   color: white;
   padding: 13px;
   border-radius: 12px;
@@ -1925,7 +1925,7 @@ h6 {
     right: 15px;
     width: 30px;
     height: 30px;
-    background: #1D3B64;
+    background: #145491;
     color: white;
     justify-content: center;
     align-items: center;
@@ -1940,7 +1940,7 @@ h6 {
 
   .nav-menu {
     position: absolute;
-    top: 70px;
+    top: 27px;
     left: -100%;
     width: 100%;
     background: white;
@@ -2006,7 +2006,7 @@ h6 {
 
 /* ---  FOOTER CSS --- */
 .lasani-footer {
-  background-color: #1D3B64;
+  background-color: #145491;
   font-family: 'Arial', sans-serif;
 }
 
@@ -2155,7 +2155,7 @@ h6 {
 
   .nav-menu.active {
     width: 100% !important;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .custom-carousel-wrapper {
