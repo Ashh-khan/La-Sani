@@ -229,12 +229,14 @@ function App() {
   // Form Conidition 
   const [formData, setFormData] = useState({
     name: "",
-    company: "",
     number: "",
     email: "",
     message: ""
   });
 
+  const [error, setError] = useState("");
+
+  // Handle Input Change
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -242,21 +244,28 @@ function App() {
     });
   };
 
+  // Handle Submit
   const handleSubmit = (e) => {
-
-    const { name, company, number, email } = formData;
+    const { name, number, email } = formData;
 
     // Validation
-    if (!name || !company || !number || !email) {
+    if (!name || !number || !email) {
       e.preventDefault();
 
-      alert(
-        "Please write Company Name, Number and Email. These fields are mandatory."
-      );
-
+      setError("Please fill all the fields are required.");
       return;
     }
+
+    setError(""); // clear error if all good
   };
+
+  // Auto hide error after 3 sec
+  useEffect(() => {
+    if (error) {
+      const timer = setTimeout(() => setError(""), 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [error]);
 
   return (
     <div className="App">
@@ -930,7 +939,7 @@ function App() {
                       <div>
                         <p>
                           We provide precision OD and ID Turning Machining Services for a wide range
-                           of industrial components and engineering applications....
+                          of industrial components and engineering applications....
                         </p>
 
                         <a href="#" className="read-btn">
@@ -1806,10 +1815,15 @@ function App() {
 
             {/* Column 1: Contact Form */}
             <div id='ContactUs' className="col-lg-3 col-md-6 footer-column text-center text-lg-start">
-
               <h5 className="footer-header">Contact Form</h5>
 
-              <div className='child-footer'>
+              <div className="child-footer">
+                {/* ✅ Error Message */}
+                {error && (
+                  <p style={{ color: "red", marginBottom: "10px" }}>
+                    {error}
+                  </p>
+                )}
 
                 <form
                   className="footer-contact-form"
@@ -1817,7 +1831,6 @@ function App() {
                   method="POST"
                   onSubmit={handleSubmit}
                 >
-
                   {/* Disable Captcha */}
                   <input type="hidden" name="_captcha" value="false" />
 
@@ -1828,10 +1841,8 @@ function App() {
                     value="https://yourwebsite.com/thankyou"
                   />
 
+                  {/* Name + Number */}
                   <div className="form-group form-Contact form-name-number">
-
-                    {/* <label>Your Name *</label> */}
-
                     <input
                       type="text"
                       name="name"
@@ -1847,37 +1858,10 @@ function App() {
                       value={formData.number}
                       onChange={handleChange}
                     />
-
-
-                  </div>
-
-                  {/* Company Name */}
-                  {/* <div className="form-group form-Contact">
-
-                    <label>Your Company Name *</label>
-
-                    <input
-                      type="text"
-                      name="company"
-                      placeholder="Enter your Company Name"
-                      value={formData.company}
-                      onChange={handleChange}
-                    />
-
-                  </div> */}
-
-                  {/* Number */}
-                  <div className="form-group form-Contact">
-
-                    {/* <label>Your Number *</label> */}
-
                   </div>
 
                   {/* Email */}
                   <div className="form-group form-Contact">
-
-                    {/* <label>Your Email *</label> */}
-
                     <input
                       type="email"
                       name="email"
@@ -1885,29 +1869,23 @@ function App() {
                       value={formData.email}
                       onChange={handleChange}
                     />
-
                   </div>
 
                   {/* Message */}
                   <div className="form-group form-Contact">
-
-                    {/* <label>Your Message</label> */}
-
                     <textarea
                       name="message"
-                      className='message-box'
+                      className="message-box"
                       rows="4"
                       placeholder="Write your message..."
                       value={formData.message}
                       onChange={handleChange}
                     />
-
                   </div>
 
                   <button type="submit" className="submit-btn contact-formbtn">
                     Submit Message
                   </button>
-
                 </form>
               </div>
             </div>
