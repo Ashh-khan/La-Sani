@@ -121,7 +121,7 @@ function App() {
 
       carousel.style.transform = `translateX(-${index * 100}%)`;
 
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(interval);
 
