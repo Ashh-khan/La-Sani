@@ -6,10 +6,10 @@ import { faHandshake, faEyeSlash, faThumbsUp } from "@fortawesome/free-solid-svg
 import { faLocationDot, faUsers, faLaptopCode, faCogs, faBriefcase, faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from 'bootstrap';
 
-import img1 from './ImageFiles/BannerImg/LandingPage.png';
-import Banner1 from './ImageFiles/BannerImg/Banner1.jpeg';
-import Banner2 from './ImageFiles/BannerImg/Banner2.jpeg';
-import Banner3 from './ImageFiles/BannerImg/Banner3.jpeg';
+import img1 from './ImageFiles/BannerImg/BannerMain 1.jpeg';
+import Banner1 from './ImageFiles/BannerImg/BannerMain 2.jpeg';
+import Banner2 from './ImageFiles/BannerImg/BannerMain 3.jpeg';
+import Banner3 from './ImageFiles/BannerImg/BannerMain 4.jpeg';
 import Banner4 from './ImageFiles/BannerImg/Banner4.jpeg';
 
 import Logo from './ImageFiles/Lasani logo White PNG.png';
@@ -226,7 +226,8 @@ function App() {
     track.innerHTML += track.innerHTML; // duplicate automatically
   }, []);
 
-  // Form Conidition 
+
+  // Form Conidition Contact-Us
   const [formData, setFormData] = useState({
     name: "",
     number: "",
@@ -352,7 +353,7 @@ function App() {
                 <img src={img1} alt="" className="img-fluid" />
               </div>
 
-              {/* <div className="Banner-carousel-item">
+              <div className="Banner-carousel-item">
                 <img src={Banner1} alt="" className="img-fluid" />
               </div>
 
@@ -363,11 +364,6 @@ function App() {
               <div className="Banner-carousel-item">
                 <img src={Banner3} alt="" className="img-fluid" />
               </div>
-
-              <div className="Banner-carousel-item">
-                <img src={Banner4} alt="" className="img-fluid" />
-              </div> */}
-
             </div>
 
           </div>
@@ -1454,11 +1450,9 @@ function App() {
 
 
       {/* Case Studies Section  */}
-      <section className="mission-vision-section py-5">
-
+      {/* <section className="mission-vision-section py-5">
         <div className="container">
 
-          {/* HEADING */}
           <div className=" mb-5">
             <h2 className="fw-bold">Case Studies</h2>
             <div className="underline underline-CaseStudies"></div>
@@ -1467,7 +1461,6 @@ function App() {
           <div className="row g-4 text-center">
 
             <div className='CaseStudies-Main-Section'>
-              {/* CaseStudies P1 */}
               <div className='CaseStudies-frist-part'>
                 <div className='col-lg-5'>
                   <h2>Precision Systems Enhancing La-Sani Performance Standards</h2>
@@ -1483,7 +1476,6 @@ function App() {
                 </div>
               </div>
 
-              {/* CaseStudies P2 */}
               <div className='CaseStudies-second-part'>
                 <div className='CS-Sec-POne col-lg-5 col-md-12 col-12'>
                   <p>
@@ -1505,7 +1497,6 @@ function App() {
                 </div>
 
                 <div className='CS-Sec-PTwo col-lg-6 col-md-12 col-12'>
-                  {/* Carousel Wrapper */}
                   <div className='ABOUT-Img-Section CaseStudies-Img-Section'>
                     <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex' }} >
 
@@ -1530,8 +1521,7 @@ function App() {
           </div>
 
         </div>
-
-      </section>
+      </section> */}
 
       {/* <!-- ===================================================== --> */}
       {/* <!-- Compnay LOGO --> */}
@@ -1624,18 +1614,16 @@ function App() {
       </section>
 
       {/* TESTIMONIALS CARDS */}
-      <section className="testimonials-section py-5">
+      {/* <section className="testimonials-section py-5">
         <div className="container">
           <h2 className="fw-bold">Testimonials</h2>
           <div className="underline underline-testimonials"></div>
 
           <div className="row mt-4">
 
-            {/* Card 1 */}
             <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
 
-                {/* LEFT */}
                 <div className="testimonial-left">
                   <p className="testimonial-text">
                     "Lasani delivers exceptional engineering precision and reliability in every project."
@@ -1648,7 +1636,6 @@ function App() {
                   </div>
                 </div>
 
-                {/* RIGHT */}
                 <div className="testimonial-right">
                   <img src={Person1} alt="user" />
                 </div>
@@ -1656,7 +1643,6 @@ function App() {
               </div>
             </div>
 
-            {/* Card 2 */}
             <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
                 <div className="testimonial-left">
@@ -1670,7 +1656,6 @@ function App() {
               </div>
             </div>
 
-            {/* Card 3 */}
             <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
                 <div className="testimonial-left">
@@ -1684,7 +1669,6 @@ function App() {
               </div>
             </div>
 
-            {/* Card 4 */}
             <div className="col-lg-3 col-md-6">
               <div className="testimonial-card d-flex">
                 <div className="testimonial-left">
@@ -1700,7 +1684,7 @@ function App() {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* ========================================================= */}
