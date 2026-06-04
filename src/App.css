@@ -218,7 +218,7 @@ h6 {
 @media (max-width: 1200px) {
 
   .Banner-carousel-item img {
-    height: 600px;
+    height: auto;
   }
 
 }
@@ -229,7 +229,7 @@ h6 {
 @media (max-width: 992px) {
 
   .Banner-carousel-item img {
-    height: 500px;
+    height: auto;
   }
 
 }
@@ -240,7 +240,7 @@ h6 {
 @media (max-width: 768px) {
 
   .Banner-carousel-item img {
-    height: 400px;
+    height: auto;
     object-position: center;
   }
 
@@ -252,7 +252,7 @@ h6 {
 @media (max-width: 576px) {
 
   .Banner-carousel-item img {
-    height: 260px;
+    height: auto;
     object-position: center;
   }
 
@@ -1984,6 +1984,7 @@ h6 {
 
   .nav-menu.active {
     left: 0;
+    top: 38px;
   }
 
   .team-overlay p {
@@ -2154,7 +2155,8 @@ h6 {
 
   .nav-menu.active {
     width: 100% !important;
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    top: 38px;
   }
 
   .custom-carousel-wrapper {
