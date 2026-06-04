@@ -6,10 +6,10 @@ import { faHandshake, faEyeSlash, faThumbsUp } from "@fortawesome/free-solid-svg
 import { faLocationDot, faUsers, faLaptopCode, faCogs, faBriefcase, faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from 'bootstrap';
 
-import img1 from './ImageFiles/BannerImg/BannerMain 1.jpeg';
-import Banner1 from './ImageFiles/BannerImg/BannerMain 2.jpeg';
-import Banner2 from './ImageFiles/BannerImg/BannerMain 3.jpeg';
-import Banner3 from './ImageFiles/BannerImg/BannerMain 4.jpeg';
+import img1 from './ImageFiles/BannerImg/imresizer-BannerMain 1.jpg';
+import Banner1 from './ImageFiles/BannerImg/imresizer-BannerMain 2.jpg';
+import Banner2 from './ImageFiles/BannerImg/imresizer-BannerMain 3.jpg';
+import Banner3 from './ImageFiles/BannerImg/imresizer-BannerMain 4.jpg';
 import Banner4 from './ImageFiles/BannerImg/Banner4.jpeg';
 
 import Logo from './ImageFiles/Lasani logo White PNG.png';
