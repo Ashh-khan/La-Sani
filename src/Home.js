@@ -1812,7 +1812,8 @@ function Home() {
 
                                 <form
                                     className="footer-contact-form"
-                                    action="https://formsubmit.co/info@la-sani.com"
+                                    // action="https://formsubmit.co/info@la-sani.com"
+                                    action="https://formsubmit.co/tyesionkhan2001@gmail.com"  
                                     method="POST"
                                     onSubmit={handleSubmit}
                                 >
