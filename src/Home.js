@@ -248,17 +248,24 @@ function Home() {
 
     // Handle Submit
     const handleSubmit = (e) => {
-        const { name, number, email } = formData;
+        e.preventDefault();
 
-        // Validation
+        const { name, number, email, message } = formData;
+
         if (!name || !number || !email) {
-            e.preventDefault();
-
-            setError("Please fill all the fields are required.");
+            setError("Please fill all required fields");
             return;
         }
 
-        setError(""); // clear error if all good
+        const subject = `New Contact from ${name}`;
+        const body = `
+        Name: ${name}
+        Phone: ${number}
+        Email: ${email}
+        Message: ${message}
+                            `;
+
+        window.location.href = `mailto:tyesionkhan2001@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
     // Auto hide error after 3 sec
@@ -1810,22 +1817,7 @@ function Home() {
                                     </p>
                                 )}
 
-                                <form
-                                    className="footer-contact-form"
-                                    // action="https://formsubmit.co/info@la-sani.com"
-                                    action="https://formsubmit.co/tyesionkhan2001@gmail.com"  
-                                    method="POST"
-                                    onSubmit={handleSubmit}
-                                >
-                                    {/* Disable Captcha */}
-                                    <input type="hidden" name="_captcha" value="false" />
-
-                                    {/* Success Redirect */}
-                                    <input
-                                        type="hidden"
-                                        name="_next"
-                                        value="https://yourwebsite.com/thankyou"
-                                    />
+                                <form className="footer-contact-form" onSubmit={handleSubmit}>
 
                                     {/* Name + Number */}
                                     <div className="form-group form-Contact form-name-number">
