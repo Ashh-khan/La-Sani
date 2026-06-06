@@ -5,6 +5,7 @@ import { faFacebook, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg
 import { faHandshake, faEyeSlash, faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot, faUsers, faLaptopCode, faCogs, faBriefcase, faBuilding } from "@fortawesome/free-solid-svg-icons";
 import { Carousel } from 'bootstrap';
+import emailjs from "emailjs-com";
 
 import img1 from './ImageFiles/BannerImg/imresizer-BannerMain 1.jpg';
 import Banner1 from './ImageFiles/BannerImg/imresizer-BannerMain 2.jpg';
@@ -228,7 +229,7 @@ function Home() {
     }, []);
 
 
-    // Form Conidition Contact-Us
+    // Form Conidition Contact-Us----------------
     const [formData, setFormData] = useState({
         name: "",
         number: "",
@@ -257,15 +258,31 @@ function Home() {
             return;
         }
 
-        const subject = `New Contact from ${name}`;
-        const body = `
-        Name: ${name}
-        Phone: ${number}
-        Email: ${email}
-        Message: ${message}
-                            `;
+        emailjs.send(
+            "service_vjp8lwu",   
+            "template_hzsx20c",  
+            {
+                name: name,
+                number: number,
+                email: email,
+                message: message
+            },
+            "XhXCOmkuMWZPxIRfu"    
+        )
+            .then(() => {
+                alert("Message sent successfully ✅");
 
-        window.location.href = `mailto:tyesionkhan2001@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                setFormData({
+                    name: "",
+                    number: "",
+                    email: "",
+                    message: ""
+                });
+            })
+            .catch((error) => {
+                console.log(error);
+                setError("Failed to send message ❌");
+            });
     };
 
     // Auto hide error after 3 sec
