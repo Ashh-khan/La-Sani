@@ -40,11 +40,23 @@ import AbdulMannan from './ImageFiles/Partner/Abdul Mannan_Director.jpeg';
 import AbdulRehman from './ImageFiles/Partner/Abdul Rehman_Managing Director.jpeg';
 import EhsanKhan from './ImageFiles/Partner/Ehsan Khan_Director.jpeg';
 
-import whyus1 from './ImageFiles/WHYUS/IMG-20221217-WA0007.jpg';
-import whyus2 from './ImageFiles/WHYUS/asa.jpg';
-import whyus3 from './ImageFiles/WHYUS/1.jpg';
-import whyus4 from './ImageFiles/WHYUS/why4.jpg';
-import whyus5 from './ImageFiles/WHYUS/why5.jpg';
+import Aboutus1 from './ImageFiles/WHYUS/Aboutus ClientMeet.png';
+import Aboutus2 from './ImageFiles/WHYUS/asa.jpg';
+import Aboutus3 from './ImageFiles/WHYUS/1.jpg';
+import Aboutus4 from './ImageFiles/WHYUS/why4.jpg';
+import Aboutus5 from './ImageFiles/WHYUS/ISO Certiificate Aboutus.png';
+
+import whyusP1one from './ImageFiles/WHYUS/Techincal Whyus.png';
+import whyusP1two from './ImageFiles/WHYUS/Infrastructure Whyus.jpg';
+import whyusP1three from './ImageFiles/WHYUS/Infrastructure Whyus 3.png';
+import whyusP1four from './ImageFiles/WHYUS/Inspection WhyUs.jpeg';
+
+import whyusP2one from './ImageFiles/WHYUS/Lasani Team Whyus.jpg';
+import whyusP2two from './ImageFiles/WHYUS/Office Whyus 2.png';
+import whyusP2three from './ImageFiles/WHYUS/Technology  Whyus.jpg';
+import whyusP2four from './ImageFiles/WHYUS/Technology Whyus 2.png';
+import whyusP2five from './ImageFiles/WHYUS/Warehouse Whyus.png';
+
 
 import WhatApp from './ImageFiles/SocialFont/whatsapp (1).png';
 
@@ -157,10 +169,31 @@ function Home() {
     }, []);
 
 
-    // WHYUS Carousel
+    // WHYUS Carousel Part One
     useEffect(() => {
 
-        const carouselItems = document.querySelectorAll(".whyus-carousel-item");
+        const carouselItems = document.querySelectorAll(".whyus-carousel-item-One");
+
+        let index = 0;
+
+        const interval = setInterval(() => {
+
+            index = (index + 1) % carouselItems.length;
+
+            carouselItems.forEach((item) => {
+                item.style.transform = `translateX(-${index * 100}%)`;
+            });
+
+        }, 3000);
+
+        return () => clearInterval(interval);
+
+    }, []);
+
+    // WHYUS Carousel Part Two
+    useEffect(() => {
+
+        const carouselItems = document.querySelectorAll(".whyus-carousel-item-Two");
 
         let index = 0;
 
@@ -213,12 +246,14 @@ function Home() {
             role: "Managing Director",
             details: "B.E (Mechanical Engineering) having 12 years’ experience in the software industry. He has joined the family business in year 2012 and is responsible for execution of strategy and expansion of business.",
             img: AbdulRehman,
+            LinkdIn: "https://www.linkedin.com/in/karehamn/"
         },
         {
             name: "Ehsan Khan",
             role: "Director",
             details: "B.Sc. (Mechanical Engineering) working as Chief Strategy Officer for company manufacturing wellhead Equipment. He is having 25 years of experience of supply Chain and Manufacturing.",
             img: EhsanKhan,
+            LinkdIn: "https://www.linkedin.com/in/khan-ehsan-ahmad-abul-jaish-79054410/"
         },
     ];
 
@@ -259,15 +294,15 @@ function Home() {
         }
 
         emailjs.send(
-            "service_vjp8lwu",   
-            "template_hzsx20c",  
+            "service_vjp8lwu",
+            "template_hzsx20c",
             {
                 name: name,
                 number: number,
                 email: email,
                 message: message
             },
-            "XhXCOmkuMWZPxIRfu"    
+            "XhXCOmkuMWZPxIRfu"
         )
             .then(() => {
                 alert("Message sent successfully ✅");
@@ -342,7 +377,7 @@ function Home() {
 
                         {/* RIGHT SIDE */}
                         <div className=" col-md-2 col-sm-6 text-end">
-                            <button className="search-btn">🔍</button>
+                            {/* <button className="search-btn">🔍</button> */}
 
                             <button className="support-btn ms-2"><a
                                 href="https://wa.me/918976337049?text=Hello"
@@ -424,13 +459,13 @@ function Home() {
                                 {/* Wrapper with overflow hidden is crucial */}
                                 <div className="custom-carousel-wrapper about-custom-carousel-wrapper">
                                     <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                        <img src={AboutUs} className="d-block w-100 rounded" alt="1" />
+                                        <img src={Aboutus4} className="d-block w-100 rounded" alt="1" />
                                     </div>
                                     <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                        <img src={AboutUs5} className="d-block w-100 rounded" alt="2" />
+                                        <img src={Aboutus5} className="d-block w-100 rounded" alt="2" />
                                     </div>
                                     <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                        <img src={AboutUs3} className="d-block w-100 rounded" alt="2" />
+                                        <img src={Aboutus1} className="d-block w-100 rounded" alt="2" />
                                     </div>
                                 </div>
                             </div>
@@ -456,8 +491,10 @@ function Home() {
                                 <p className='para-content mt-3'><span>
                                     <h6>CYLINDER TUBES</h6>
                                 </span> Lasani Fluid Power LLP is a market leader in the supply of hydraulic cylinder tube and rod products in India.</p>
-                                <p className='para-content'>Our primary products cater to hydraulic and pneumatic cylinder industries, with specialization in precision Cylinder Tubes selected from reputed mills and trusted manufacturers.</p>
-                                <p className='para-content'>We supply Cylinder Tubes in grades such as ST52 / E355, S355JR, and S355J2H, conforming to international standards including DIN 2391, EN 10305-1, EN 10305-2, EN 10305-3, EN 10305-4, ASTM A519, ASTM A513, EN 10217, and EN 10216.</p>
+                                <p className='para-content'>Our primary products cater to hydraulic and pneumatic cylinder industries, with specialization in precision Cylinder Tubes selected from reputed mills and trusted manufacturers.
+                                    We supply Cylinder Tubes in grades such as ST52 / E355, S355JR, and S355J2H, conforming to international standards including DIN 2391, EN 10305-1, EN 10305-2, EN 10305-3, EN 10305-4, ASTM A519, ASTM A513, EN 10217, and EN 10216.
+                                </p>
+                                {/* <p className='para-content'></p> */}
                                 <p className='para-content'>The tubes are available in various delivery conditions including SR (+SR), BKS (+C), AR (As Rolled), and Normalized condition, depending on customer application and performance requirements.</p>
                             </div>
 
@@ -1146,13 +1183,7 @@ function Home() {
                                             </div>
 
                                             <div className="socials">
-                                                <span><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
-                                                    <FontAwesomeIcon className='soical-icons' icon={faXTwitter} />
-                                                </a></span>
-                                                <span><a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">
-                                                    <FontAwesomeIcon className='soical-icons' icon={faFacebook} />
-                                                </a></span>
-                                                <span><a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                                <span><a href={member.LinkdIn} target="_blank" rel="noopener noreferrer">
                                                     <FontAwesomeIcon className='soical-icons' icon={faLinkedin} />
                                                 </a></span>
                                             </div>
@@ -1262,195 +1293,218 @@ function Home() {
 
                             {/* Left Content */}
                             <div className='WhyUs-Info col-lg-8 col-md-12 col-12'>
-                                <div>
-                                    <div className="row text-center col-lg-12 section-one">
+                                <div className="row text-center col-lg-12 section-one">
 
-                                        {/* ================================================= */}
-                                        {/* TECHNICAL CARD */}
-                                        {/* ================================================= */}
-                                        <div className="col-lg-4 col-md-4 col-12">
+                                    {/* ================================================= */}
+                                    {/* TECHNICAL CARD */}
+                                    {/* ================================================= */}
+                                    <div className="col-lg-4 col-md-4 col-12">
 
-                                            <div className="mission-card techinical-card text-center">
+                                        <div className="mission-card techinical-card text-center">
 
-                                                <div className="techinical-icon">
-                                                    {/* <i className="fa-solid fa-handshake"></i> */}
-                                                    <FontAwesomeIcon
-                                                        className="techinical-main-icon"
-                                                        icon={faCogs}
-                                                    />
-                                                </div>
-
-                                                <h3>TECHNICAL</h3>
-
-                                                <p>
-                                                    "Strong technical understanding of hydraulic applications,
-                                                    tube grades, machining processes, tolerances, and
-                                                    customer-specific engineering requirements across industries."
-                                                </p>
-
+                                            <div className="techinical-icon">
+                                                {/* <i className="fa-solid fa-handshake"></i> */}
+                                                <FontAwesomeIcon
+                                                    className="techinical-main-icon"
+                                                    icon={faCogs}
+                                                />
                                             </div>
 
-                                        </div>
+                                            <h3>TECHNICAL</h3>
 
-                                        {/* ================================================= */}
-                                        {/* EXPERIENCE CARD */}
-                                        {/* ================================================= */}
-                                        <div className="col-lg-4 col-md-4 col-12">
-
-                                            <div className="mission-card text-center techinical-card">
-
-                                                <div className="techinical-icon">
-                                                    {/* <i className="fa-solid fa-eye-slash"></i> */}
-                                                    <FontAwesomeIcon
-                                                        className="techinical-main-icon"
-                                                        icon={faBriefcase}
-                                                    />
-                                                </div>
-
-                                                <h3>EXPERIENCE</h3>
-
-                                                <p>
-                                                    "Over 40 years of industry experience in hydraulic
-                                                    cylinder tubes, industrial pipes, sourcing,
-                                                    processing, and supply chain solutions."
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-
-                                        {/* ================================================= */}
-                                        {/* INFRASTRUCTURE CARD */}
-                                        {/* ================================================= */}
-                                        <div className="col-lg-4 col-md-4 col-12">
-
-                                            <div className="mission-card text-center techinical-card">
-
-                                                <div className="techinical-icon">
-                                                    {/* <i className="fa-solid fa-thumbs-up"></i> */}
-                                                    <FontAwesomeIcon
-                                                        className="techinical-main-icon"
-                                                        icon={faBuilding}
-                                                    />
-                                                </div>
-
-                                                <h3>INFRASTRUCTURE</h3>
-
-                                                <p>
-                                                    "Large ready stock, processing support, warehouse
-                                                    facilities, and strong logistics capabilities ensure
-                                                    faster delivery and reliable material availability."
-                                                </p>
-
-                                            </div>
+                                            <p>
+                                                "Strong technical understanding of hydraulic applications,
+                                                tube grades, machining processes, tolerances, and
+                                                customer-specific engineering requirements across industries."
+                                            </p>
 
                                         </div>
 
                                     </div>
 
-                                    <div className="row text-center col-lg-12 section-two">
+                                    {/* ================================================= */}
+                                    {/* EXPERIENCE CARD */}
+                                    {/* ================================================= */}
+                                    <div className="col-lg-4 col-md-4 col-12">
 
-                                        {/* ================================================= */}
-                                        {/* LOCATION CARD */}
-                                        {/* ================================================= */}
-                                        <div className="col-lg-4 col-md-4 col-12">
+                                        <div className="mission-card text-center techinical-card">
 
-                                            <div className="mission-card techinical-card text-center">
-
-                                                <div className="techinical-icon">
-                                                    {/* <i className="fa-solid fa-handshake"></i> */}
-                                                    <FontAwesomeIcon
-                                                        className="techinical-main-icon"
-                                                        icon={faLocationDot}
-                                                    />
-                                                </div>
-
-                                                <h3>LOCATION</h3>
-
-                                                <p>
-                                                    "Strategically located near Jawaharlal Nehru Port and
-                                                    India’s leading steel market for efficient sourcing
-                                                    and nationwide distribution support"
-                                                </p>
-
+                                            <div className="techinical-icon">
+                                                {/* <i className="fa-solid fa-eye-slash"></i> */}
+                                                <FontAwesomeIcon
+                                                    className="techinical-main-icon"
+                                                    icon={faBriefcase}
+                                                />
                                             </div>
 
-                                        </div>
+                                            <h3>EXPERIENCE</h3>
 
-                                        {/* ================================================= */}
-                                        {/* TEAM CARD */}
-                                        {/* ================================================= */}
-                                        <div className="col-lg-4 col-md-4 col-12">
-
-                                            <div className="mission-card text-center techinical-card">
-
-                                                <div className="techinical-icon">
-                                                    {/* <i className="fa-solid fa-eye-slash"></i> */}
-                                                    <FontAwesomeIcon
-                                                        className="techinical-main-icon"
-                                                        icon={faUsers}
-                                                    />
-                                                </div>
-
-                                                <h3>TEAM</h3>
-
-                                                <p>
-                                                    "Highly qualified and experienced partners, professionals,
-                                                    and process-driven teams ensure efficient operations,
-                                                    technical support, and reliable customer service excellence."
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-
-                                        {/* ================================================= */}
-                                        {/* TECHNOLOGY CARD */}
-                                        {/* ================================================= */}
-                                        <div className="col-lg-4 col-md-4 col-12">
-
-                                            <div className="mission-card text-center techinical-card">
-
-                                                <div className="techinical-icon">
-                                                    {/* <i className="fa-solid fa-thumbs-up"></i> */}
-                                                    <FontAwesomeIcon
-                                                        className="techinical-main-icon"
-                                                        icon={faLaptopCode}
-                                                    />
-                                                </div>
-
-                                                <h3>TECHNOLOGY</h3>
-
-                                                <p>
-                                                    "Advanced ERP and CRM systems with AI-driven Copilot,
-                                                    predictive analysis, automation, and customer alert
-                                                    systems improve operational efficiency."
-                                                </p>
-
-                                            </div>
+                                            <p>
+                                                "Over 40 years of industry experience in hydraulic
+                                                cylinder tubes, industrial pipes, sourcing,
+                                                processing, and supply chain solutions."
+                                            </p>
 
                                         </div>
 
                                     </div>
+
+                                    {/* ================================================= */}
+                                    {/* INFRASTRUCTURE CARD */}
+                                    {/* ================================================= */}
+                                    <div className="col-lg-4 col-md-4 col-12">
+
+                                        <div className="mission-card text-center techinical-card">
+
+                                            <div className="techinical-icon">
+                                                {/* <i className="fa-solid fa-thumbs-up"></i> */}
+                                                <FontAwesomeIcon
+                                                    className="techinical-main-icon"
+                                                    icon={faBuilding}
+                                                />
+                                            </div>
+
+                                            <h3>INFRASTRUCTURE</h3>
+
+                                            <p>
+                                                "Large ready stock, processing support, warehouse
+                                                facilities, and strong logistics capabilities ensure
+                                                faster delivery and reliable material availability."
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div className="row text-center col-lg-12 section-two">
+
+                                    {/* ================================================= */}
+                                    {/* LOCATION CARD */}
+                                    {/* ================================================= */}
+                                    <div className="col-lg-4 col-md-4 col-12">
+
+                                        <div className="mission-card techinical-card text-center">
+
+                                            <div className="techinical-icon">
+                                                {/* <i className="fa-solid fa-handshake"></i> */}
+                                                <FontAwesomeIcon
+                                                    className="techinical-main-icon"
+                                                    icon={faLocationDot}
+                                                />
+                                            </div>
+
+                                            <h3>LOCATION</h3>
+
+                                            <p>
+                                                "Strategically located near Jawaharlal Nehru Port and
+                                                India’s leading steel market for efficient sourcing
+                                                and nationwide distribution support"
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    {/* ================================================= */}
+                                    {/* TEAM CARD */}
+                                    {/* ================================================= */}
+                                    <div className="col-lg-4 col-md-4 col-12">
+
+                                        <div className="mission-card text-center techinical-card">
+
+                                            <div className="techinical-icon">
+                                                {/* <i className="fa-solid fa-eye-slash"></i> */}
+                                                <FontAwesomeIcon
+                                                    className="techinical-main-icon"
+                                                    icon={faUsers}
+                                                />
+                                            </div>
+
+                                            <h3>TEAM</h3>
+
+                                            <p>
+                                                "Highly qualified and experienced partners, professionals,
+                                                and process-driven teams ensure efficient operations,
+                                                technical support, and reliable customer service excellence."
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                    {/* ================================================= */}
+                                    {/* TECHNOLOGY CARD */}
+                                    {/* ================================================= */}
+                                    <div className="col-lg-4 col-md-4 col-12">
+
+                                        <div className="mission-card text-center techinical-card">
+
+                                            <div className="techinical-icon">
+                                                {/* <i className="fa-solid fa-thumbs-up"></i> */}
+                                                <FontAwesomeIcon
+                                                    className="techinical-main-icon"
+                                                    icon={faLaptopCode}
+                                                />
+                                            </div>
+
+                                            <h3>TECHNOLOGY</h3>
+
+                                            <p>
+                                                "Advanced ERP and CRM systems with AI-driven Copilot,
+                                                predictive analysis, automation, and customer alert
+                                                systems improve operational efficiency."
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
 
                             {/* Right Image Section (kept structure same, only class renamed) */}
                             <div className='WHYUS-Img-Section col-lg-4 col-md-12 col-12 mb-4'>
 
-                                {/* Carousel Wrapper */}
-                                <div className="custom-carousel-wrapper" style={{ overflow: 'hidden', display: 'flex' }} >
+                                {/* Carousel Wrapper Part 1 */}
+                                <div className="custom-carousel-wrapper WhyUs-Child" style={{ overflow: 'hidden', display: 'flex' }} >
 
-                                    <div className="whyus-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                        <img src={whyus2} className="d-block w-100 rounded" alt="1" />
+                                    <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP1one} className="d-block w-100 rounded" alt="1" />
                                     </div>
 
-                                    <div className="whyus-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                        <img src={whyus3} className="d-block w-100 rounded" alt="2" />
+                                    <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP1two} className="d-block w-100 rounded" alt="2" />
                                     </div>
 
-                                    <div className="whyus-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                        <img src={whyus4} className="d-block w-100 rounded" alt="3" />
+                                    <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP1three} className="d-block w-100 rounded" alt="3" />
+                                    </div>
+
+                                     <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP1four} className="d-block w-100 rounded" alt="4" />
+                                    </div>
+
+                                </div>
+
+                                {/* Carousel Wrapper Part 2 */}
+                                <div className="custom-carousel-wrapper WhyUs-Child" style={{ overflow: 'hidden', display: 'flex' }} >
+
+                                    <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP2one} className="d-block w-100 rounded" alt="1" />
+                                    </div>
+
+                                    <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP2two} className="d-block w-100 rounded" alt="2" />
+                                    </div>
+
+                                    <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP2three} className="d-block w-100 rounded" alt="3" />
+                                    </div>
+
+                                     <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                        <img src={whyusP2four} className="d-block w-100 rounded" alt="3" />
                                     </div>
 
                                 </div>
