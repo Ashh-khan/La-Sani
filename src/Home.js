@@ -47,15 +47,14 @@ import Aboutus4 from './ImageFiles/WHYUS/why4.jpg';
 import Aboutus5 from './ImageFiles/WHYUS/ISO Certiificate Aboutus.png';
 
 import whyusP1one from './ImageFiles/WHYUS/Techincal Whyus.png';
-import whyusP1two from './ImageFiles/WHYUS/Infrastructure Whyus.jpg';
+import whyusP1two from './ImageFiles/WHYUS/Infrastructure Whyus.jpeg';
 import whyusP1three from './ImageFiles/WHYUS/Infrastructure Whyus 3.png';
 import whyusP1four from './ImageFiles/WHYUS/Inspection WhyUs.jpeg';
 
 import whyusP2one from './ImageFiles/WHYUS/Lasani Team Whyus.jpg';
-import whyusP2two from './ImageFiles/WHYUS/Office Whyus 2.png';
+import whyusP2two from './ImageFiles/WHYUS/Infrastructure Office 2.jpeg';
 import whyusP2three from './ImageFiles/WHYUS/Technology  Whyus.jpg';
-import whyusP2four from './ImageFiles/WHYUS/Technology Whyus 2.png';
-import whyusP2five from './ImageFiles/WHYUS/Warehouse Whyus.png';
+import whyusP2four from './ImageFiles/WHYUS/Infrastructure Office 3.jpeg';
 
 
 import WhatApp from './ImageFiles/SocialFont/whatsapp (1).png';
@@ -365,6 +364,15 @@ function Home() {
                             <div className="close-btn close-navbar-btn" onClick={() => setOpen(false)}>
                                 ✖
                             </div>
+                             <button className=" close-navbar-btn support-btn-mob">
+                                <a href="https://wa.me/918976337049?text=Hello"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="support-btn-mob">
+                                    {/* WhatsApp */}
+                                    <img className='Whatapp-image' src={WhatApp} alt="" />
+                                </a>
+                            </button>
                             <ul className="menu-list">
                                 <li className="nav-item"><a href="#home" className="nav-link active">HOME</a></li>
                                 <li className="nav-item"><a href="#ABOUT" className="nav-link">ABOUT US</a></li>
@@ -379,15 +387,15 @@ function Home() {
                         <div className=" col-md-2 col-sm-6 text-end">
                             {/* <button className="search-btn">🔍</button> */}
 
-                            <button className="support-btn ms-2"><a
-                                href="https://wa.me/918976337049?text=Hello"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="support-btn"
-                            >
-                                {/* WhatsApp */}
-                                <img className='Whatapp-image' src={WhatApp} alt="" />
-                            </a></button>
+                            <button className="support-btn ms-2">
+                                <a href="https://wa.me/918976337049?text=Hello"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="support-btn">
+                                    {/* WhatsApp */}
+                                    <img className='Whatapp-image' src={WhatApp} alt="" />
+                                </a>
+                            </button>
 
                             {/* MOBILE TOGGLE */}
                             <span
@@ -1482,7 +1490,7 @@ function Home() {
                                         <img src={whyusP1three} className="d-block w-100 rounded" alt="3" />
                                     </div>
 
-                                     <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                    <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                                         <img src={whyusP1four} className="d-block w-100 rounded" alt="4" />
                                     </div>
 
@@ -1503,7 +1511,7 @@ function Home() {
                                         <img src={whyusP2three} className="d-block w-100 rounded" alt="3" />
                                     </div>
 
-                                     <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
+                                    <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
                                         <img src={whyusP2four} className="d-block w-100 rounded" alt="3" />
                                     </div>
 

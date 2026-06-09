@@ -1931,6 +1931,11 @@ h6 {
     justify-content: flex-start;
   }
 
+  .support-btn-mob {
+  left: 15px !important;
+  background-color: white !important;
+}
+
   .close-navbar-btn {
     display: flex;
     position: absolute;
