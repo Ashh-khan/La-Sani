@@ -8,7 +8,6 @@ import { Carousel } from 'bootstrap';
 import emailjs from "emailjs-com";
 import { Helmet } from "react-helmet";
 
-
 import img1 from './ImageFiles/BannerImg/imresizer-BannerMain 1.jpg';
 import Banner1 from './ImageFiles/BannerImg/imresizer-BannerMain 2.jpg';
 import Banner2 from './ImageFiles/BannerImg/imresizer-BannerMain 3.jpg';
