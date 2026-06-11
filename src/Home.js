@@ -428,11 +428,11 @@ function Home() {
                             <div className="Banner-carousel-inner">
 
                                 <div className="Banner-carousel-item">
-                                    <img src={img1} alt="" className="img-fluid" />
+                                    <img src={img1} alt="Hydraulic cylinder tubes manufacturer in India banner" className="img-fluid" />
                                 </div>
 
                                 <div className="Banner-carousel-item">
-                                    <img src={Banner1} alt="" className="img-fluid" />
+                                    <img src={Banner1} alt="Honed tubes and chrome plated rods supplier India" className="img-fluid" />
                                 </div>
 
                                 <div className="Banner-carousel-item">
@@ -527,7 +527,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={honed1}
-                                                alt=""
+                                                alt="Honed tube for hydraulic cylinder applications"
                                             />
                                         </div>
 
@@ -557,7 +557,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={Suitabletoskive}
-                                                alt=""
+                                                alt="Ready to skive and hone tube for hydraulic cylinder manufacturing"
                                             />
                                         </div>
 
@@ -587,7 +587,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={HotFinished}
-                                                alt=""
+                                                alt="Hot finished seamless bored and honed tube for hydraulic cylinders"
                                             />
                                         </div>
 
@@ -617,7 +617,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={ChromePlateBar}
-                                                alt=""
+                                                alt="Chrome plated rod for hydraulic cylinder supplier India"
                                             />
                                         </div>
 
@@ -656,7 +656,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={SmallTubePic}
-                                                alt=""
+                                                alt="Smooth bore precision cold drawn tube for hydraulic applications"
                                             />
 
                                         </div>
@@ -687,7 +687,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={HydraulicLinePipe}
-                                                alt=""
+                                                alt="Hydraulic line pipe for pressure and fluid transfer systems"
                                             />
                                         </div>
 
@@ -741,7 +741,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={CarbonSteelAlloy}
-                                                alt=""
+                                                alt="Carbon steel and alloy steel seamless tubes for industrial applications"
                                             />
                                         </div>
 
@@ -769,7 +769,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={StainlessSteel}
-                                                alt=""
+                                                alt="Stainless steel pipes and tubes corrosion resistant industrial use"
                                             />
                                         </div>
 
@@ -797,7 +797,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={HollowSections}
-                                                alt=""
+                                                alt="Rectangular and square hollow sections steel structural pipes"
                                             />
                                         </div>
                                         <div className="report-content report-content-INDUSTRIAL-Tubes">
@@ -823,7 +823,7 @@ function Home() {
                                         <div className="report-image">
                                             <img
                                                 src={ERWWelded}
-                                                alt=""
+                                                alt="ERW welded steel pipes for industrial and structural applications"
                                             />
                                         </div>
 
@@ -867,8 +867,8 @@ function Home() {
                                         focus on our customers' economic drivers, resulting in cost savings and shorter lead times. We are committed to providing
                                         the highest level of service and on-time delivery.</p>
                                     {/* <h5>Our services and areas of expertise include: </h5>
-                <h5>Machining Services</h5>
-                <div className="underline-Machining underline"></div> */}
+                                      <h5>Machining Services</h5>
+                                      <div className="underline-Machining underline"></div> */}
                                     <div className='Product-Para'>
                                     </div>
                                 </div>
@@ -882,7 +882,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={DeepTurning}
-                                                    alt=""
+                                                    alt="Deep hole drilling machining service for hydraulic cylinders and industrial components"
                                                 />
                                             </div>
 
@@ -912,7 +912,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={Boring}
-                                                    alt=""
+                                                    alt="Deep hole boring service for precision hydraulic cylinder components"
                                                 />
                                             </div>
 
@@ -942,7 +942,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={DeepHoleHoning}
-                                                    alt=""
+                                                    alt="Deep hole honing process for smooth bore hydraulic cylinders"
                                                 />
                                             </div>
 
@@ -970,7 +970,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={Trepanning}
-                                                    alt=""
+                                                    alt="Trepanning machining process for large diameter industrial components"
                                                 />
                                             </div>
 
@@ -1003,7 +1003,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={ODTurning}
-                                                    alt=""
+                                                    alt="OD and ID turning machining services for precision industrial parts"
                                                 />
                                             </div>
 
@@ -1033,7 +1033,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={CuttingMachine}
-                                                    alt=""
+                                                    alt="Bandsaw cutting machine service for industrial metal materials"
                                                 />
                                             </div>
 
@@ -1062,7 +1062,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={HardChromePlating}
-                                                    alt=""
+                                                    alt="Hard chrome plating service for hydraulic rods and shafts"
                                                 />
                                             </div>
 
@@ -1091,7 +1091,7 @@ function Home() {
                                             <div className="report-image">
                                                 <img
                                                     src={Welding}
-                                                    alt=""
+                                                    alt="Welding and cladding services for hydraulic cylinder repair and manufacturing"
                                                 />
                                             </div>
 
