@@ -349,8 +349,8 @@ function Home() {
 
                                 <div className="col-lg-10 col-md-10 col-12 text-center Header-Details text-md-start">
                                     {/* <span>1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218.</span>
-                <span className="ms-3">📞 +91 99000 19885 | +91 89763 37049</span>
-                <span className="ms-3">✉ info@la-sani.com</span> */}
+                                        <span className="ms-3">📞 +91 99000 19885 | +91 89763 37049</span>
+                                        <span className="ms-3">✉ info@la-sani.com</span> */}
                                 </div>
 
                                 <div className="col-lg-2 col-md-3 col-12 text-center text-md-end Header-Time">
@@ -501,7 +501,7 @@ function Home() {
 
                             {/* Heading */}
                             <div id='PRODUCTSANDSERVICES' className="mb-5 Product-Heading">
-                                <h2 className="fw-bold">PRODUCTS</h2>
+                                <h1 className="fw-bold">PRODUCTS</h1>
                                 <div className="underline underline-PRODUCTS"></div>
                                 {/* <h4 className='mt-3'>PIPES AND TUBES</h4> */}
                                 {/* <div className="underline-Product-Points underline-TUBES-ROD"></div> */}
@@ -860,7 +860,7 @@ function Home() {
 
                                 {/* Heading */}
                                 <div id='PRODUCTSANDSERVICES' className="mb-5 Product-Heading">
-                                    <h2 className="fw-bold">MACHINING SERVICES</h2>
+                                    <h1 className="fw-bold">MACHINING SERVICES</h1>
                                     <div className="underline underline-MACHINING"></div>
                                     <p className='para-content mt-2'> Lasani is an ISO 9001–2015 Certified facility specialising in precision deep hole drilling and machining services of long
                                         parts that require difficult internal features with tight positional tolerances. We guarantee exceptional quality with a
@@ -1124,7 +1124,7 @@ function Home() {
                 <div>
                     <section className="services py-5">
                         <div id='MACHININGSERVICES' className="container">
-                            <h2 className="fw-bold">CYLINDER REPAIR SERVICES</h2>
+                            <h1 className="fw-bold">CYLINDER REPAIR SERVICES</h1>
                             <div className="underline underline-CYLINDER"></div>
                             <h5 className='mt-2'>All Cylinder Types — Quickly Restored to Full Functionality</h5>
                             <p className='para-content mb-5'>
@@ -1162,7 +1162,7 @@ function Home() {
                 {/* PARTNERS SECTION  */}
                 <section className="services services-content py-5">
                     <div id='MACHININGSERVICES' className="container">
-                        <h2 className="fw-bold">Our Partners</h2>
+                        <h1 className="fw-bold">Our Partners</h1>
                         <div className="underline underline-Partners"></div>
                         <p className='para-content mt-2'>
                             At Lasani, our senior team comprises seasoned professionals who bring a wealth of experience, innovative thinking,
@@ -1219,7 +1219,7 @@ function Home() {
                 {/* HISTORY SECTION */}
                 <section id='HISTORY' className="history-section py-5 bg-light">
                     <div id="HISTORY" className="container">
-                        <h2 className="fw-bold">HISTORY</h2>
+                        <h1 className="fw-bold">HISTORY</h1>
                         <div className="underline underline-HISTORY"></div>
 
                         <div className="row mt-2">
@@ -1303,7 +1303,7 @@ function Home() {
                         <div className="container">
 
                             {/* Section Heading */}
-                            <h2 className="fw-bold">WHY US?</h2>
+                            <h1 className="fw-bold">WHY US?</h1>
                             <div className="underline underline-WhyUs"></div>
 
                             {/* First-Card Why Us */}
@@ -1793,7 +1793,7 @@ function Home() {
 
                         {/* HEADING */}
                         <div className=" mb-5">
-                            <h2 className="fw-bold">Our Core Values</h2>
+                            <h1 className="fw-bold">Our Core Values</h1>
                             <div className="underline underline-CoreValues"></div>
                         </div>
 

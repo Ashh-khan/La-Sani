@@ -11,6 +11,10 @@ h6 {
   color: #145491 !important;
 }
 
+h1{
+  font-size: 32px !important;
+}
+
 /* ========================================================= */
 /* STICKY LEFT SIDE BRAND */
 /* ========================================================= */
@@ -439,8 +443,8 @@ h6 {
 /* RESPONSIVE */
 @media(max-width:991px) {
 
-  .overlay-content h2 {
-    font-size: 34px;
+  .overlay-content h1 {
+    font-size: 34px !important;
     margin-bottom: 90px;
   }
 
@@ -455,8 +459,8 @@ h6 {
     height: 240px;
   }
 
-  .overlay-content h2 {
-    font-size: 28px;
+  .overlay-content h1 {
+    font-size: 28px !important;
     margin-bottom: 70px;
   }
 
@@ -561,9 +565,9 @@ h6 {
   display: flex;
 }
 
-.CaseStudies-frist-part h2 {
+.CaseStudies-frist-part h1 {
   text-align: left;
-  font-size: 35px;
+  font-size: 35px !important;
 }
 
 .CaseStudies-second-part {
@@ -1320,8 +1324,8 @@ h6 {
 
 /* 1200px CSS Of All CSS*/
 @media screen and (max-width: 1200px) {
-  .ABOUTus-Section-Main h2 {
-    font-size: 26px;
+  .ABOUTus-Section-Main h1 {
+    font-size: 26px !important;
   }
 
   .underline-ABOUT {
@@ -1346,8 +1350,8 @@ h6 {
   }
 
   /* Products */
-  .Product-Heading h2 {
-    font-size: 26px;
+  .Product-Heading h1 {
+    font-size: 26px !important;
   }
 
   .underline-PRODUCTS {
@@ -1371,8 +1375,8 @@ h6 {
     width: 340px;
   }
 
-  .services h2 {
-    font-size: 26px;
+  .services h1 {
+    font-size: 26px !important;
   }
 
   .underline-CYLINDER {
@@ -1407,8 +1411,8 @@ h6 {
     width: 300px;
   }
 
-  .history-section h2 {
-    font-size: 26px;
+  .history-section h1 {
+    font-size: 26px !important;
   }
 
   .underline-HISTORY {
@@ -1419,16 +1423,16 @@ h6 {
     font-size: 13px;
   }
 
-  .WhyUs-Section-Main h2 {
-    font-size: 26px;
+  .WhyUs-Section-Main h1 {
+    font-size: 26px !important;
   }
 
   .underline-WhyUs {
     width: 140px;
   }
 
-  .mission-vision-section h2 {
-    font-size: 26px;
+  .mission-vision-section h1 {
+    font-size: 26px !important;
   }
 
   .underline-CoreValues {
@@ -1491,8 +1495,8 @@ h6 {
     font-size: 12px;
   }
 
-  .CaseStudies-frist-part h2 {
-    font-size: 29px;
+  .CaseStudies-frist-part h1 {
+    font-size: 29px !important;
   }
 
   .CaseStudies-frist-part p {
@@ -1537,8 +1541,8 @@ h6 {
     font-size: 12px;
   }
 
-  .CaseStudies-frist-part h2 {
-    font-size: 25px;
+  .CaseStudies-frist-part h1 {
+    font-size: 25px !important;
   }
 
   .mission-main-icon {
@@ -1740,8 +1744,8 @@ h6 {
     gap: 5px;
   }
 
-  .CaseStudies-frist-part h2 {
-    font-size: 22px;
+  .CaseStudies-frist-part h1 {
+    font-size: 22px !important;
   }
 
   .CaseStudies-frist-part p {
@@ -1765,24 +1769,24 @@ h6 {
 
 /* 425px All CSS */
 @media screen and (max-width: 425px) {
-  .services h2 {
-    font-size: 19px;
+  .services h1 {
+    font-size: 19px  !important;
   }
 
-  .history-section h2 {
-    font-size: 19px;
+  .history-section h1 {
+    font-size: 19px !important;
   }
 
-  .WhyUs-Section-Main h2 {
-    font-size: 19px;
+  .WhyUs-Section-Main h1 {
+    font-size: 19px !important;
   }
 
-  .testimonials-section h2 {
-    font-size: 19px;
+  .testimonials-section h1 {
+    font-size: 19px !important;
   }
 
-  .mission-vision-section h2 {
-    font-size: 19px;
+  .mission-vision-section h1 {
+    font-size: 19px !important;
   }
 
   .underline-CaseStudies {
@@ -1825,24 +1829,24 @@ h6 {
     margin-left: 5px;
   }
 
-  .services h2 {
-    font-size: 19px;
+  .services h1 {
+    font-size: 19px !important;
   }
 
-  .history-section h2 {
-    font-size: 19px;
+  .history-section h1 {
+    font-size: 19px !important;
   }
 
-  .WhyUs-Section-Main h2 {
-    font-size: 19px;
+  .WhyUs-Section-Main h1 {
+    font-size: 19px !important;
   }
 
-  .testimonials-section h2 {
-    font-size: 19px;
+  .testimonials-section h1 {
+    font-size: 19px !important;
   }
 
-  .mission-vision-section h2 {
-    font-size: 19px;
+  .mission-vision-section h1 {
+    font-size: 19px !important;
   }
 
   .underline-MACHINING {
@@ -2148,8 +2152,8 @@ h6 {
 
 
 @media screen and (max-width:575px) {
-  .services h2 {
-    font-size: 20px;
+  .services h1 {
+    font-size: 20px !important;
   }
 
   .underline-CYLINDER {
@@ -2227,8 +2231,8 @@ h6 {
     margin-left: 2px;
   }
 
-  .services h2 {
-    font-size: 15px;
+  .services h1 {
+    font-size: 15px !important;
   }
 
   .underline-CYLINDER {
