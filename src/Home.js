@@ -336,6 +336,18 @@ function Home() {
                     name="description"
                     content="Lasani Fluid Power LLP is leading supplier of hydraulic cylinder tubes, honed tubes, chrome plated rods in India. 50+ years experience."
                 />
+
+                <script type="application/ld+json">
+                    {`
+                       {
+                         "@context": "https://schema.org",
+                         "@type": "Organization",
+                         "name": "Lasani Fluid Power LLP",
+                         "url": "https://yourwebsite.com",
+                         "logo": "https://ashh-khan.github.io/La-Sani/static/media/Lasani%20logo%20White%20PNG.ce289ed58b13b41658e7.png"
+                       }
+                    `}
+                </script>
             </Helmet>
 
             <div className="App">
@@ -366,7 +378,7 @@ function Home() {
                         <div className="row navbar-row-main align-items-center">
                             {/* LOGO */}
                             <div className="col-md-3 col-sm-6">
-                                <h3 className="logo"><img src={Logo} alt="" /></h3>
+                                <h3 className="logo"><img src={Logo} alt="LaSani-Logo" /></h3>
                             </div>
 
                             {/* MENU */}
@@ -380,7 +392,7 @@ function Home() {
                                         rel="noopener noreferrer"
                                         className="support-btn-mob">
                                         {/* WhatsApp */}
-                                        <img className='Whatapp-image' src={WhatApp} alt="" />
+                                        <img className='Whatapp-image' src={WhatApp} alt="WhatApp-Logo" />
                                     </a>
                                 </button>
                                 <ul className="menu-list">
@@ -403,7 +415,7 @@ function Home() {
                                         rel="noopener noreferrer"
                                         className="support-btn">
                                         {/* WhatsApp */}
-                                        <img className='Whatapp-image' src={WhatApp} alt="" />
+                                        <img className='Whatapp-image' src={WhatApp} alt="WhatApp-Logo" />
                                     </a>
                                 </button>
 
@@ -428,19 +440,19 @@ function Home() {
                             <div className="Banner-carousel-inner">
 
                                 <div className="Banner-carousel-item">
-                                    <img src={img1} alt="Hydraulic cylinder tubes manufacturer in India banner" className="img-fluid" />
+                                    <img src={img1} alt="Banner-carousel-Img" className="img-fluid" />
                                 </div>
 
                                 <div className="Banner-carousel-item">
-                                    <img src={Banner1} alt="Honed tubes and chrome plated rods supplier India" className="img-fluid" />
+                                    <img src={Banner1} alt="Banner-carousel-Img" className="img-fluid" />
                                 </div>
 
                                 <div className="Banner-carousel-item">
-                                    <img src={Banner2} alt="" className="img-fluid" />
+                                    <img src={Banner2} alt="Banner-carousel-Img" className="img-fluid" />
                                 </div>
 
                                 <div className="Banner-carousel-item">
-                                    <img src={Banner3} alt="" className="img-fluid" />
+                                    <img src={Banner3} alt="Banner-carousel-Img" className="img-fluid" />
                                 </div>
                             </div>
 
@@ -477,13 +489,13 @@ function Home() {
                                     {/* Wrapper with overflow hidden is crucial */}
                                     <div className="custom-carousel-wrapper about-custom-carousel-wrapper">
                                         <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={Aboutus4} className="d-block w-100 rounded" alt="1" />
+                                            <img src={Aboutus4} className="d-block w-100 rounded" alt="AboutUs-Img-1" />
                                         </div>
                                         <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={Aboutus5} className="d-block w-100 rounded" alt="2" />
+                                            <img src={Aboutus5} className="d-block w-100 rounded" alt="AboutUs-Img-2" />
                                         </div>
                                         <div className="about-carousel-item" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={Aboutus1} className="d-block w-100 rounded" alt="2" />
+                                            <img src={Aboutus1} className="d-block w-100 rounded" alt="AboutUs-Img-2" />
                                         </div>
                                     </div>
                                 </div>
@@ -1183,7 +1195,7 @@ function Home() {
                                         <div className="team-card">
 
                                             <div>
-                                                <img src={member.img} alt="" />
+                                                <img src={member.img} alt="Partners-Img" />
                                             </div>
 
                                             <div className="team-info">
@@ -1489,19 +1501,19 @@ function Home() {
                                     <div className="custom-carousel-wrapper WhyUs-Child" style={{ overflow: 'hidden', display: 'flex' }} >
 
                                         <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP1one} className="d-block w-100 rounded" alt="1" />
+                                            <img src={whyusP1one} className="d-block w-100 rounded" alt="WhyUs-Img-1" />
                                         </div>
 
                                         <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP1two} className="d-block w-100 rounded" alt="2" />
+                                            <img src={whyusP1two} className="d-block w-100 rounded" alt="WhyUs-Img-2" />
                                         </div>
 
                                         <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP1three} className="d-block w-100 rounded" alt="3" />
+                                            <img src={whyusP1three} className="d-block w-100 rounded" alt="WhyUs-Img-3" />
                                         </div>
 
                                         <div className="whyus-carousel-item-One" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP1four} className="d-block w-100 rounded" alt="4" />
+                                            <img src={whyusP1four} className="d-block w-100 rounded" alt="WhyUs-Img-4" />
                                         </div>
 
                                     </div>
@@ -1510,19 +1522,19 @@ function Home() {
                                     <div className="custom-carousel-wrapper WhyUs-Child" style={{ overflow: 'hidden', display: 'flex' }} >
 
                                         <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP2one} className="d-block w-100 rounded" alt="1" />
+                                            <img src={whyusP2one} className="d-block w-100 rounded" alt="WhyUsP2-Img-1" />
                                         </div>
 
                                         <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP2two} className="d-block w-100 rounded" alt="2" />
+                                            <img src={whyusP2two} className="d-block w-100 rounded" alt="WhyUsP2-Img-2" />
                                         </div>
 
                                         <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP2three} className="d-block w-100 rounded" alt="3" />
+                                            <img src={whyusP2three} className="d-block w-100 rounded" alt="WhyUsP2-Img-3" />
                                         </div>
 
                                         <div className="whyus-carousel-item-Two" style={{ minWidth: '100%', transition: 'transform 0.5s ease-in-out' }}>
-                                            <img src={whyusP2four} className="d-block w-100 rounded" alt="3" />
+                                            <img src={whyusP2four} className="d-block w-100 rounded" alt="WhyUsP2-Img-4" />
                                         </div>
 
                                     </div>
@@ -1623,10 +1635,10 @@ function Home() {
                 {/* <!-- ===================================================== --> */}
                 {/* <!-- Compnay LOGO --> */}
                 {/* <!-- ===================================================== --> */}
-                <section class="certification-section">
+                <section className="certification-section">
 
-                    <div class="container">
-                        <div class="text-center section-header">
+                    <div className="container">
+                        <div className="text-center section-header">
                             {/* <h2>Certifications</h2>
 
             <p>
@@ -1636,74 +1648,74 @@ function Home() {
                         </div>
 
                         {/* <!-- Carousel Wrapper --> */}
-                        <div class="logo-slider">
+                        <div className="logo-slider">
 
-                            <div class="logo-track">
+                            <div className="logo-track">
 
                                 {/* <!-- Card 1 --> */}
-                                <div class="logo-card">
-                                    <img src={PartnerLogo1} alt="AEO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo1} alt="Ace Hydraulics hydraulic industry partner India" />
                                 </div>
 
                                 {/* <!-- Card 2 --> */}
-                                <div class="logo-card">
-                                    <img src={PartnerLogo2} alt="FIATA" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo2} alt="Bicelli Geco Hydraulics industrial partner" />
                                 </div>
 
                                 {/* <!-- Card 3 --> */}
-                                <div class="logo-card">
-                                    <img src={PartnerLogo3} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo3} alt="Canara Hydraulics hydraulic cylinder client India" />
                                 </div>
 
                                 {/* <!-- Card 4 --> */}
-                                <div class="logo-card">
-                                    <img src={PartnerLogo4} alt="India" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo4} alt="Cangold Engineers industrial engineering partner" />
                                 </div>
 
                                 {/* <!-- Card 5 --> */}
-                                <div class="logo-card">
-                                    <img src={PartnerLogo5} alt="IATA" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo5} alt="Danfoss hydraulic systems global partner" />
                                 </div>
 
                                 {/* <!-- Duplicate for Infinite Loop --> */}
-                                <div class="logo-card">
-                                    <img src={PartnerLogo6} alt="AEO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo6} alt="Galaxy Hydraulics hydraulic components partner" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo7} alt="FIATA" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo7} alt="Geco Legend Hydraulics industrial partner" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo8} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo8} alt="Genner Hydraulics hydraulic manufacturing partner" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo9} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo9} alt="Hydac hydraulic systems technology partner" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo10} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo10} alt="Metexim Sourcing Pvt Ltd industrial sourcing partner" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo11} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo11} alt="Pennar Industries steel and engineering partner India" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo12} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo12} alt="PREAC industrial hydraulics partner" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo13} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo13} alt="Suvera Fluid Power Pvt Ltd hydraulic solutions partner" />
                                 </div>
 
-                                <div class="logo-card">
-                                    <img src={PartnerLogo14} alt="ISO" />
+                                <div className="logo-card">
+                                    <img src={PartnerLogo14} alt="TAFE industrial machinery partner India" />
                                 </div>
 
-                                <div class="logo-card PartnerLogo15">
-                                    <img src={PartnerLogo15} alt="ISO" />
+                                <div className="logo-card PartnerLogo15">
+                                    <img src={PartnerLogo15} alt="TIL Limited heavy engineering partner India" />
                                 </div>
                             </div>
                         </div>
@@ -1975,8 +1987,8 @@ function Home() {
                                                 📧 account@la-sani.com
                                             </a>
 
-                                            <div class="right-sticky-brand">
-                                                <span class="brand-orange"><img src={WhatAppQR} alt="" /></span>
+                                            <div className="right-sticky-brand">
+                                                <span className="brand-orange"><img src={WhatAppQR} alt="WhatApp-Img" /></span>
                                             </div>
                                         </div>
                                     </li>
