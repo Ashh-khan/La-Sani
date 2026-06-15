@@ -554,7 +554,7 @@ function Home() {
                                                     quality precision cold drawn drawn or DOM tubes Material can be arranged...
                                                 </p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -584,7 +584,7 @@ function Home() {
                                                     skive/ Hone to make hydraulic cylinders pipe...
                                                 </p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -614,7 +614,7 @@ function Home() {
                                                     hot finished raw materialOur In house processing facility ...
                                                 </p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -644,7 +644,7 @@ function Home() {
                                                     by world renowned manufacturers Stringent Quality Control....
                                                 </p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -684,7 +684,7 @@ function Home() {
                                                     offer precise dimensional accuracy, high concentricity...
                                                 </p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -712,7 +712,7 @@ function Home() {
                                                 <p>HPL Tubes are seamless cold-drawn precision steel tubes primarily used
                                                     as pressure lines in hydraulic or pneumatic systems...</p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -766,7 +766,7 @@ function Home() {
                                                 <p> Our range of seamless tubes includes both Carbon Steel grades designed
                                                     for high performance under demanding operating conditions The....</p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -794,7 +794,7 @@ function Home() {
                                                 <p>Our Stainless Steel Pipes and Tubes are manufactured from
                                                     premium-grade stainless steels to deliver exceptional corrosion resistance,...</p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -821,7 +821,7 @@ function Home() {
                                                 <p>Rectangular and Square Hollow Sections (RHS & SHS) are manufactured from
                                                     high-quality hot rolled or cold formed steel, offering excellent...</p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>
@@ -848,7 +848,7 @@ function Home() {
                                                 <p>Our range of Electric Resistance Welded (ERW), High-Frequency Welded
                                                     (HFW), Longitudinally Submerged Arc Welded (LSAW), and Helical...</p>
 
-                                                <Link to="/ReadMorePage" className="read-btn">
+                                                <Link to="/ReadMore" className="read-btn">
                                                     Read more →
                                                 </Link>
                                             </div>

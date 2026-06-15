@@ -13,7 +13,7 @@ function App() {
       <Route path="/ReadMore" element={<ReadMorePage />} />
 
        {/* 404 Page */}
-      <Route path="*" element={<h1>404 Page Not Found</h1>} />
+      {/* <Route path="*" element={<h1 >404 Page Not Found</h1>} /> */}
     </Routes>
   )
 }
