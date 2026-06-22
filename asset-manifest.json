@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/La-Sani/static/css/main.485f732f.css",
-    "main.js": "/La-Sani/static/js/main.977b1c71.js",
+    "main.css": "/La-Sani/static/css/main.7fa2690d.css",
+    "main.js": "/La-Sani/static/js/main.fc3344a3.js",
     "static/js/453.8a33b806.chunk.js": "/La-Sani/static/js/453.8a33b806.chunk.js",
     "static/media/1.jpg": "/La-Sani/static/media/1.856d93ceef4ef4ff2321.jpg",
     "static/media/why4.jpg": "/La-Sani/static/media/why4.b68b958c0e5d7ba22ae7.jpg",
@@ -63,12 +63,12 @@
     "static/media/Suvera Fluid Power Pvt Ltd.png": "/La-Sani/static/media/Suvera Fluid Power Pvt Ltd.20fdfc25ffbf428fc8cb.png",
     "static/media/Carbon Steel & Alloy Steel.jpg": "/La-Sani/static/media/Carbon Steel & Alloy Steel.0463994342787a57c822.jpg",
     "index.html": "/La-Sani/index.html",
-    "main.485f732f.css.map": "/La-Sani/static/css/main.485f732f.css.map",
-    "main.977b1c71.js.map": "/La-Sani/static/js/main.977b1c71.js.map",
+    "main.7fa2690d.css.map": "/La-Sani/static/css/main.7fa2690d.css.map",
+    "main.fc3344a3.js.map": "/La-Sani/static/js/main.fc3344a3.js.map",
     "453.8a33b806.chunk.js.map": "/La-Sani/static/js/453.8a33b806.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.485f732f.css",
-    "static/js/main.977b1c71.js"
+    "static/css/main.7fa2690d.css",
+    "static/js/main.fc3344a3.js"
   ]
 }
