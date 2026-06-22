@@ -95,6 +95,9 @@ function Home() {
 
     const [open, setOpen] = useState(false);
 
+    const rating = 4.6;
+    const totalReviews = 5;
+
     // Navbar Toogle
     useEffect(() => {
         const links = document.querySelectorAll(".nav-link");
@@ -1640,11 +1643,11 @@ function Home() {
                     <div className="container">
                         <div className="text-center section-header">
                             {/* <h2>Certifications</h2>
-
-            <p>
-              Certified excellence, ensuring compliance,
-              quality, and global logistics reliability.
-            </p> */}
+                              <p>
+                                Certified excellence, ensuring compliance,
+                                quality, and global logistics reliability.
+                              </p>  
+                            */}
                         </div>
 
                         {/* <!-- Carousel Wrapper --> */}
@@ -1724,76 +1727,134 @@ function Home() {
 
                 {/* TESTIMONIALS CARDS */}
                 {/* <section className="testimonials-section py-5">
-        <div className="container">
-          <h2 className="fw-bold">Testimonials</h2>
-          <div className="underline underline-testimonials"></div>
+                    <div className="container">
+                        <h2 className="fw-bold">Testimonials</h2>
+                        <div className="underline underline-testimonials"></div>
 
-          <div className="row mt-4">
+                        <div className="row mt-4">
 
-            <div className="col-lg-3 col-md-6">
-              <div className="testimonial-card d-flex">
+                            <div className="col-lg-3 col-md-6">
+                                <div className="testimonial-card d-flex">
 
-                <div className="testimonial-left">
-                  <p className="testimonial-text">
-                    "Lasani delivers exceptional engineering precision and reliability in every project."
-                  </p>
+                                    <div className="testimonial-left">
+                                        <p className="testimonial-text">
+                                            "Lasani delivers exceptional engineering precision and reliability in every project."
+                                        </p>
 
-                  <h6 className="testimonial-name">— Ahmed Khan</h6>
+                                        <h6 className="testimonial-name">— Ahmed Khan</h6>
 
-                  <div className="testimonial-stars">
-                    ⭐⭐⭐⭐
-                  </div>
+                                        <div className="testimonial-stars">
+                                            ⭐⭐⭐⭐
+                                        </div>
+                                    </div>
+
+                                    <div className="testimonial-right">
+                                        <img src={Person1} alt="user" />
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6">
+                                <div className="testimonial-card d-flex">
+                                    <div className="testimonial-left">
+                                        <p className="testimonial-text">"Outstanding service quality and highly professional team execution."</p>
+                                        <h6 className="testimonial-name">— Sara Ali</h6>
+                                        <div className="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                                    </div>
+                                    <div className="testimonial-right">
+                                        <img src={Person2} alt="user" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6">
+                                <div className="testimonial-card d-flex">
+                                    <div className="testimonial-left">
+                                        <p className="testimonial-text">"Innovative solutions with strong technical expertise and support."</p>
+                                        <h6 className="testimonial-name">— Imran Sheikh</h6>
+                                        <div className="testimonial-stars">⭐⭐⭐⭐</div>
+                                    </div>
+                                    <div className="testimonial-right">
+                                        <img src={Person1} alt="user" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3 col-md-6">
+                                <div className="testimonial-card d-flex">
+                                    <div className="testimonial-left">
+                                        <p className="testimonial-text">"Highly efficient processes with excellent customer satisfaction."</p>
+                                        <h6 className="testimonial-name">— Fatima Noor</h6>
+                                        <div className="testimonial-stars">⭐⭐⭐</div>
+                                    </div>
+                                    <div className="testimonial-right">
+                                        <img src={Person2} alt="user" />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section> */}
+
+
+                {/* Google Rating and Map */}
+                <div className="container my-4">
+                    <div className="row justify-content-center Google-rate-map-section">
+                        <div className="col-md-6 col-sm-12 Google-Rating-card">
+                            <div className="card shadow-lg p-3 ">
+
+                                <h4 className="fw-bold">LASANI FLUID POWER LLP</h4>
+                                <p className="text-muted mb-1">
+                                    Panvel, Maharashtra
+                                </p>
+
+                                {/* Rating */}
+                                <div className="d-flex align-items-center">
+                                    <h2 className="me-2">{rating}</h2>
+
+                                    {/* Stars */}
+                                    <div>
+                                        ⭐⭐⭐⭐⭐
+                                    </div>
+
+                                    <span className="ms-2 text-muted">
+                                        ({totalReviews} reviews)
+                                    </span>
+                                </div>
+
+                                {/* Button */}
+                                <a
+                                    href="https://www.google.com/search?q=LASANI+FLUID+POWER+LLP+reviews#lrd=0x3be7e98113bb7603:0xd4e35e6021771d49,1,,,,"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="btn btn-primary mt-3"
+                                >
+                                    View on Google
+                                </a>
+
+                            </div>
+                        </div>
+
+                        {/* RIGHT SIDE - MAP */}
+                        <div className="col-lg-6 col-md-6 col-sm-12">
+                            <div className="map-container shadow">
+
+                                <iframe
+                                    title="Google Map"
+                                    src="https://www.google.com/maps?q=LASANI+FLUID+POWER+LLP&output=embed"
+                                    width="100%"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    className='Google-Map'
+                                ></iframe>
+
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-
-                <div className="testimonial-right">
-                  <img src={Person1} alt="user" />
-                </div>
-
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="testimonial-card d-flex">
-                <div className="testimonial-left">
-                  <p className="testimonial-text">"Outstanding service quality and highly professional team execution."</p>
-                  <h6 className="testimonial-name">— Sara Ali</h6>
-                  <div className="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                </div>
-                <div className="testimonial-right">
-                  <img src={Person2} alt="user" />
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="testimonial-card d-flex">
-                <div className="testimonial-left">
-                  <p className="testimonial-text">"Innovative solutions with strong technical expertise and support."</p>
-                  <h6 className="testimonial-name">— Imran Sheikh</h6>
-                  <div className="testimonial-stars">⭐⭐⭐⭐</div>
-                </div>
-                <div className="testimonial-right">
-                  <img src={Person1} alt="user" />
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-3 col-md-6">
-              <div className="testimonial-card d-flex">
-                <div className="testimonial-left">
-                  <p className="testimonial-text">"Highly efficient processes with excellent customer satisfaction."</p>
-                  <h6 className="testimonial-name">— Fatima Noor</h6>
-                  <div className="testimonial-stars">⭐⭐⭐</div>
-                </div>
-                <div className="testimonial-right">
-                  <img src={Person2} alt="user" />
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section> */}
 
 
                 {/* ========================================================= */}

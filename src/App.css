@@ -11,7 +11,7 @@ h6 {
   color: #145491 !important;
 }
 
-h1{
+h1 {
   font-size: 32px !important;
 }
 
@@ -430,7 +430,7 @@ h1{
   gap: 45px;
 }
 
-.WHYUS-Img-Section .WhyUs-Child{
+.WHYUS-Img-Section .WhyUs-Child {
   height: 50%;
 }
 
@@ -981,6 +981,15 @@ h1{
 
 /* --------------Slider CSS --------------- */
 
+/* -------------- Google-Rating & Google-Map --------------- */
+.Google-Rating-card .card{
+  height: 240px;
+  justify-content: space-around;
+}
+
+.Google-Map {
+  height: 240px;
+}
 
 /* ========================================================= */
 /* MISSION VISION QUALITY SECTION */
@@ -1763,6 +1772,10 @@ h1{
   .testimonials-section .row {
     gap: 20px;
   }
+
+  .Google-rate-map-section{
+    gap: 20px;
+  }
 }
 
 
@@ -1770,7 +1783,7 @@ h1{
 /* 425px All CSS */
 @media screen and (max-width: 425px) {
   .services h1 {
-    font-size: 19px  !important;
+    font-size: 19px !important;
   }
 
   .history-section h1 {
@@ -1936,9 +1949,9 @@ h1{
   }
 
   .support-btn-mob {
-  left: 15px !important;
-  background-color: white !important;
-}
+    left: 15px !important;
+    background-color: white !important;
+  }
 
   .close-navbar-btn {
     display: flex;

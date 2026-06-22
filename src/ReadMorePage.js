@@ -49,8 +49,8 @@ function ReadMorePage() {
 
                 <div className="col-lg-10 col-md-10 col-12 text-center Header-Details text-md-start">
                   {/* <span>1219-T, Kalamboli Steel Market, Panvel, Maharashtra – 410218.</span>
-                <span className="ms-3">📞 +91 99000 19885 | +91 89763 37049</span>
-                <span className="ms-3">✉ info@la-sani.com</span> */}
+                     <span className="ms-3">📞 +91 99000 19885 | +91 89763 37049</span>
+                     <span className="ms-3">✉ info@la-sani.com</span> */}
                 </div>
 
                 <div className="col-lg-2 col-md-3 col-12 text-center text-md-end Header-Time">
